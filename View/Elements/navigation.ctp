@@ -20,7 +20,7 @@
                         <li class="dropdown-header"><?php echo AuthComponent::user()['name'];?></li>
                         <li><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'edit',AuthComponent::user()['id']));?>"><?php echo __('Edit account')?></a></li>
                         <li class="divider"></li>
-                        <li class=""><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'logout'));?>"><?php echo __('Signout')?></a></li>
+                        <li class=""><a href="<?php echo $this->Html->url(array('controller'=>'users','action'=>'logout'));?>"><?php echo __('Sign out')?></a></li>
                     </ul>
                 </li>
             </ul>

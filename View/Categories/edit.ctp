@@ -27,12 +27,6 @@
 					<?php echo $this->Form->input('parent_id', array('class' => 'form-control', 'placeholder' => 'Parent Id'));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('lft', array('class' => 'form-control', 'placeholder' => 'Lft'));?>
-				</div>
-				<div class="form-group">
-					<?php echo $this->Form->input('rght', array('class' => 'form-control', 'placeholder' => 'Rght'));?>
-				</div>
-				<div class="form-group">
 					<?php echo $this->Form->input('name', array('class' => 'form-control', 'placeholder' => 'Name'));?>
 				</div>
 				<div class="form-group">

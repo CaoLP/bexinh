@@ -98,7 +98,6 @@ class UsersController extends AppController
             $options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
             $this->request->data = $this->User->find('first', $options);
         }
-        $groups = $this->User->Group->find('list');
         $stores = $this->User->Store->find('list');
         $this->set(compact('groups', 'stores'));
     }

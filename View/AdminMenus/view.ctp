@@ -48,13 +48,6 @@
 		</td>
 </tr>
 <tr>
-		<th><?php echo __('Group Ids'); ?></th>
-		<td>
-			<?php echo h($adminMenu['AdminMenu']['group_ids']); ?>
-			&nbsp;
-		</td>
-</tr>
-<tr>
 		<th><?php echo __('Parent Admin Menu'); ?></th>
 		<td>
 			<?php echo $this->Html->link($adminMenu['ParentAdminMenu']['name'], array('controller' => 'admin_menus', 'action' => 'view', $adminMenu['ParentAdminMenu']['id'])); ?>
