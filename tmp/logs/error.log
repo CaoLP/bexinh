@@ -1,0 +1,115 @@
+2015-03-21 10:25:44 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /bexinhshop/user/add
+Stack Trace:
+#0 C:\xampp\htdocs\bexinhshop\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 10:25:47 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\bexinhshop\Controller\UsersController.php, line 58]
+2015-03-21 10:25:47 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /bexinhshop/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\bexinhshop\Lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 58, Array)
+#2 C:\xampp\htdocs\bexinhshop\Lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 58, Array)
+#3 C:\xampp\htdocs\bexinhshop\Lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 10:25:53 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\bexinhshop\Controller\UsersController.php, line 58]
+2015-03-21 10:25:53 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /bexinhshop/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\bexinhshop\Lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 58, Array)
+#2 C:\xampp\htdocs\bexinhshop\Lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 58, Array)
+#3 C:\xampp\htdocs\bexinhshop\Lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 12:55:21 Error: [MissingViewException] View file "Users\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\login.ctp',
+)
+Request URL: /bexinhshop/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\bexinhshop\Lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\bexinhshop\Lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\bexinhshop\Lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\bexinhshop\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 12:55:50 Error: [MissingLayoutException] Layout file "Layouts\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layouts\\login.ctp',
+)
+Request URL: /bexinhshop/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(514): View->_getLayoutFileName('login')
+#1 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(481): View->renderLayout('', 'login')
+#2 C:\xampp\htdocs\bexinhshop\Lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\bexinhshop\Lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\htdocs\bexinhshop\Lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\bexinhshop\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-03-21 12:55:50 Error: [MissingLayoutException] Layout file "Layouts\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layouts\\login.ctp',
+)
+Request URL: /bexinhshop/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(514): View->_getLayoutFileName('login')
+#1 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(481): View->renderLayout('', 'login')
+#2 C:\xampp\htdocs\bexinhshop\Lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#3 C:\xampp\htdocs\bexinhshop\Lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\htdocs\bexinhshop\Lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 C:\xampp\htdocs\bexinhshop\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-03-21 13:52:20 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [C:\xampp\htdocs\bexinhshop\View\Users\index.ctp, line 19]
+2015-03-21 13:52:20 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /bexinhshop/users
+Stack Trace:
+#0 C:\xampp\htdocs\bexinhshop\Lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 19, Array)
+#2 C:\xampp\htdocs\bexinhshop\Lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 19, Array)
+#3 C:\xampp\htdocs\bexinhshop\Lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-22 01:34:32 Error: [MissingActionException] Action DashboardController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'DashboardController',
+  'action' => 'admin_index',
+)
+Request URL: /bexinhshop/admin/dashboard
+Stack Trace:
+#0 C:\xampp\htdocs\bexinhshop\Lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\bexinhshop\Lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(DashboardController), Object(CakeRequest))
+#2 C:\xampp\htdocs\bexinhshop\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-22 10:55:49 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /bexinhshop/
+Stack Trace:
+#0 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Auth')
+#1 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(848): HelperCollection->__isset('Auth')
+#2 C:\xampp\htdocs\bexinhshop\View\Elements\navigation.ctp(18): View->__get('Auth')
+#3 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(961): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(923): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(1217): View->_render('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(418): View->_renderElement('C:\\xampp\\htdocs...', Array, Array)
+#7 C:\xampp\htdocs\bexinhshop\View\Layouts\default.ctp(25): View->element('navigation')
+#8 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(961): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(923): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(546): View->_render('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\bexinhshop\Lib\Cake\View\View.php(481): View->renderLayout('', 'default')
+#12 C:\xampp\htdocs\bexinhshop\Lib\Cake\Controller\Controller.php(960): View->render('home', NULL)
+#13 C:\xampp\htdocs\bexinhshop\Controller\PagesController.php(59): Controller->render('home')
+#14 [internal function]: PagesController->display('home')
+#15 C:\xampp\htdocs\bexinhshop\Lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#16 C:\xampp\htdocs\bexinhshop\Lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#17 C:\xampp\htdocs\bexinhshop\Lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#18 C:\xampp\htdocs\bexinhshop\webroot\index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#19 {main}
