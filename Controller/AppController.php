@@ -25,6 +25,7 @@ class AppController extends Controller
 {
     public $components = array(
         'Session',
+        'Menu',
         'Auth' => array(
             'loginRedirect' => array(
                 'controller' => 'dashboard',
@@ -39,7 +40,8 @@ class AppController extends Controller
                     'scope' => array('User.status' => 1)
                 ),
             )
-        )
+        ),
+        'DebugKit.Toolbar'
     );
 
     public function beforeRender()

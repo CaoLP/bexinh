@@ -8,7 +8,7 @@
 App::uses('Helper', 'View');
 class MenuHelper extends Helper
 {
-    public function loopChildMenu($data, $parent_name,$prefix = '__')
+    public function loopChildMenu($data, $parent_name, $prefix = '__')
     {
         foreach ($data as $child):
             ?>
@@ -28,6 +28,53 @@ class MenuHelper extends Helper
                 </td>
             </tr>
         <?php
+        endforeach;
+    }
+
+    public function createMenu($menu)
+    {
+        foreach ($menu as $item):
+            $submenu = false;
+            if (count($item['ChildAdminMenu']) > 0) $submenu = true;
+            if (!$submenu):
+                ?>
+                <li>
+                    <a href="<?php echo $item['AdminMenu']['url']; ?>"  class="list-group-item <?php if ($item['AdminMenu']['url'] == $this->request->here) echo 'active'; ?>"><i
+                            class="<?php echo $item['AdminMenu']['icon']; ?>"></i><?php echo $item['AdminMenu']['name']; ?>
+                    </a>
+                </li>
+            <?php
+            else:
+                $active = '';
+                $in = '';
+                $html = '<li>
+                    <a href="#sub' . $item['AdminMenu']['id'] . '" class="list-group-item {active}" data-toggle="collapse">
+                        <i class="' . $item['AdminMenu']['icon'] . '"></i>' . $item['AdminMenu']['name'] . ' <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </li>';
+                if($item['AdminMenu']['url'] == $this->request->here){
+                    $in = 'in';
+                    $active = 'active';
+                }
+                $html .= '<li class="collapse {flag}" id="sub' . $item['AdminMenu']['id'] . '">
+                    <a href="' . $item['AdminMenu']['url'] . '" class="list-group-item '.$active.'">
+                    <i class="' . $item['AdminMenu']['icon'] . '"></i>' . $item['AdminMenu']['name'] . '</a>';
+
+                foreach ($item['ChildAdminMenu'] as $child):
+                    $subactive = '';
+                    if ($child['url'] == $this->request->here) {
+                        if($active == '') $active = 'active';
+                        $subactive = 'active';
+                        $in = 'in';
+                    }
+                    $html .= '<a href="' . $child['url'] . '"
+                       class="list-group-item ' . $subactive . '"><i
+                            class="' . $child['icon'] . '"></i>' . $child['name'] . '</a>';
+                endforeach;
+                $html .= '</li>';
+                $html = str_replace('{active}', $active, $html);
+                $html = str_replace('{flag}', $in, $html);
+                echo $html;
+            endif;
         endforeach;
     }
 }
