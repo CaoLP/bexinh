@@ -77,10 +77,10 @@
     </div>
 </div>
 
-<?php $this->Html->script('/media/js/jquery.form.js',array('inline'=>false)); ?>
-<?php $this->Html->script('/media/js/plupload.js',array('inline'=>false)); ?>
-<?php $this->Html->script('/media/js/plupload.html5.js',array('inline'=>false)); ?>
-<?php $this->Html->script('/media/js/plupload.flash.js',array('inline'=>false)); ?>
+<?php $this->Html->script('jquery.form.js',array('inline'=>false)); ?>
+<?php $this->Html->script('plupload.js',array('inline'=>false)); ?>
+<?php $this->Html->script('plupload.html5.js',array('inline'=>false)); ?>
+<?php $this->Html->script('plupload.flash.js',array('inline'=>false)); ?>
 <?php $this->Html->scriptStart(array('inline'=>false)); ?>
 
 

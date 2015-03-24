@@ -28,6 +28,7 @@ class MediasController extends AppController{
     * Liste les médias
     **/
     public function index($ref,$ref_id){
+
         if(!$this->canUploadMedias($ref, $ref_id)){
             throw new ForbiddenException();
         }

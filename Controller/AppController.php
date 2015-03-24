@@ -52,4 +52,11 @@ class AppController extends Controller
         ));
         //sample
     }
+    public function canUploadMedias($model, $id){
+//        if($model == 'User' & $id = $this->Session->read('Auth.User.id')){
+//            return true; // Everyone can edit the medias for their own record
+//        }
+//        return $this->Session->read('Auth.User.role') == 'admin'; // Only admins can upload medias for everything else
+        return true;
+    }
 }
