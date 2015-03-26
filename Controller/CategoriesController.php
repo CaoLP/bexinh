@@ -22,6 +22,12 @@ class CategoriesController extends AppController {
  */
 	public function index() {
 		$this->Category->recursive = 0;
+        $this->Paginator->settings = array(
+            'contain' => array('Thumb'),
+            'conditions'=>array(
+                'Category.name <>' => '0'
+            )
+        );
 		$this->set('categories', $this->Paginator->paginate());
 	}
 

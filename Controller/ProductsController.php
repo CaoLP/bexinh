@@ -26,7 +26,10 @@ class ProductsController extends AppController
     {
         $this->Product->recursive = 0;
         $this->Paginator->settings = array(
-            'contain' => array('Thumb')
+            'contain' => array('Thumb'),
+            'conditions'=>array(
+                'Product.name <>' => '0'
+            )
         );
         $this->set('products', $this->Paginator->paginate());
     }
@@ -124,7 +127,8 @@ class ProductsController extends AppController
         }
         $providers = $this->Product->Provider->find('list');
         $categories = $this->Product->Category->find('list');
-        $this->set(compact('providers', 'categories'));
+        $product_options= $this->Product->ProductOption->Option->OptionGroup->find('all',array('recursive'=>1));
+        $this->set(compact('providers', 'categories','product_options'));
     }
 
     /**
