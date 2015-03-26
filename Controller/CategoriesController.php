@@ -46,17 +46,33 @@ class CategoriesController extends AppController {
  * @return void
  */
 	public function add() {
-		if ($this->request->is('post')) {
-			$this->Category->create();
-			if ($this->Category->save($this->request->data)) {
-				$this->Session->setFlash(__('The category has been saved.'), 'default', array('class' => 'alert alert-success'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The category could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
-			}
-		}
-		$parentCategories = $this->Category->ParentCategory->find('list');
-		$this->set(compact('parentCategories'));
+        $temp = array(
+            'Category' => array(
+                'name' => '0',
+                'descriptions' => '0',
+                'excerpt' => '0',
+                'status' => '0'
+            )
+        );
+        $data = $this->Category->find('first',array('conditions'=>array('Category.name'=>'0')));
+        if($data){
+            $id = $data['Category']['id'];
+        }else{
+            $this->Category->save($temp);
+            $id = $this->Category->id;
+        }
+        $this->redirect(Router::url(array('action'=>'edit',$id)));
+//		if ($this->request->is('post')) {
+//			$this->Category->create();
+//			if ($this->Category->save($this->request->data)) {
+//				$this->Session->setFlash(__('The category has been saved.'), 'default', array('class' => 'alert alert-success'));
+//				return $this->redirect(array('action' => 'index'));
+//			} else {
+//				$this->Session->setFlash(__('The category could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
+//			}
+//		}
+//		$parentCategories = $this->Category->ParentCategory->find('list');
+//		$this->set(compact('parentCategories'));
 	}
 
 /**

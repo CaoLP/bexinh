@@ -228,3 +228,8 @@ strong,label{color:#333; font-weight: bold; }
 #filelist .progressbar .progress span.ui-label b {
     font-weight: bold;
 }
+.currency{
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}

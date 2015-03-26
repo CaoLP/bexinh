@@ -97,20 +97,6 @@
 		</td>
 </tr>
 <tr>
-		<th><?php echo __('Thumbnail'); ?></th>
-		<td>
-			<?php echo h($product['Product']['thumbnail']); ?>
-			&nbsp;
-		</td>
-</tr>
-<tr>
-		<th><?php echo __('Images'); ?></th>
-		<td>
-			<?php echo h($product['Product']['images']); ?>
-			&nbsp;
-		</td>
-</tr>
-<tr>
 		<th><?php echo __('Created'); ?></th>
 		<td>
 			<?php echo h($product['Product']['created']); ?>

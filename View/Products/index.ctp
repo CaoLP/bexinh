@@ -32,6 +32,7 @@
 		<table cellpadding="0" cellspacing="0" class="table table-striped">
 				<thead>
 					<tr>
+                        <th></th>
 						<th><?php echo $this->Paginator->sort('id'); ?></th>
 						<th><?php echo $this->Paginator->sort('sku'); ?></th>
 						<th><?php echo $this->Paginator->sort('provider_id'); ?></th>
@@ -41,8 +42,6 @@
 						<th><?php echo $this->Paginator->sort('source_price'); ?></th>
 						<th><?php echo $this->Paginator->sort('excert'); ?></th>
 						<th><?php echo $this->Paginator->sort('descriptions'); ?></th>
-						<th><?php echo $this->Paginator->sort('thumbnail'); ?></th>
-						<th><?php echo $this->Paginator->sort('images'); ?></th>
 						<th><?php echo $this->Paginator->sort('created'); ?></th>
 						<th><?php echo $this->Paginator->sort('created_by'); ?></th>
 						<th><?php echo $this->Paginator->sort('updated'); ?></th>
@@ -55,6 +54,10 @@
 				<tbody>
 				<?php foreach ($products as $product): ?>
 					<tr>
+                        <td><?php
+                            if($product['Thumb']['file'])
+                            echo $this->Media->image($product['Thumb']['file'], 50, 50, array('class'=>'thumbnail'));
+                            ?>&nbsp;</td>
 						<td><?php echo h($product['Product']['id']); ?>&nbsp;</td>
 						<td><?php echo h($product['Product']['sku']); ?>&nbsp;</td>
 								<td>
@@ -66,8 +69,6 @@
 						<td><?php echo h($product['Product']['source_price']); ?>&nbsp;</td>
 						<td><?php echo h($product['Product']['excert']); ?>&nbsp;</td>
 						<td><?php echo h($product['Product']['descriptions']); ?>&nbsp;</td>
-						<td><?php echo h($product['Product']['thumbnail']); ?>&nbsp;</td>
-						<td><?php echo h($product['Product']['images']); ?>&nbsp;</td>
 						<td><?php echo h($product['Product']['created']); ?>&nbsp;</td>
 								<td>
 			<?php echo $this->Html->link($product['TrackableCreator']['name'], array('controller' => 'users', 'action' => 'view', $product['TrackableCreator']['id'])); ?>

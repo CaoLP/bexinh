@@ -14,7 +14,7 @@
     echo $this->fetch('meta');
     echo $this->fetch('css');
     echo $this->fetch('script');
-    echo $this->Html->css(array('site.min'));
+    echo $this->Html->css(array('site.min','custom'));
     echo $this->Html->css(array('//fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic'));
     ?>
 
@@ -45,7 +45,8 @@ if (AuthComponent::user()) {
 <!-- /.container -->
 
 <?php
-echo $this->Html->script(array('site.min'));
+echo $this->Html->script(array('site.min','jquery.maskMoney.min'));
+echo $this->Html->script(array('action'));
 ?>
 </body>
 </html>

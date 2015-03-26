@@ -54,12 +54,6 @@
 					<?php echo $this->Form->input('descriptions', array('class' => 'form-control', 'placeholder' => 'Descriptions'));?>
 				</div>
 				<div class="form-group">
-					<?php echo $this->Form->input('thumbnail', array('class' => 'form-control', 'placeholder' => 'Thumbnail'));?>
-				</div>
-				<div class="form-group">
-					<?php echo $this->Form->input('images', array('class' => 'form-control', 'placeholder' => 'Images'));?>
-				</div>
-				<div class="form-group">
 					<?php echo $this->Form->input('status', array('class' => 'form-control', 'placeholder' => 'Status'));?>
 				</div>
 				<div class="form-group">

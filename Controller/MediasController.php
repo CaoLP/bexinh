@@ -41,7 +41,6 @@ class MediasController extends AppController{
         $medias = $this->Media->find('all',array(
             'conditions' => array('ref_id' => $ref_id,'ref' => $ref)
         ));
-
         $thumbID = false;
         if($this->$ref->hasField('media_id')){
             $this->$ref->id = $ref_id;
@@ -129,7 +128,7 @@ class MediasController extends AppController{
                 $this->Media->saveField('position',$v);
             }
         }
-        return false;
+        die;
     }
 
 

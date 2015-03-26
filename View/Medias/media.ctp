@@ -47,16 +47,16 @@
 					<td style="width:140px"><label><?php echo __d('media',"Alignement"); ?></label></td>
 					<td>
 						<input type="radio" name="align-<?php echo $media['id']; ?>" class="align" id="align-none-<?php echo $media['id']; ?>" value="none" checked>
-						<?php echo $this->Html->image('/media/img/align-none.png'); ?><label for="align-none-<?php echo $media['id']; ?>">Aucun</label>
+						<?php echo $this->Html->image('/img/align-none.png'); ?><label for="align-none-<?php echo $media['id']; ?>">Aucun</label>
 
 						<input type="radio" name="align-<?php echo $media['id']; ?>" class="align" id="align-left-<?php echo $media['id']; ?>" value="left">
-						<?php echo $this->Html->image('/media/img/align-left.png'); ?><label for="align-left-<?php echo $media['id']; ?>">Gauche</label>
+						<?php echo $this->Html->image('/img/align-left.png'); ?><label for="align-left-<?php echo $media['id']; ?>">Gauche</label>
 
 						<input type="radio" name="align-<?php echo $media['id']; ?>" class="align" id="align-center-<?php echo $media['id']; ?>" value="center">
-						<?php echo $this->Html->image('/media/img/align-center.png'); ?><label for="align-center-<?php echo $media['id']; ?>">Centre</label>
+						<?php echo $this->Html->image('/img/align-center.png'); ?><label for="align-center-<?php echo $media['id']; ?>">Centre</label>
 
 						<input type="radio" name="align-<?php echo $media['id']; ?>" class="align" id="align-right-<?php echo $media['id']; ?>" value="right">
-						<?php echo $this->Html->image('/media/img/align-right.png'); ?><label for="align-right-<?php echo $media['id']; ?>">Droite</label>
+						<?php echo $this->Html->image('/img/align-right.png'); ?><label for="align-right-<?php echo $media['id']; ?>">Droite</label>
 					</td>
 				</tr>
 				<tr>

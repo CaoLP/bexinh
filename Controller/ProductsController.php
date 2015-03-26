@@ -25,6 +25,9 @@ class ProductsController extends AppController
     public function index()
     {
         $this->Product->recursive = 0;
+        $this->Paginator->settings = array(
+            'contain' => array('Thumb')
+        );
         $this->set('products', $this->Paginator->paginate());
     }
 
@@ -51,18 +54,41 @@ class ProductsController extends AppController
      */
     public function add()
     {
-        if ($this->request->is('post')) {
-            $this->Product->create();
-            if ($this->Product->save($this->request->data)) {
-                $this->Session->setFlash(__('The product has been saved.'), 'default', array('class' => 'alert alert-success'));
-                return $this->redirect(array('action' => 'index'));
-            } else {
-                $this->Session->setFlash(__('The product could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
-            }
+        $temp = array(
+            'Product' => array(
+                'sku' => '0',
+                'provider_id' => '0',
+                'name' => '0',
+                'price' => '0',
+                'retail_price' => '0',
+                'source_price' => '0',
+                'excert' => '0',
+                'descriptions' => '0',
+                'status' => '0',
+                'category_id' => '0'
+            )
+        );
+        $data = $this->Product->find('first',array('conditions'=>array('Product.sku'=>'0')));
+        if($data){
+            $id = $data['Product']['id'];
+        }else{
+            $this->Product->save($temp);
+            $id = $this->Product->id;
         }
-        $providers = $this->Product->Provider->find('list');
-        $categories = $this->Product->Category->find('list');
-        $this->set(compact('providers', 'categories'));
+        $this->redirect(Router::url(array('action'=>'edit',$id)));
+//        if ($this->request->is('post')) {
+//            $this->Product->create();
+//            debug($this->request->data);die;
+//            if ($this->Product->save($this->request->data)) {
+//                $this->Session->setFlash(__('The product has been saved.'), 'default', array('class' => 'alert alert-success'));
+//                return $this->redirect(array('action' => 'index'));
+//            } else {
+//                $this->Session->setFlash(__('The product could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
+//            }
+//        }
+//        $providers = $this->Product->Provider->find('list');
+//        $categories = $this->Product->Category->find('list');
+//        $this->set(compact('providers', 'categories'));
     }
 
     /**
@@ -78,6 +104,14 @@ class ProductsController extends AppController
             throw new NotFoundException(__('Invalid product'));
         }
         if ($this->request->is(array('post', 'put'))) {
+
+            $this->request->data['Product']['price'] = str_replace(',','',$this->request->data['Product']['price']);
+            $this->request->data['Product']['price'] = str_replace(' VNĐ','',$this->request->data['Product']['price']);
+            $this->request->data['Product']['retail_price'] = str_replace(',','',$this->request->data['Product']['retail_price']);
+            $this->request->data['Product']['retail_price'] = str_replace(' VNĐ','',$this->request->data['Product']['retail_price']);
+            $this->request->data['Product']['source_price'] = str_replace(',','',$this->request->data['Product']['source_price']);
+            $this->request->data['Product']['source_price'] = str_replace(' VNĐ','',$this->request->data['Product']['source_price']);
+
             if ($this->Product->save($this->request->data)) {
                 $this->Session->setFlash(__('The product has been saved.'), 'default', array('class' => 'alert alert-success'));
                 return $this->redirect(array('action' => 'index'));

@@ -43,25 +43,20 @@
             <?php echo $this->Form->input('name', array('class' => 'form-control', 'placeholder' => 'Name')); ?>
         </div>
         <div class="form-group">
-            <?php echo $this->Form->input('price', array('class' => 'form-control', 'placeholder' => 'Price')); ?>
+            <?php echo $this->Form->input('price', array('type'=>'text','class' => 'form-control currency', 'placeholder' => 'Price')); ?>
         </div>
         <div class="form-group">
-            <?php echo $this->Form->input('retail_price', array('class' => 'form-control', 'placeholder' => 'Retail Price')); ?>
+            <?php echo $this->Form->input('retail_price', array('type'=>'text','class' => 'form-control currency', 'placeholder' => 'Retail Price')); ?>
         </div>
         <div class="form-group">
-            <?php echo $this->Form->input('source_price', array('class' => 'form-control', 'placeholder' => 'Source Price')); ?>
+            <?php echo $this->Form->input('source_price', array('type'=>'text','class' => 'form-control currency', 'placeholder' => 'Source Price')); ?>
         </div>
         <div class="form-group">
             <?php echo $this->Form->input('excert', array('class' => 'form-control', 'placeholder' => 'Excert')); ?>
         </div>
         <div class="form-group">
-            <?php echo $this->Form->input('descriptions', array('class' => 'form-control', 'placeholder' => 'Descriptions')); ?>
-        </div>
-        <div class="form-group">
-            <?php echo $this->Form->input('thumbnail', array('class' => 'form-control', 'placeholder' => 'Thumbnail')); ?>
-        </div>
-        <div class="form-group">
-            <?php echo $this->Form->input('images', array('class' => 'form-control', 'placeholder' => 'Images')); ?>
+            <?php echo $this->Media->ckeditor('descriptions', array('label'=> __('Descriptions'))); ?>
+            <?php //echo $this->Form->input('descriptions', array('class' => 'form-control', 'placeholder' => 'Descriptions')); ?>
         </div>
         <div class="form-group">
             <?php echo $this->Form->input('status', array('class' => 'form-control', 'placeholder' => 'Status')); ?>
