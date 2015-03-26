@@ -12,7 +12,7 @@ App::uses('AppModel', 'Model');
  * @property Warehouse $Warehouse
  */
 class Product extends AppModel {
-
+    public $actsAs = array('Media');
 /**
  * Validation rules
  *

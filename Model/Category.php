@@ -8,14 +8,13 @@ App::uses('AppModel', 'Model');
  * @property Product $Product
  */
 class Category extends AppModel {
-
 /**
  * Behaviors
  *
  * @var array
  */
 	public $actsAs = array(
-		'Tree',
+		'Tree','Media'
 	);
 
 /**

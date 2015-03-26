@@ -65,16 +65,25 @@
             <div class="panel panel-default">
                 <div class="panel-heading"><?php echo __('Options') ?></div>
                 <div class="panel-body">
-                    <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch_"
-                               class="onoffswitch-checkbox toggle-event"
-                               id="myonoffswitch_"
-                               value="">
-                        <label class="onoffswitch-label" for="myonoffswitch_">
-                            <span class="onoffswitch-inner"></span>
-                            <span class="onoffswitch-switch"></span>
-                        </label>
-                    </div>
+                    <?php foreach ($product_options as $opt_gr) {
+                        ?>
+                        <h4><?php echo $opt_gr['OptionGroup']['name']?></h4>
+                        <?php
+                        foreach ($opt_gr['Option'] as $opt) {
+                            ?>
+                            <div class="list-option">
+                                <span class="title-option"><?php echo $opt['name']?></span>
+                                <label class="toggle">
+                                    <input type="checkbox" checked="<?php
+
+
+                                    ?>" name="data[ProductOption][]">
+                                    <span class="handle"></span>
+                                </label>
+                            </div>
+                        <?php
+                        }
+                    } ?>
                 </div>
             </div>
         </div>
