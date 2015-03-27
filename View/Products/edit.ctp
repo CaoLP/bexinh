@@ -65,19 +65,22 @@
             <div class="panel panel-default">
                 <div class="panel-heading"><?php echo __('Options') ?></div>
                 <div class="panel-body">
-                    <?php foreach ($product_options as $opt_gr) {
+                    <?php foreach ($product_options as $key => $opt_gr) {
                         ?>
-                        <h4><?php echo $opt_gr['OptionGroup']['name']?></h4>
+                        <h4><?php echo $key ?></h4>
                         <?php
-                        foreach ($opt_gr['Option'] as $opt) {
+                        foreach ($opt_gr as $s_key => $opt) {
                             ?>
                             <div class="list-option">
-                                <span class="title-option"><?php echo $opt['name']?></span>
+                                <span class="title-option"><?php echo $opt ?></span>
                                 <label class="toggle">
-                                    <input type="checkbox" checked="<?php
-
-
-                                    ?>" name="data[ProductOption][]">
+                                    <input type="checkbox" <?php
+                                    foreach ($this->request->data['ProductOption'] as $op) {
+                                        if ($op['option_id'] == $s_key) echo 'checked';
+                                        else
+                                            echo '';
+                                    }
+                                    ?> name="data[ProductOption][]" value="<?php echo $s_key; ?>">
                                     <span class="handle"></span>
                                 </label>
                             </div>
