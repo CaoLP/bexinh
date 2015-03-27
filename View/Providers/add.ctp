@@ -7,9 +7,9 @@
 <div class="panel-body">
     <div class="col-md-12">
         <ul class="nav nav-pills nav-justified">
-                        <li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;List Providers'), array('action' => 'index'), array('escape' => false)); ?></li>
-            		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp;&nbsp;List Products'), array('controller' => 'products', 'action' => 'index'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;New Product'), array('controller' => 'products', 'action' => 'add'), array('escape' => false)); ?> </li>
+                        <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Providers'), array('action' => 'index'), array('escape' => false)); ?></li>
+            		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Products'), array('controller' => 'products', 'action' => 'index'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Product'), array('controller' => 'products', 'action' => 'add'), array('escape' => false)); ?> </li>
         </ul>
     </div>
     <div class="col-md-12">

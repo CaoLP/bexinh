@@ -7,24 +7,24 @@
 <div class="panel-body">
     <div class="col-md-12">
         <ul class="nav nav-pills nav-justified">
-            		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-edit"></span>&nbsp&nbsp;Edit Store'), array('action' => 'edit', $store['Store']['id']), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Form->postLink(__('<span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;Delete Store'), array('action' => 'delete', $store['Store']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $store['Store']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp&nbsp;List Stores'), array('action' => 'index'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp&nbsp;New Store'), array('action' => 'add'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp&nbsp;List Users'), array('controller' => 'users', 'action' => 'index'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp&nbsp;New Manager'), array('controller' => 'users', 'action' => 'add'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp&nbsp;List Customer Promotes'), array('controller' => 'customer_promotes', 'action' => 'index'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp&nbsp;New Customer Promote'), array('controller' => 'customer_promotes', 'action' => 'add'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp&nbsp;List Inout Warehouses'), array('controller' => 'inout_warehouses', 'action' => 'index'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp&nbsp;New Inout Warehouse'), array('controller' => 'inout_warehouses', 'action' => 'add'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp&nbsp;List Orders'), array('controller' => 'orders', 'action' => 'index'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp&nbsp;New Order'), array('controller' => 'orders', 'action' => 'add'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp&nbsp;List Promotes'), array('controller' => 'promotes', 'action' => 'index'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp&nbsp;New Promote'), array('controller' => 'promotes', 'action' => 'add'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp&nbsp;List Reexes'), array('controller' => 'reexes', 'action' => 'index'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp&nbsp;New Reex'), array('controller' => 'reexes', 'action' => 'add'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp&nbsp;List Warehouses'), array('controller' => 'warehouses', 'action' => 'index'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp&nbsp;New Warehouse'), array('controller' => 'warehouses', 'action' => 'add'), array('escape' => false)); ?> </li>
+            		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>'.__('Edit Store'), array('action' => 'edit', $store['Store']['id']), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>'.__('Delete Store'), array('action' => 'delete', $store['Store']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $store['Store']['id'])); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Stores'), array('action' => 'index'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Store'), array('action' => 'add'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Users'), array('controller' => 'users', 'action' => 'index'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Manager'), array('controller' => 'users', 'action' => 'add'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Customer Promotes'), array('controller' => 'customer_promotes', 'action' => 'index'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Customer Promote'), array('controller' => 'customer_promotes', 'action' => 'add'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Inout Warehouses'), array('controller' => 'inout_warehouses', 'action' => 'index'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Inout Warehouse'), array('controller' => 'inout_warehouses', 'action' => 'add'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Orders'), array('controller' => 'orders', 'action' => 'index'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Order'), array('controller' => 'orders', 'action' => 'add'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Promotes'), array('controller' => 'promotes', 'action' => 'index'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Promote'), array('controller' => 'promotes', 'action' => 'add'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Reexes'), array('controller' => 'reexes', 'action' => 'index'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Reex'), array('controller' => 'reexes', 'action' => 'add'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Warehouses'), array('controller' => 'warehouses', 'action' => 'index'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Warehouse'), array('controller' => 'warehouses', 'action' => 'add'), array('escape' => false)); ?> </li>
 
         </ul>
     </div>
@@ -154,9 +154,9 @@
 			<td><?php echo $customerPromote['updated']; ?></td>
 			<td><?php echo $customerPromote['updated_by']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-search"></span>'), array('controller' => 'customer_promotes', 'action' => 'view', $customerPromote['id']), array('escape' => false)); ?>
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-edit"></span>'), array('controller' => 'customer_promotes', 'action' => 'edit', $customerPromote['id']), array('escape' => false)); ?>
-				<?php echo $this->Form->postLink(__('<span class="glyphicon glyphicon-remove"></span>'), array('controller' => 'customer_promotes', 'action' => 'delete', $customerPromote['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $customerPromote['id'])); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-search"></span>', array('controller' => 'customer_promotes', 'action' => 'view', $customerPromote['id']), array('escape' => false)); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('controller' => 'customer_promotes', 'action' => 'edit', $customerPromote['id']), array('escape' => false)); ?>
+				<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('controller' => 'customer_promotes', 'action' => 'delete', $customerPromote['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $customerPromote['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -165,7 +165,7 @@
                 <?php endif; ?>
 
                 <div class="actions">
-                    <?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;New Customer Promote'), array('controller' => 'customer_promotes', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
+                    <?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Customer Promote'), array('controller' => 'customer_promotes', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
             </div><!-- end col md 12 -->
         </div>
             <div class="related row">
@@ -202,9 +202,9 @@
 			<td><?php echo $inoutWarehouse['updated_by']; ?></td>
 			<td><?php echo $inoutWarehouse['status']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-search"></span>'), array('controller' => 'inout_warehouses', 'action' => 'view', $inoutWarehouse['id']), array('escape' => false)); ?>
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-edit"></span>'), array('controller' => 'inout_warehouses', 'action' => 'edit', $inoutWarehouse['id']), array('escape' => false)); ?>
-				<?php echo $this->Form->postLink(__('<span class="glyphicon glyphicon-remove"></span>'), array('controller' => 'inout_warehouses', 'action' => 'delete', $inoutWarehouse['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $inoutWarehouse['id'])); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-search"></span>', array('controller' => 'inout_warehouses', 'action' => 'view', $inoutWarehouse['id']), array('escape' => false)); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('controller' => 'inout_warehouses', 'action' => 'edit', $inoutWarehouse['id']), array('escape' => false)); ?>
+				<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('controller' => 'inout_warehouses', 'action' => 'delete', $inoutWarehouse['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $inoutWarehouse['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -213,7 +213,7 @@
                 <?php endif; ?>
 
                 <div class="actions">
-                    <?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;New Inout Warehouse'), array('controller' => 'inout_warehouses', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
+                    <?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Inout Warehouse'), array('controller' => 'inout_warehouses', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
             </div><!-- end col md 12 -->
         </div>
             <div class="related row">
@@ -284,9 +284,9 @@
 			<td><?php echo $order['updated']; ?></td>
 			<td><?php echo $order['updated_by']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-search"></span>'), array('controller' => 'orders', 'action' => 'view', $order['id']), array('escape' => false)); ?>
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-edit"></span>'), array('controller' => 'orders', 'action' => 'edit', $order['id']), array('escape' => false)); ?>
-				<?php echo $this->Form->postLink(__('<span class="glyphicon glyphicon-remove"></span>'), array('controller' => 'orders', 'action' => 'delete', $order['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $order['id'])); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-search"></span>', array('controller' => 'orders', 'action' => 'view', $order['id']), array('escape' => false)); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('controller' => 'orders', 'action' => 'edit', $order['id']), array('escape' => false)); ?>
+				<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('controller' => 'orders', 'action' => 'delete', $order['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $order['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -295,7 +295,7 @@
                 <?php endif; ?>
 
                 <div class="actions">
-                    <?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;New Order'), array('controller' => 'orders', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
+                    <?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Order'), array('controller' => 'orders', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
             </div><!-- end col md 12 -->
         </div>
             <div class="related row">
@@ -340,9 +340,9 @@
 			<td><?php echo $promote['store_id']; ?></td>
 			<td><?php echo $promote['global']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-search"></span>'), array('controller' => 'promotes', 'action' => 'view', $promote['id']), array('escape' => false)); ?>
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-edit"></span>'), array('controller' => 'promotes', 'action' => 'edit', $promote['id']), array('escape' => false)); ?>
-				<?php echo $this->Form->postLink(__('<span class="glyphicon glyphicon-remove"></span>'), array('controller' => 'promotes', 'action' => 'delete', $promote['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $promote['id'])); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-search"></span>', array('controller' => 'promotes', 'action' => 'view', $promote['id']), array('escape' => false)); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('controller' => 'promotes', 'action' => 'edit', $promote['id']), array('escape' => false)); ?>
+				<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('controller' => 'promotes', 'action' => 'delete', $promote['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $promote['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -351,7 +351,7 @@
                 <?php endif; ?>
 
                 <div class="actions">
-                    <?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;New Promote'), array('controller' => 'promotes', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
+                    <?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Promote'), array('controller' => 'promotes', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
             </div><!-- end col md 12 -->
         </div>
             <div class="related row">
@@ -398,9 +398,9 @@
 			<td><?php echo $reex['created_date']; ?></td>
 			<td><?php echo $reex['cause']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-search"></span>'), array('controller' => 'reexes', 'action' => 'view', $reex['id']), array('escape' => false)); ?>
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-edit"></span>'), array('controller' => 'reexes', 'action' => 'edit', $reex['id']), array('escape' => false)); ?>
-				<?php echo $this->Form->postLink(__('<span class="glyphicon glyphicon-remove"></span>'), array('controller' => 'reexes', 'action' => 'delete', $reex['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $reex['id'])); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-search"></span>', array('controller' => 'reexes', 'action' => 'view', $reex['id']), array('escape' => false)); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('controller' => 'reexes', 'action' => 'edit', $reex['id']), array('escape' => false)); ?>
+				<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('controller' => 'reexes', 'action' => 'delete', $reex['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $reex['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -409,7 +409,7 @@
                 <?php endif; ?>
 
                 <div class="actions">
-                    <?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;New Reex'), array('controller' => 'reexes', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
+                    <?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Reex'), array('controller' => 'reexes', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
             </div><!-- end col md 12 -->
         </div>
             <div class="related row">
@@ -450,9 +450,9 @@
 			<td><?php echo $user['store_id']; ?></td>
 			<td><?php echo $user['status']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-search"></span>'), array('controller' => 'users', 'action' => 'view', $user['id']), array('escape' => false)); ?>
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-edit"></span>'), array('controller' => 'users', 'action' => 'edit', $user['id']), array('escape' => false)); ?>
-				<?php echo $this->Form->postLink(__('<span class="glyphicon glyphicon-remove"></span>'), array('controller' => 'users', 'action' => 'delete', $user['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $user['id'])); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-search"></span>', array('controller' => 'users', 'action' => 'view', $user['id']), array('escape' => false)); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('controller' => 'users', 'action' => 'edit', $user['id']), array('escape' => false)); ?>
+				<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('controller' => 'users', 'action' => 'delete', $user['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $user['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -461,7 +461,7 @@
                 <?php endif; ?>
 
                 <div class="actions">
-                    <?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;New User'), array('controller' => 'users', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
+                    <?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New User'), array('controller' => 'users', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
             </div><!-- end col md 12 -->
         </div>
             <div class="related row">
@@ -502,9 +502,9 @@
 			<td><?php echo $warehouse['updated']; ?></td>
 			<td><?php echo $warehouse['updated_by']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-search"></span>'), array('controller' => 'warehouses', 'action' => 'view', $warehouse['id']), array('escape' => false)); ?>
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-edit"></span>'), array('controller' => 'warehouses', 'action' => 'edit', $warehouse['id']), array('escape' => false)); ?>
-				<?php echo $this->Form->postLink(__('<span class="glyphicon glyphicon-remove"></span>'), array('controller' => 'warehouses', 'action' => 'delete', $warehouse['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $warehouse['id'])); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-search"></span>', array('controller' => 'warehouses', 'action' => 'view', $warehouse['id']), array('escape' => false)); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('controller' => 'warehouses', 'action' => 'edit', $warehouse['id']), array('escape' => false)); ?>
+				<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('controller' => 'warehouses', 'action' => 'delete', $warehouse['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $warehouse['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -513,7 +513,7 @@
                 <?php endif; ?>
 
                 <div class="actions">
-                    <?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;New Warehouse'), array('controller' => 'warehouses', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
+                    <?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Warehouse'), array('controller' => 'warehouses', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
             </div><!-- end col md 12 -->
         </div>
     

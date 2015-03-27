@@ -7,12 +7,12 @@
 <div class="panel-body">
     <div class="col-md-12">
         <ul class="nav nav-pills nav-justified">
-            		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-edit"></span>&nbsp&nbsp;Edit Admin Menu'), array('action' => 'edit', $adminMenu['AdminMenu']['id']), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Form->postLink(__('<span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;Delete Admin Menu'), array('action' => 'delete', $adminMenu['AdminMenu']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $adminMenu['AdminMenu']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp&nbsp;List Admin Menus'), array('action' => 'index'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp&nbsp;New Admin Menu'), array('action' => 'add'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-list"></span>&nbsp&nbsp;List Admin Menus'), array('controller' => 'admin_menus', 'action' => 'index'), array('escape' => false)); ?> </li>
-		<li><?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp&nbsp;New Parent Admin Menu'), array('controller' => 'admin_menus', 'action' => 'add'), array('escape' => false)); ?> </li>
+            		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>'.__('Edit Admin Menu'), array('action' => 'edit', $adminMenu['AdminMenu']['id']), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>'.__('Delete Admin Menu'), array('action' => 'delete', $adminMenu['AdminMenu']['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $adminMenu['AdminMenu']['id'])); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Admin Menus'), array('action' => 'index'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Admin Menu'), array('action' => 'add'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Admin Menus'), array('controller' => 'admin_menus', 'action' => 'index'), array('escape' => false)); ?> </li>
+		<li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Parent Admin Menu'), array('controller' => 'admin_menus', 'action' => 'add'), array('escape' => false)); ?> </li>
 
         </ul>
     </div>
@@ -103,9 +103,9 @@
 			<td><?php echo $childAdminMenu['lft']; ?></td>
 			<td><?php echo $childAdminMenu['rght']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-search"></span>'), array('controller' => 'admin_menus', 'action' => 'view', $childAdminMenu['id']), array('escape' => false)); ?>
-				<?php echo $this->Html->link(__('<span class="glyphicon glyphicon-edit"></span>'), array('controller' => 'admin_menus', 'action' => 'edit', $childAdminMenu['id']), array('escape' => false)); ?>
-				<?php echo $this->Form->postLink(__('<span class="glyphicon glyphicon-remove"></span>'), array('controller' => 'admin_menus', 'action' => 'delete', $childAdminMenu['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $childAdminMenu['id'])); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-search"></span>', array('controller' => 'admin_menus', 'action' => 'view', $childAdminMenu['id']), array('escape' => false)); ?>
+				<?php echo $this->Html->link('<span class="glyphicon glyphicon-edit"></span>', array('controller' => 'admin_menus', 'action' => 'edit', $childAdminMenu['id']), array('escape' => false)); ?>
+				<?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>', array('controller' => 'admin_menus', 'action' => 'delete', $childAdminMenu['id']), array('escape' => false), __('Are you sure you want to delete # %s?', $childAdminMenu['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>
@@ -114,7 +114,7 @@
                 <?php endif; ?>
 
                 <div class="actions">
-                    <?php echo $this->Html->link(__('<span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;New Child Admin Menu'), array('controller' => 'admin_menus', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
+                    <?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Child Admin Menu'), array('controller' => 'admin_menus', 'action' => 'add'), array('escape' => false, 'class' => 'btn btn-default')); ?>                </div>
             </div><!-- end col md 12 -->
         </div>
     
