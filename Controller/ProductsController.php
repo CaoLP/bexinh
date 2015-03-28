@@ -113,22 +113,12 @@ class ProductsController extends AppController
             $this->request->data['Product']['retail_price'] = str_replace(' VNĐ','',$this->request->data['Product']['retail_price']);
             $this->request->data['Product']['source_price'] = str_replace(',','',$this->request->data['Product']['source_price']);
             $this->request->data['Product']['source_price'] = str_replace(' VNĐ','',$this->request->data['Product']['source_price']);
-
             if ($this->Product->save($this->request->data)) {
-
-                if(isset($this->request->data['ProductOption'])
-                    && $this->request->data['ProductOption']
-                    && count($this->request->data['ProductOption']) >0){
-                    $product_id = $this->Product->id;
-                    $option_data = $this->request->data['ProductOption'];
-                    $options = array();
-                    foreach($option_data as $op){
-                        $code = $this->request->data['Product']['sku'] ;
-                        $options['ProductOption'][] = array('product_id'=>$product_id,'option_id'=>$op, 'code'=>$code);
-                    }
-                    $this->Product->ProductOption->saveMany($options['ProductOption']);
+                if(!isset($this->request->data['ProductOption'])){
+                    $this->request->data['ProductOption'] = array();
                 }
-
+                $product_id = $this->Product->id;
+                $this->Product->ProductOption->updateOptions($this->request->data['ProductOption'], $product_id);
                 $this->Session->setFlash(__('The product has been saved.'), 'default', array('class' => 'alert alert-success'));
                 return $this->redirect(array('action' => 'index'));
             } else {

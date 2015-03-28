@@ -56,7 +56,7 @@ class MenuHelper extends Helper
                     $active = 'active';
                 }
                 $html .= '<li class="collapse {flag}" id="sub' . $item['AdminMenu']['id'] . '">
-                    <a href="' . $item['AdminMenu']['url'] . '" class="list-group-item '.$active.'">
+                    <a href="' . Router::url($item['AdminMenu']['url']) . '" class="list-group-item '.$active.'">
                     <i class="' . $item['AdminMenu']['icon'] . '"></i>' . $item['AdminMenu']['name'] . '</a>';
 
                 foreach ($item['ChildAdminMenu'] as $child):
@@ -66,7 +66,7 @@ class MenuHelper extends Helper
                         $subactive = 'active';
                         $in = 'in';
                     }
-                    $html .= '<a href="' . $child['url'] . '"
+                    $html .= '<a href="' .  Router::url($child['url']) . '"
                        class="list-group-item ' . $subactive . '"><i
                             class="' . $child['icon'] . '"></i>' . $child['name'] . '</a>';
                 endforeach;

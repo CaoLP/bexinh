@@ -53,7 +53,7 @@ if (!defined('APP_DIR')) {
  * /app/webroot/index.php
  */
 //define('CAKE_CORE_INCLUDE_PATH', 'C:' . DS . 'xampp' . DS . 'htdocs' . DS . 'cakephp' . DS . 'lib');
-if (!CAKE_CORE_INCLUDE_PATH)
+//if (!CAKE_CORE_INCLUDE_PATH)
     define('CAKE_CORE_INCLUDE_PATH', 'C:' . DS . 'xampp' . DS . 'htdocs' . DS . APP_DIR . DS . 'Lib');
 
 /**

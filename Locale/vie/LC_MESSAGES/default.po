@@ -1,2038 +1,2038 @@
-# LANGUAGE translation of CakePHP Application
-# Copyright YEAR NAME <EMAIL@ADDRESS>
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"Project-Id-Version: Media Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-09 17:18+0000\n"
+"PO-Revision-Date: Sat Mar 28 2015 10:10:58 GMT+0700 (SE Asia Standard Time)\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vie\n"
+"Plural-Forms: nplurals=1; plural=n>1\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Loco-Source-Locale: en_GB\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Loco-Target-Locale: vi_VN"
 
-#: /AdminMenus/add.ctp:5
-msgid "Add Admin Menu"
-msgstr ""
-
-#: /AdminMenus/add.ctp:10;11
-#: /AdminMenus/edit.ctp:11;12
-#: /AdminMenus/index.ctp:11
-#: /AdminMenus/view.ctp:12;14
+#: AdminMenus/add.ctp:10;11
+#: AdminMenus/edit.ctp:11;12
+#: AdminMenus/index.ctp:11
+#: AdminMenus/view.ctp:12;14
 msgid "List Admin Menus"
-msgstr ""
+msgstr "Danh sách menu"
 
-#: /AdminMenus/add.ctp:12
-#: /AdminMenus/edit.ctp:13
-#: /AdminMenus/index.ctp:12
-#: /AdminMenus/view.ctp:15
+#: AdminMenus/add.ctp:12
+#: AdminMenus/edit.ctp:13
+#: AdminMenus/index.ctp:12
+#: AdminMenus/view.ctp:15
 msgid "New Parent Admin Menu"
-msgstr ""
+msgstr "Menu cha"
 
-#: /AdminMenus/add.ctp:30
-#: /AdminMenus/edit.ctp:35
-#: /Categories/add.ctp:41
-#: /Categories/edit.ctp:45
-#: /CustomerPromotes/add.ctp:40
-#: /CustomerPromotes/edit.ctp:44
-#: /Customers/add.ctp:44
-#: /Customers/edit.ctp:48
-#: /InoutWarehouseDetails/add.ctp:51
-#: /InoutWarehouseDetails/edit.ctp:55
-#: /InoutWarehouses/add.ctp:38
-#: /InoutWarehouses/edit.ctp:42
-#: /OptionGroups/add.ctp:22
-#: /OptionGroups/edit.ctp:26
-#: /Options/add.ctp:28
-#: /Options/edit.ctp:32
-#: /OrderDetails/add.ctp:59
-#: /OrderDetails/edit.ctp:63
-#: /Orders/add.ctp:93
-#: /Orders/edit.ctp:97
-#: /ProductCategories/add.ctp:27
-#: /ProductCategories/edit.ctp:31
-#: /ProductOptions/add.ctp:30
-#: /ProductOptions/edit.ctp:34
-#: /ProductPromotes/add.ctp:27
-#: /ProductPromotes/edit.ctp:31
-#: /Products/add.ctp:63
-#: /Products/edit.ctp:105
-#: /Promotes/add.ctp:52
-#: /Promotes/edit.ctp:56
-#: /Providers/add.ctp:25
-#: /Providers/edit.ctp:29
-#: /Reexes/add.ctp:51
-#: /Reexes/edit.ctp:55
-#: /Stores/add.ctp:52
-#: /Stores/edit.ctp:56
-#: /Users/add.ctp:48
-#: /Users/edit.ctp:52
-#: /Warehouses/add.ctp:44
-#: /Warehouses/edit.ctp:48
+#: AdminMenus/add.ctp:30
+#: AdminMenus/edit.ctp:35
+#: Categories/add.ctp:41
+#: Categories/edit.ctp:45
+#: CustomerPromotes/add.ctp:40
+#: CustomerPromotes/edit.ctp:44
+#: Customers/add.ctp:44
+#: Customers/edit.ctp:48
+#: InoutWarehouseDetails/add.ctp:51
+#: InoutWarehouseDetails/edit.ctp:55
+#: InoutWarehouses/add.ctp:38
+#: InoutWarehouses/edit.ctp:42
+#: OptionGroups/add.ctp:22
+#: OptionGroups/edit.ctp:26
+#: Options/add.ctp:28
+#: Options/edit.ctp:32
+#: OrderDetails/add.ctp:59
+#: OrderDetails/edit.ctp:63
+#: Orders/add.ctp:93
+#: Orders/edit.ctp:97
+#: ProductCategories/add.ctp:27
+#: ProductCategories/edit.ctp:31
+#: ProductOptions/add.ctp:30
+#: ProductOptions/edit.ctp:34
+#: ProductPromotes/add.ctp:27
+#: ProductPromotes/edit.ctp:31
+#: Products/add.ctp:63
+#: Products/edit.ctp:105
+#: Promotes/add.ctp:52
+#: Promotes/edit.ctp:56
+#: Providers/add.ctp:25
+#: Providers/edit.ctp:29
+#: Reexes/add.ctp:51
+#: Reexes/edit.ctp:55
+#: Stores/add.ctp:52
+#: Stores/edit.ctp:56
+#: Users/add.ctp:48
+#: Users/edit.ctp:52
+#: Warehouses/add.ctp:44
+#: Warehouses/edit.ctp:48
 #: View/Helper/FormHelper.php:1896
 #: View/Scaffolds/form.ctp:21
 msgid "Submit"
-msgstr ""
+msgstr "Lưu lại"
 
-#: /AdminMenus/edit.ctp:5
-#: /AdminMenus/view.ctp:10
+#: AdminMenus/edit.ctp:5
+#: AdminMenus/view.ctp:10
 msgid "Edit Admin Menu"
-msgstr ""
+msgstr "Thay đổi menu"
 
-#: /AdminMenus/edit.ctp:10
-#: /Categories/edit.ctp:10
-#: /CustomerPromotes/edit.ctp:10
-#: /Customers/edit.ctp:10
-#: /InoutWarehouseDetails/edit.ctp:10
-#: /InoutWarehouses/edit.ctp:10
-#: /OptionGroups/edit.ctp:10
-#: /Options/edit.ctp:10
-#: /OrderDetails/edit.ctp:10
-#: /Orders/edit.ctp:10
-#: /ProductCategories/edit.ctp:10
-#: /ProductOptions/edit.ctp:10
-#: /ProductPromotes/edit.ctp:10
-#: /Products/edit.ctp:10
-#: /Promotes/edit.ctp:10
-#: /Providers/edit.ctp:10
-#: /Reexes/edit.ctp:10
-#: /Stores/edit.ctp:10
-#: /Users/edit.ctp:10
-#: /Warehouses/edit.ctp:10
+#: AdminMenus/edit.ctp:10
+#: Categories/edit.ctp:10
+#: CustomerPromotes/edit.ctp:10
+#: Customers/edit.ctp:10
+#: InoutWarehouseDetails/edit.ctp:10
+#: InoutWarehouses/edit.ctp:10
+#: OptionGroups/edit.ctp:10
+#: Options/edit.ctp:10
+#: OrderDetails/edit.ctp:10
+#: Orders/edit.ctp:10
+#: ProductCategories/edit.ctp:10
+#: ProductOptions/edit.ctp:10
+#: ProductPromotes/edit.ctp:10
+#: Products/edit.ctp:10
+#: Promotes/edit.ctp:10
+#: Providers/edit.ctp:10
+#: Reexes/edit.ctp:10
+#: Stores/edit.ctp:10
+#: Users/edit.ctp:10
+#: Warehouses/edit.ctp:10
 #: View/Scaffolds/form.ctp:29
 #: View/Scaffolds/index.ctp:49
 #: View/Scaffolds/view.ctp:173
 msgid "Delete"
-msgstr ""
+msgstr "Xóa"
 
-#: /AdminMenus/edit.ctp:10
-#: /AdminMenus/index.ctp:43
-#: /AdminMenus/view.ctp:11;108
-#: /Categories/edit.ctp:10
-#: /Categories/index.ctp:52
-#: /Categories/view.ctp:11;164;226
-#: /CustomerPromotes/edit.ctp:10
-#: /CustomerPromotes/index.ctp:66
-#: /CustomerPromotes/view.ctp:11
-#: /Customers/edit.ctp:10
-#: /Customers/index.ctp:62
-#: /Customers/view.ctp:11;151;233
-#: /Helper/MenuHelper.php:27
-#: /InoutWarehouseDetails/edit.ctp:10
-#: /InoutWarehouseDetails/index.ctp:58
-#: /InoutWarehouseDetails/view.ctp:11
-#: /InoutWarehouses/edit.ctp:10
-#: /InoutWarehouses/index.ctp:60
-#: /InoutWarehouses/view.ctp:11;139
-#: /OptionGroups/edit.ctp:10
-#: /OptionGroups/index.ctp:34
-#: /OptionGroups/view.ctp:11;65
-#: /Options/edit.ctp:10
-#: /Options/index.ctp:40
-#: /Options/view.ctp:11
-#: /OrderDetails/edit.ctp:10
-#: /OrderDetails/index.ctp:66
-#: /OrderDetails/view.ctp:11
-#: /Orders/edit.ctp:10
-#: /Orders/index.ctp:104
-#: /Orders/view.ctp:11;266
-#: /ProductCategories/edit.ctp:10
-#: /ProductCategories/index.ctp:42
-#: /ProductCategories/view.ctp:11
-#: /ProductOptions/edit.ctp:10
-#: /ProductOptions/index.ctp:44
-#: /ProductOptions/view.ctp:11
-#: /ProductPromotes/edit.ctp:10
-#: /ProductPromotes/index.ctp:42
-#: /ProductPromotes/view.ctp:11
-#: /Products/edit.ctp:10
-#: /Products/index.ctp:87
-#: /Products/view.ctp:11;184;238;272;308;360
-#: /Promotes/edit.ctp:10
-#: /Promotes/index.ctp:70
-#: /Promotes/view.ctp:11;173;255
-#: /Providers/edit.ctp:10
-#: /Providers/index.ctp:36
-#: /Providers/view.ctp:11;98
-#: /Reexes/edit.ctp:10
-#: /Reexes/index.ctp:68
-#: /Reexes/view.ctp:11
-#: /Stores/edit.ctp:10
-#: /Stores/index.ctp:72
-#: /Stores/view.ctp:11;159;207;289;345;403;455;507
-#: /Users/edit.ctp:10
-#: /Users/index.ctp:58
-#: /Users/view.ctp:11;183
-#: /Warehouses/edit.ctp:10
-#: /Warehouses/index.ctp:66
-#: /Warehouses/view.ctp:11
+#: AdminMenus/edit.ctp:10
+#: AdminMenus/index.ctp:43
+#: AdminMenus/view.ctp:11;108
+#: Categories/edit.ctp:10
+#: Categories/index.ctp:52
+#: Categories/view.ctp:11;164;226
+#: CustomerPromotes/edit.ctp:10
+#: CustomerPromotes/index.ctp:66
+#: CustomerPromotes/view.ctp:11
+#: Customers/edit.ctp:10
+#: Customers/index.ctp:62
+#: Customers/view.ctp:11;151;233
+#: Helper/MenuHelper.php:27
+#: InoutWarehouseDetails/edit.ctp:10
+#: InoutWarehouseDetails/index.ctp:58
+#: InoutWarehouseDetails/view.ctp:11
+#: InoutWarehouses/edit.ctp:10
+#: InoutWarehouses/index.ctp:60
+#: InoutWarehouses/view.ctp:11;139
+#: OptionGroups/edit.ctp:10
+#: OptionGroups/index.ctp:34
+#: OptionGroups/view.ctp:11;65
+#: Options/edit.ctp:10
+#: Options/index.ctp:40
+#: Options/view.ctp:11
+#: OrderDetails/edit.ctp:10
+#: OrderDetails/index.ctp:66
+#: OrderDetails/view.ctp:11
+#: Orders/edit.ctp:10
+#: Orders/index.ctp:104
+#: Orders/view.ctp:11;266
+#: ProductCategories/edit.ctp:10
+#: ProductCategories/index.ctp:42
+#: ProductCategories/view.ctp:11
+#: ProductOptions/edit.ctp:10
+#: ProductOptions/index.ctp:44
+#: ProductOptions/view.ctp:11
+#: ProductPromotes/edit.ctp:10
+#: ProductPromotes/index.ctp:42
+#: ProductPromotes/view.ctp:11
+#: Products/edit.ctp:10
+#: Products/index.ctp:87
+#: Products/view.ctp:11;184;238;272;308;360
+#: Promotes/edit.ctp:10
+#: Promotes/index.ctp:70
+#: Promotes/view.ctp:11;173;255
+#: Providers/edit.ctp:10
+#: Providers/index.ctp:36
+#: Providers/view.ctp:11;98
+#: Reexes/edit.ctp:10
+#: Reexes/index.ctp:68
+#: Reexes/view.ctp:11
+#: Stores/edit.ctp:10
+#: Stores/index.ctp:72
+#: Stores/view.ctp:11;159;207;289;345;403;455;507
+#: Users/edit.ctp:10
+#: Users/index.ctp:58
+#: Users/view.ctp:11;183
+#: Warehouses/edit.ctp:10
+#: Warehouses/index.ctp:66
+#: Warehouses/view.ctp:11
 #: View/Scaffolds/form.ctp:32
 #: View/Scaffolds/index.ctp:52
 #: View/Scaffolds/view.ctp:55;176
+#, c-format
 msgid "Are you sure you want to delete # %s?"
-msgstr ""
+msgstr "Bạn có chắc muốn xóa id %s này không?"
 
-#: /AdminMenus/index.ctp:5
+#: AdminMenus/index.ctp:5
 msgid "Admin Menus"
 msgstr ""
 
-#: /AdminMenus/index.ctp:10
-#: /AdminMenus/view.ctp:13
-msgid "New Admin Menu"
-msgstr ""
-
-#: /AdminMenus/view.ctp:5
+#: AdminMenus/view.ctp:5
 msgid "Admin Menu"
 msgstr ""
 
-#: /AdminMenus/view.ctp:11
+#: AdminMenus/view.ctp:11
 msgid "Delete Admin Menu"
-msgstr ""
+msgstr "Xóa menu"
 
-#: /AdminMenus/view.ctp:23;83
-#: /Categories/view.ctp:27;129;183
-#: /CustomerPromotes/view.ctp:29
-#: /Customers/view.ctp:27;122;170
-#: /InoutWarehouseDetails/view.ctp:25
-#: /InoutWarehouses/view.ctp:27;108
-#: /OptionGroups/view.ctp:23;48
-#: /Options/view.ctp:23
-#: /OrderDetails/view.ctp:27
-#: /Orders/view.ctp:31;231
-#: /ProductCategories/view.ctp:25
-#: /ProductOptions/view.ctp:25
-#: /ProductPromotes/view.ctp:25
-#: /Products/view.ctp:37;153;203;257;291;327
-#: /Promotes/view.ctp:29;138;192
-#: /Providers/view.ctp:23;55
-#: /Reexes/view.ctp:25
-#: /Stores/view.ctp:35;130;178;226;308;364;422;474
-#: /Users/view.ctp:25;120
-#: /Warehouses/view.ctp:27
+#: AdminMenus/view.ctp:23;83
+#: Categories/view.ctp:27;129;183
+#: CustomerPromotes/view.ctp:29
+#: Customers/view.ctp:27;122;170
+#: InoutWarehouseDetails/view.ctp:25
+#: InoutWarehouses/view.ctp:27;108
+#: OptionGroups/view.ctp:23;48
+#: Options/view.ctp:23
+#: OrderDetails/view.ctp:27
+#: Orders/view.ctp:31;231
+#: ProductCategories/view.ctp:25
+#: ProductOptions/view.ctp:25
+#: ProductPromotes/view.ctp:25
+#: Products/view.ctp:37;153;203;257;291;327
+#: Promotes/view.ctp:29;138;192
+#: Providers/view.ctp:23;55
+#: Reexes/view.ctp:25
+#: Stores/view.ctp:35;130;178;226;308;364;422;474
+#: Users/view.ctp:25;120
+#: Warehouses/view.ctp:27
 msgid "Id"
-msgstr ""
+msgstr "Mã"
 
-#: /AdminMenus/view.ctp:30;84
-#: /Categories/view.ctp:55;133;186
-#: /Customers/view.ctp:34
-#: /InoutWarehouseDetails/view.ctp:95
-#: /InoutWarehouses/view.ctp:118
-#: /OptionGroups/view.ctp:30;49
-#: /Options/view.ctp:30
-#: /OrderDetails/view.ctp:48
-#: /Orders/view.ctp:234
-#: /Products/view.ctp:58;163;206
-#: /Promotes/view.ctp:36;141
-#: /Providers/view.ctp:30;58
-#: /Stores/view.ctp:42;309;427
-#: /Users/view.ctp:60
+#: AdminMenus/view.ctp:30;84
+#: Categories/view.ctp:55;133;186
+#: Customers/view.ctp:34
+#: InoutWarehouseDetails/view.ctp:95
+#: InoutWarehouses/view.ctp:118
+#: OptionGroups/view.ctp:30;49
+#: Options/view.ctp:30
+#: OrderDetails/view.ctp:48
+#: Orders/view.ctp:234
+#: Products/view.ctp:58;163;206
+#: Promotes/view.ctp:36;141
+#: Providers/view.ctp:30;58
+#: Stores/view.ctp:42;309;427
+#: Users/view.ctp:60
 msgid "Name"
-msgstr ""
+msgstr "Tên"
 
-#: /AdminMenus/view.ctp:37;85
+#: AdminMenus/view.ctp:37;85
 msgid "Icon"
-msgstr ""
+msgstr "Biểu tượng"
 
-#: /AdminMenus/view.ctp:44;86
+#: AdminMenus/view.ctp:44;86
 msgid "Url"
 msgstr ""
 
-#: /AdminMenus/view.ctp:51
+#: AdminMenus/view.ctp:51
 msgid "Parent Admin Menu"
-msgstr ""
+msgstr "Menu cha"
 
-#: /AdminMenus/view.ctp:58;89
-#: /Categories/view.ctp:41;131
+#: AdminMenus/view.ctp:58;89
+#: Categories/view.ctp:41;131
 msgid "Lft"
 msgstr ""
 
-#: /AdminMenus/view.ctp:65;90
-#: /Categories/view.ctp:48;132
+#: AdminMenus/view.ctp:65;90
+#: Categories/view.ctp:48;132
 msgid "Rght"
 msgstr ""
 
-#: /AdminMenus/view.ctp:78
+#: AdminMenus/view.ctp:78
 msgid "Related Admin Menus"
-msgstr ""
+msgstr "Menu liên quan"
 
-#: /AdminMenus/view.ctp:87
+#: AdminMenus/view.ctp:87
 msgid "Group Ids"
-msgstr ""
+msgstr "Nhóm"
 
-#: /AdminMenus/view.ctp:88
-#: /Categories/view.ctp:130
+#: AdminMenus/view.ctp:88
+#: Categories/view.ctp:130
 msgid "Parent Id"
-msgstr ""
+msgstr "ID Cha"
 
-#: /AdminMenus/view.ctp:117
+#: AdminMenus/view.ctp:117
 msgid "New Child Admin Menu"
-msgstr ""
+msgstr "Thêm menu con"
 
-#: /Categories/add.ctp:5
+#: Categories/add.ctp:5
 msgid "Add Category"
-msgstr ""
+msgstr "Thêm danh mục"
 
-#: /Categories/add.ctp:10;11
-#: /Categories/edit.ctp:11;12
-#: /Categories/index.ctp:11
-#: /Categories/view.ctp:12;14
-#: /ProductCategories/add.ctp:13
-#: /ProductCategories/edit.ctp:14
-#: /ProductCategories/index.ctp:14
-#: /ProductCategories/view.ctp:16
-#: /Products/add.ctp:13
-#: /Products/edit.ctp:14
-#: /Products/index.ctp:14
-#: /Products/view.ctp:16
+#: Categories/add.ctp:10;11
+#: Categories/edit.ctp:11;12
+#: Categories/index.ctp:11
+#: Categories/view.ctp:12;14
+#: ProductCategories/add.ctp:13
+#: ProductCategories/edit.ctp:14
+#: ProductCategories/index.ctp:14
+#: ProductCategories/view.ctp:16
+#: Products/add.ctp:13
+#: Products/edit.ctp:14
+#: Products/index.ctp:14
+#: Products/view.ctp:16
 msgid "List Categories"
-msgstr ""
+msgstr "Danh mục"
 
-#: /Categories/add.ctp:12
-#: /Categories/edit.ctp:13
-#: /Categories/index.ctp:12
-#: /Categories/view.ctp:15
+#: Categories/add.ctp:12
+#: Categories/edit.ctp:13
+#: Categories/index.ctp:12
+#: Categories/view.ctp:15
 msgid "New Parent Category"
-msgstr ""
+msgstr "Danh mục cha"
 
-#: /Categories/add.ctp:13
-#: /Categories/edit.ctp:14
-#: /Categories/index.ctp:13
-#: /Categories/view.ctp:16
-#: /CustomerPromotes/add.ctp:17
-#: /CustomerPromotes/edit.ctp:18
-#: /CustomerPromotes/index.ctp:18
-#: /CustomerPromotes/view.ctp:20
-#: /Customers/add.ctp:11
-#: /Customers/edit.ctp:12
-#: /Customers/index.ctp:12
-#: /Customers/view.ctp:14
-#: /InoutWarehouses/add.ctp:13
-#: /InoutWarehouses/edit.ctp:14
-#: /InoutWarehouses/index.ctp:14
-#: /InoutWarehouses/view.ctp:16
-#: /Orders/add.ctp:13
-#: /Orders/edit.ctp:14
-#: /Orders/index.ctp:14
-#: /Orders/view.ctp:16
-#: /Products/add.ctp:15
-#: /Products/edit.ctp:16
-#: /Products/index.ctp:16
-#: /Products/view.ctp:18
-#: /Promotes/add.ctp:13
-#: /Promotes/edit.ctp:14
-#: /Promotes/index.ctp:14
-#: /Promotes/view.ctp:16
-#: /Reexes/add.ctp:13
-#: /Reexes/edit.ctp:14
-#: /Reexes/index.ctp:14
-#: /Reexes/view.ctp:16
-#: /Stores/add.ctp:11
-#: /Stores/edit.ctp:12
-#: /Stores/index.ctp:12
-#: /Stores/view.ctp:14
-#: /Users/add.ctp:10
-#: /Users/edit.ctp:11
-#: /Users/view.ctp:12
-#: /Warehouses/add.ctp:15
-#: /Warehouses/edit.ctp:16
-#: /Warehouses/index.ctp:16
-#: /Warehouses/view.ctp:18
+#: Categories/add.ctp:13
+#: Categories/edit.ctp:14
+#: Categories/index.ctp:13
+#: Categories/view.ctp:16
+#: CustomerPromotes/add.ctp:17
+#: CustomerPromotes/edit.ctp:18
+#: CustomerPromotes/index.ctp:18
+#: CustomerPromotes/view.ctp:20
+#: Customers/add.ctp:11
+#: Customers/edit.ctp:12
+#: Customers/index.ctp:12
+#: Customers/view.ctp:14
+#: InoutWarehouses/add.ctp:13
+#: InoutWarehouses/edit.ctp:14
+#: InoutWarehouses/index.ctp:14
+#: InoutWarehouses/view.ctp:16
+#: Orders/add.ctp:13
+#: Orders/edit.ctp:14
+#: Orders/index.ctp:14
+#: Orders/view.ctp:16
+#: Products/add.ctp:15
+#: Products/edit.ctp:16
+#: Products/index.ctp:16
+#: Products/view.ctp:18
+#: Promotes/add.ctp:13
+#: Promotes/edit.ctp:14
+#: Promotes/index.ctp:14
+#: Promotes/view.ctp:16
+#: Reexes/add.ctp:13
+#: Reexes/edit.ctp:14
+#: Reexes/index.ctp:14
+#: Reexes/view.ctp:16
+#: Stores/add.ctp:11
+#: Stores/edit.ctp:12
+#: Stores/index.ctp:12
+#: Stores/view.ctp:14
+#: Users/add.ctp:10
+#: Users/edit.ctp:11
+#: Users/view.ctp:12
+#: Warehouses/add.ctp:15
+#: Warehouses/edit.ctp:16
+#: Warehouses/index.ctp:16
+#: Warehouses/view.ctp:18
 msgid "List Users"
-msgstr ""
+msgstr "Người dùng"
 
-#: /Categories/add.ctp:14
-#: /Categories/edit.ctp:15
-#: /Categories/index.ctp:14
-#: /Categories/view.ctp:17
-#: /CustomerPromotes/add.ctp:18
-#: /CustomerPromotes/edit.ctp:19
-#: /CustomerPromotes/index.ctp:19
-#: /CustomerPromotes/view.ctp:21
-#: /Customers/add.ctp:12
-#: /Customers/edit.ctp:13
-#: /Customers/index.ctp:13
-#: /Customers/view.ctp:15
-#: /InoutWarehouses/add.ctp:14
-#: /InoutWarehouses/edit.ctp:15
-#: /InoutWarehouses/index.ctp:15
-#: /InoutWarehouses/view.ctp:17
-#: /Products/add.ctp:16
-#: /Products/edit.ctp:17
-#: /Products/index.ctp:17
-#: /Products/view.ctp:19
-#: /Promotes/add.ctp:14
-#: /Promotes/edit.ctp:15
-#: /Promotes/index.ctp:15
-#: /Promotes/view.ctp:17
-#: /Reexes/add.ctp:14
-#: /Reexes/edit.ctp:15
-#: /Reexes/index.ctp:15
-#: /Reexes/view.ctp:17
-#: /Warehouses/add.ctp:16
-#: /Warehouses/edit.ctp:17
-#: /Warehouses/index.ctp:17
-#: /Warehouses/view.ctp:19
+#: Categories/add.ctp:14
+#: Categories/edit.ctp:15
+#: Categories/index.ctp:14
+#: Categories/view.ctp:17
+#: CustomerPromotes/add.ctp:18
+#: CustomerPromotes/edit.ctp:19
+#: CustomerPromotes/index.ctp:19
+#: CustomerPromotes/view.ctp:21
+#: Customers/add.ctp:12
+#: Customers/edit.ctp:13
+#: Customers/index.ctp:13
+#: Customers/view.ctp:15
+#: InoutWarehouses/add.ctp:14
+#: InoutWarehouses/edit.ctp:15
+#: InoutWarehouses/index.ctp:15
+#: InoutWarehouses/view.ctp:17
+#: Products/add.ctp:16
+#: Products/edit.ctp:17
+#: Products/index.ctp:17
+#: Products/view.ctp:19
+#: Promotes/add.ctp:14
+#: Promotes/edit.ctp:15
+#: Promotes/index.ctp:15
+#: Promotes/view.ctp:17
+#: Reexes/add.ctp:14
+#: Reexes/edit.ctp:15
+#: Reexes/index.ctp:15
+#: Reexes/view.ctp:17
+#: Warehouses/add.ctp:16
+#: Warehouses/edit.ctp:17
+#: Warehouses/index.ctp:17
+#: Warehouses/view.ctp:19
 msgid "New Trackable Creator"
-msgstr ""
+msgstr "Người tạo"
 
-#: /Categories/add.ctp:15
-#: /Categories/edit.ctp:16
-#: /Categories/index.ctp:15
-#: /Categories/view.ctp:18
-#: /InoutWarehouseDetails/add.ctp:13
-#: /InoutWarehouseDetails/edit.ctp:14
-#: /InoutWarehouseDetails/index.ctp:14
-#: /InoutWarehouseDetails/view.ctp:16
-#: /OrderDetails/add.ctp:13
-#: /OrderDetails/edit.ctp:14
-#: /OrderDetails/index.ctp:14
-#: /OrderDetails/view.ctp:16
-#: /ProductCategories/add.ctp:11
-#: /ProductCategories/edit.ctp:12
-#: /ProductCategories/index.ctp:12
-#: /ProductCategories/view.ctp:14
-#: /ProductOptions/add.ctp:13
-#: /ProductOptions/edit.ctp:14
-#: /ProductOptions/index.ctp:14
-#: /ProductOptions/view.ctp:16
-#: /ProductPromotes/add.ctp:11
-#: /ProductPromotes/edit.ctp:12
-#: /ProductPromotes/index.ctp:12
-#: /ProductPromotes/view.ctp:14
-#: /Products/add.ctp:10
-#: /Products/edit.ctp:11
-#: /Products/view.ctp:12
-#: /Providers/add.ctp:11
-#: /Providers/edit.ctp:12
-#: /Providers/index.ctp:12
-#: /Providers/view.ctp:14
-#: /Warehouses/add.ctp:13
-#: /Warehouses/edit.ctp:14
-#: /Warehouses/index.ctp:14
-#: /Warehouses/view.ctp:16
+#: Categories/add.ctp:15
+#: Categories/edit.ctp:16
+#: Categories/index.ctp:15
+#: Categories/view.ctp:18
+#: InoutWarehouseDetails/add.ctp:13
+#: InoutWarehouseDetails/edit.ctp:14
+#: InoutWarehouseDetails/index.ctp:14
+#: InoutWarehouseDetails/view.ctp:16
+#: OrderDetails/add.ctp:13
+#: OrderDetails/edit.ctp:14
+#: OrderDetails/index.ctp:14
+#: OrderDetails/view.ctp:16
+#: ProductCategories/add.ctp:11
+#: ProductCategories/edit.ctp:12
+#: ProductCategories/index.ctp:12
+#: ProductCategories/view.ctp:14
+#: ProductOptions/add.ctp:13
+#: ProductOptions/edit.ctp:14
+#: ProductOptions/index.ctp:14
+#: ProductOptions/view.ctp:16
+#: ProductPromotes/add.ctp:11
+#: ProductPromotes/edit.ctp:12
+#: ProductPromotes/index.ctp:12
+#: ProductPromotes/view.ctp:14
+#: Products/add.ctp:10
+#: Products/edit.ctp:11
+#: Products/view.ctp:12
+#: Providers/add.ctp:11
+#: Providers/edit.ctp:12
+#: Providers/index.ctp:12
+#: Providers/view.ctp:14
+#: Warehouses/add.ctp:13
+#: Warehouses/edit.ctp:14
+#: Warehouses/index.ctp:14
+#: Warehouses/view.ctp:16
 msgid "List Products"
-msgstr ""
+msgstr "Sản phẩm"
 
-#: /Categories/add.ctp:16
-#: /Categories/edit.ctp:17
-#: /Categories/index.ctp:16
-#: /Categories/view.ctp:19;235
-#: /InoutWarehouseDetails/add.ctp:14
-#: /InoutWarehouseDetails/edit.ctp:15
-#: /InoutWarehouseDetails/index.ctp:15
-#: /InoutWarehouseDetails/view.ctp:17
-#: /OrderDetails/add.ctp:14
-#: /OrderDetails/edit.ctp:15
-#: /OrderDetails/index.ctp:15
-#: /OrderDetails/view.ctp:17
-#: /ProductCategories/add.ctp:12
-#: /ProductCategories/edit.ctp:13
-#: /ProductCategories/index.ctp:13
-#: /ProductCategories/view.ctp:15
-#: /ProductOptions/add.ctp:14
-#: /ProductOptions/edit.ctp:15
-#: /ProductOptions/index.ctp:15
-#: /ProductOptions/view.ctp:17
-#: /ProductPromotes/add.ctp:12
-#: /ProductPromotes/edit.ctp:13
-#: /ProductPromotes/index.ctp:13
-#: /ProductPromotes/view.ctp:15
-#: /Products/index.ctp:11
-#: /Products/view.ctp:13
-#: /Providers/add.ctp:12
-#: /Providers/edit.ctp:13
-#: /Providers/index.ctp:13
-#: /Providers/view.ctp:15;107
-#: /Warehouses/add.ctp:14
-#: /Warehouses/edit.ctp:15
-#: /Warehouses/index.ctp:15
-#: /Warehouses/view.ctp:17
+#: Categories/add.ctp:16
+#: Categories/edit.ctp:17
+#: Categories/index.ctp:16
+#: Categories/view.ctp:19;235
+#: InoutWarehouseDetails/add.ctp:14
+#: InoutWarehouseDetails/edit.ctp:15
+#: InoutWarehouseDetails/index.ctp:15
+#: InoutWarehouseDetails/view.ctp:17
+#: OrderDetails/add.ctp:14
+#: OrderDetails/edit.ctp:15
+#: OrderDetails/index.ctp:15
+#: OrderDetails/view.ctp:17
+#: ProductCategories/add.ctp:12
+#: ProductCategories/edit.ctp:13
+#: ProductCategories/index.ctp:13
+#: ProductCategories/view.ctp:15
+#: ProductOptions/add.ctp:14
+#: ProductOptions/edit.ctp:15
+#: ProductOptions/index.ctp:15
+#: ProductOptions/view.ctp:17
+#: ProductPromotes/add.ctp:12
+#: ProductPromotes/edit.ctp:13
+#: ProductPromotes/index.ctp:13
+#: ProductPromotes/view.ctp:15
+#: Products/index.ctp:11
+#: Products/view.ctp:13
+#: Providers/add.ctp:12
+#: Providers/edit.ctp:13
+#: Providers/index.ctp:13
+#: Providers/view.ctp:15;107
+#: Warehouses/add.ctp:14
+#: Warehouses/edit.ctp:15
+#: Warehouses/index.ctp:15
+#: Warehouses/view.ctp:17
 msgid "New Product"
-msgstr ""
+msgstr "Sản phẩm mới"
 
-#: /Categories/edit.ctp:5
-#: /Categories/view.ctp:10
+#: Categories/edit.ctp:5
+#: Categories/view.ctp:10
 msgid "Edit Category"
-msgstr ""
+msgstr "Thay đổi danh mục"
 
-#: /Categories/index.ctp:5
+#: Categories/index.ctp:5
 msgid "Categories"
-msgstr ""
+msgstr "Danh mục"
 
-#: /Categories/index.ctp:10
-#: /Categories/view.ctp:13
-#: /ProductCategories/add.ctp:14
-#: /ProductCategories/edit.ctp:15
-#: /ProductCategories/index.ctp:15
-#: /ProductCategories/view.ctp:17
-#: /Products/add.ctp:14
-#: /Products/edit.ctp:15
-#: /Products/index.ctp:15
-#: /Products/view.ctp:17
+#: Categories/index.ctp:10
+#: Categories/view.ctp:13
+#: ProductCategories/add.ctp:14
+#: ProductCategories/edit.ctp:15
+#: ProductCategories/index.ctp:15
+#: ProductCategories/view.ctp:17
+#: Products/add.ctp:14
+#: Products/edit.ctp:15
+#: Products/index.ctp:15
+#: Products/view.ctp:17
 msgid "New Category"
-msgstr ""
+msgstr "Danh mục mới"
 
-#: /Categories/index.ctp:60
-#: /CustomerPromotes/index.ctp:74
-#: /Customers/index.ctp:70
-#: /InoutWarehouseDetails/index.ctp:66
-#: /InoutWarehouses/index.ctp:68
-#: /OptionGroups/index.ctp:42
-#: /Options/index.ctp:48
-#: /OrderDetails/index.ctp:74
-#: /Orders/index.ctp:112
-#: /ProductCategories/index.ctp:50
-#: /ProductOptions/index.ctp:52
-#: /ProductPromotes/index.ctp:50
-#: /Products/index.ctp:95
-#: /Promotes/index.ctp:78
-#: /Providers/index.ctp:44
-#: /Reexes/index.ctp:76
-#: /Stores/index.ctp:80
-#: /Users/index.ctp:66
-#: /Warehouses/index.ctp:74
+#: Categories/index.ctp:60
+#: CustomerPromotes/index.ctp:74
+#: Customers/index.ctp:70
+#: InoutWarehouseDetails/index.ctp:66
+#: InoutWarehouses/index.ctp:68
+#: OptionGroups/index.ctp:42
+#: Options/index.ctp:48
+#: OrderDetails/index.ctp:74
+#: Orders/index.ctp:112
+#: ProductCategories/index.ctp:50
+#: ProductOptions/index.ctp:52
+#: ProductPromotes/index.ctp:50
+#: Products/index.ctp:95
+#: Promotes/index.ctp:78
+#: Providers/index.ctp:44
+#: Reexes/index.ctp:76
+#: Stores/index.ctp:80
+#: Users/index.ctp:66
+#: Warehouses/index.ctp:74
 #: View/Scaffolds/index.ctp:63
-msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgid ""
+"Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
+"starting on record {:start}, ending on {:end}"
 msgstr ""
+"Trang {:page} trên {:pages}, hiển thị {:current} record trên tổng số {:"
+"count} record, bắt đầu ở record {:start}, kết thúc ở record {:end}"
 
-#: /Categories/view.ctp:5
-#: /ProductCategories/view.ctp:39
-#: /Products/view.ctp:135
+#: Categories/view.ctp:5
+#: ProductCategories/view.ctp:39
+#: Products/view.ctp:135
 msgid "Category"
-msgstr ""
+msgstr "Danh mục"
 
-#: /Categories/view.ctp:11
+#: Categories/view.ctp:11
 msgid "Delete Category"
-msgstr ""
+msgstr "Xóa danh mục"
 
-#: /Categories/view.ctp:34
+#: Categories/view.ctp:34
 msgid "Parent Category"
-msgstr ""
+msgstr "Danh mục cha"
 
-#: /Categories/view.ctp:62;134;191
-#: /Products/edit.ctp:61
-#: /Products/view.ctp:93
-#: /Providers/view.ctp:63
+#: Categories/view.ctp:62;134;191
+#: Products/edit.ctp:61
+#: Products/view.ctp:93
+#: Providers/view.ctp:63
 msgid "Descriptions"
-msgstr ""
+msgstr "Nội dung"
 
-#: /Categories/view.ctp:69;135
+#: Categories/view.ctp:69;135
 msgid "Excerpt"
-msgstr ""
+msgstr "Mô tả"
 
-#: /Categories/view.ctp:76;136;193
-#: /Products/edit.ctp:98
-#: /Providers/view.ctp:65
+#: Categories/view.ctp:76;136;193
+#: Products/edit.ctp:98
+#: Providers/view.ctp:65
 msgid "Images"
-msgstr ""
+msgstr "Hình ảnh"
 
-#: /Categories/view.ctp:83;137;194
-#: /CustomerPromotes/view.ctp:71
-#: /Customers/view.ctp:83;128;193
-#: /InoutWarehouses/view.ctp:62
-#: /Orders/view.ctp:192
-#: /Products/view.ctp:100;335
-#: /Promotes/view.ctp:78;215
-#: /Providers/view.ctp:66
-#: /Reexes/view.ctp:88
-#: /Stores/view.ctp:84;136;183;249;315;373;425;482
-#: /Users/view.ctp:46;143
-#: /Warehouses/view.ctp:83
+#: Categories/view.ctp:83;137;194
+#: CustomerPromotes/view.ctp:71
+#: Customers/view.ctp:83;128;193
+#: InoutWarehouses/view.ctp:62
+#: Orders/view.ctp:192
+#: Products/view.ctp:100;335
+#: Promotes/view.ctp:78;215
+#: Providers/view.ctp:66
+#: Reexes/view.ctp:88
+#: Stores/view.ctp:84;136;183;249;315;373;425;482
+#: Users/view.ctp:46;143
+#: Warehouses/view.ctp:83
 msgid "Created"
-msgstr ""
+msgstr "Ngày tạo"
 
-#: /Categories/view.ctp:90
-#: /CustomerPromotes/view.ctp:78
-#: /Customers/view.ctp:90
-#: /InoutWarehouses/view.ctp:69
-#: /Orders/view.ctp:199
-#: /Products/view.ctp:107
-#: /Promotes/view.ctp:85
-#: /Reexes/view.ctp:95
-#: /Stores/view.ctp:91
-#: /Warehouses/view.ctp:90
+#: Categories/view.ctp:90
+#: CustomerPromotes/view.ctp:78
+#: Customers/view.ctp:90
+#: InoutWarehouses/view.ctp:69
+#: Orders/view.ctp:199
+#: Products/view.ctp:107
+#: Promotes/view.ctp:85
+#: Reexes/view.ctp:95
+#: Stores/view.ctp:91
+#: Warehouses/view.ctp:90
 msgid "Trackable Creator"
 msgstr ""
 
-#: /Categories/view.ctp:97;139;196
-#: /CustomerPromotes/view.ctp:85
-#: /Customers/view.ctp:97;130;195
-#: /InoutWarehouses/view.ctp:76
-#: /Orders/view.ctp:206
-#: /Products/view.ctp:114;337
-#: /Promotes/view.ctp:92;217
-#: /Providers/view.ctp:68
-#: /Reexes/view.ctp:102
-#: /Stores/view.ctp:98;138;185;251;317;375;484
-#: /Users/view.ctp:145
-#: /Warehouses/view.ctp:97
+#: Categories/view.ctp:97;139;196
+#: CustomerPromotes/view.ctp:85
+#: Customers/view.ctp:97;130;195
+#: InoutWarehouses/view.ctp:76
+#: Orders/view.ctp:206
+#: Products/view.ctp:114;337
+#: Promotes/view.ctp:92;217
+#: Providers/view.ctp:68
+#: Reexes/view.ctp:102
+#: Stores/view.ctp:98;138;185;251;317;375;484
+#: Users/view.ctp:145
+#: Warehouses/view.ctp:97
 msgid "Updated"
-msgstr ""
+msgstr "Ngày thay đổi"
 
-#: /Categories/view.ctp:104
-#: /CustomerPromotes/view.ctp:92
-#: /Customers/view.ctp:104
-#: /InoutWarehouses/view.ctp:83
-#: /Orders/view.ctp:213
-#: /Products/view.ctp:121
-#: /Promotes/view.ctp:99
-#: /Reexes/view.ctp:109
-#: /Stores/view.ctp:105
-#: /Warehouses/view.ctp:104
+#: Categories/view.ctp:104
+#: CustomerPromotes/view.ctp:92
+#: Customers/view.ctp:104
+#: InoutWarehouses/view.ctp:83
+#: Orders/view.ctp:213
+#: Products/view.ctp:121
+#: Promotes/view.ctp:99
+#: Reexes/view.ctp:109
+#: Stores/view.ctp:105
+#: Warehouses/view.ctp:104
 msgid "Trackable Updater"
 msgstr ""
 
-#: /Categories/view.ctp:111;141;198
-#: /Customers/view.ctp:192
-#: /InoutWarehouses/view.ctp:90
-#: /Orders/view.ctp:185
-#: /Products/view.ctp:128
-#: /Promotes/view.ctp:106;214
-#: /Providers/view.ctp:70
-#: /Stores/view.ctp:112;187;248;319;433
-#: /Users/view.ctp:102;142
+#: Categories/view.ctp:111;141;198
+#: Customers/view.ctp:192
+#: InoutWarehouses/view.ctp:90
+#: Orders/view.ctp:185
+#: Products/view.ctp:128
+#: Promotes/view.ctp:106;214
+#: Providers/view.ctp:70
+#: Stores/view.ctp:112;187;248;319;433
+#: Users/view.ctp:102;142
 msgid "Status"
-msgstr ""
+msgstr "Trạng thái"
 
-#: /Categories/view.ctp:124
+#: Categories/view.ctp:124
 msgid "Related Categories"
-msgstr ""
+msgstr "Danh mục liên quan"
 
-#: /Categories/view.ctp:138;195
-#: /Customers/view.ctp:129;194
-#: /Products/view.ctp:336
-#: /Promotes/view.ctp:216
-#: /Providers/view.ctp:67
-#: /Stores/view.ctp:137;184;250;316;374;483
-#: /Users/view.ctp:144
+#: Categories/view.ctp:138;195
+#: Customers/view.ctp:129;194
+#: Products/view.ctp:336
+#: Promotes/view.ctp:216
+#: Providers/view.ctp:67
+#: Stores/view.ctp:137;184;250;316;374;483
+#: Users/view.ctp:144
 msgid "Created By"
-msgstr ""
+msgstr "Người tạo"
 
-#: /Categories/view.ctp:140;197
-#: /Customers/view.ctp:131;196
-#: /Products/view.ctp:338
-#: /Promotes/view.ctp:218
-#: /Providers/view.ctp:69
-#: /Stores/view.ctp:139;186;252;318;376;485
-#: /Users/view.ctp:146
+#: Categories/view.ctp:140;197
+#: Customers/view.ctp:131;196
+#: Products/view.ctp:338
+#: Promotes/view.ctp:218
+#: Providers/view.ctp:69
+#: Stores/view.ctp:139;186;252;318;376;485
+#: Users/view.ctp:146
 msgid "Updated By"
-msgstr ""
+msgstr "Người thay đổi"
 
-#: /Categories/view.ctp:173
+#: Categories/view.ctp:173
 msgid "New Child Category"
-msgstr ""
+msgstr "Danh mục con mới"
 
-#: /Categories/view.ctp:178
-#: /Providers/view.ctp:50
+#: Categories/view.ctp:178
+#: Providers/view.ctp:50
 msgid "Related Products"
-msgstr ""
+msgstr "Sản phẩm liên quan"
 
-#: /Categories/view.ctp:184
-#: /InoutWarehouseDetails/view.ctp:46
-#: /InoutWarehouses/view.ctp:111
-#: /OrderDetails/view.ctp:62
-#: /Orders/view.ctp:236
-#: /Products/view.ctp:44;156;208
-#: /Promotes/view.ctp:143
-#: /Providers/view.ctp:56
+#: Categories/view.ctp:184
+#: InoutWarehouseDetails/view.ctp:46
+#: InoutWarehouses/view.ctp:111
+#: OrderDetails/view.ctp:62
+#: Orders/view.ctp:236
+#: Products/view.ctp:44;156;208
+#: Promotes/view.ctp:143
+#: Providers/view.ctp:56
 msgid "Sku"
-msgstr ""
+msgstr "Mã sản phẩm"
 
-#: /Categories/view.ctp:185
-#: /Providers/view.ctp:57
+#: Categories/view.ctp:185
+#: Providers/view.ctp:57
 msgid "Provider Id"
-msgstr ""
+msgstr "Id nhà cung cấp"
 
-#: /Categories/view.ctp:187
-#: /InoutWarehouseDetails/view.ctp:60
-#: /InoutWarehouses/view.ctp:113
-#: /OrderDetails/view.ctp:55
-#: /Orders/view.ctp:235
-#: /Products/view.ctp:65;158;207;331
-#: /Promotes/view.ctp:142
-#: /Providers/view.ctp:59
-#: /Stores/view.ctp:478
-#: /Warehouses/view.ctp:55
+#: Categories/view.ctp:187
+#: InoutWarehouseDetails/view.ctp:60
+#: InoutWarehouses/view.ctp:113
+#: OrderDetails/view.ctp:55
+#: Orders/view.ctp:235
+#: Products/view.ctp:65;158;207;331
+#: Promotes/view.ctp:142
+#: Providers/view.ctp:59
+#: Stores/view.ctp:478
+#: Warehouses/view.ctp:55
 msgid "Price"
-msgstr ""
+msgstr "Giá bán"
 
-#: /Categories/view.ctp:188
-#: /Products/view.ctp:72;332
-#: /Providers/view.ctp:60
-#: /Stores/view.ctp:479
-#: /Warehouses/view.ctp:62
+#: Categories/view.ctp:188
+#: Products/view.ctp:72;332
+#: Providers/view.ctp:60
+#: Stores/view.ctp:479
+#: Warehouses/view.ctp:62
 msgid "Retail Price"
-msgstr ""
+msgstr "Giá bán lẻ"
 
-#: /Categories/view.ctp:189
-#: /Products/view.ctp:79
-#: /Providers/view.ctp:61
+#: Categories/view.ctp:189
+#: Products/view.ctp:79
+#: Providers/view.ctp:61
 msgid "Source Price"
-msgstr ""
+msgstr "Giá gốc"
 
-#: /Categories/view.ctp:190
-#: /Products/view.ctp:86
-#: /Providers/view.ctp:62
+#: Categories/view.ctp:190
+#: Products/view.ctp:86
+#: Providers/view.ctp:62
 msgid "Excert"
-msgstr ""
+msgstr "Mô tả"
 
-#: /Categories/view.ctp:192
-#: /Providers/view.ctp:64
+#: Categories/view.ctp:192
+#: Providers/view.ctp:64
 msgid "Thumbnail"
-msgstr ""
+msgstr "Ảnh đại diện"
 
-#: /Categories/view.ctp:199
-#: /Products/view.ctp:259
-#: /Providers/view.ctp:71
+#: Categories/view.ctp:199
+#: Products/view.ctp:259
+#: Providers/view.ctp:71
 msgid "Category Id"
-msgstr ""
+msgstr "Id danh mục"
 
-#: /CustomerPromotes/add.ctp:5
+#: CustomerPromotes/add.ctp:5
 msgid "Add Customer Promote"
 msgstr ""
 
-#: /CustomerPromotes/add.ctp:10
-#: /CustomerPromotes/edit.ctp:11
-#: /CustomerPromotes/view.ctp:12
-#: /Customers/add.ctp:13
-#: /Customers/edit.ctp:14
-#: /Customers/index.ctp:14
-#: /Customers/view.ctp:16
-#: /Stores/add.ctp:13
-#: /Stores/edit.ctp:14
-#: /Stores/index.ctp:14
-#: /Stores/view.ctp:16
+#: CustomerPromotes/add.ctp:10
+#: CustomerPromotes/edit.ctp:11
+#: CustomerPromotes/view.ctp:12
+#: Customers/add.ctp:13
+#: Customers/edit.ctp:14
+#: Customers/index.ctp:14
+#: Customers/view.ctp:16
+#: Stores/add.ctp:13
+#: Stores/edit.ctp:14
+#: Stores/index.ctp:14
+#: Stores/view.ctp:16
 msgid "List Customer Promotes"
 msgstr ""
 
-#: /CustomerPromotes/add.ctp:11
-#: /CustomerPromotes/edit.ctp:12
-#: /CustomerPromotes/index.ctp:12
-#: /CustomerPromotes/view.ctp:14
-#: /Customers/add.ctp:10
-#: /Customers/edit.ctp:11
-#: /Customers/view.ctp:12
-#: /Orders/add.ctp:11
-#: /Orders/edit.ctp:12
-#: /Orders/index.ctp:12
-#: /Orders/view.ctp:14
+#: CustomerPromotes/add.ctp:11
+#: CustomerPromotes/edit.ctp:12
+#: CustomerPromotes/index.ctp:12
+#: CustomerPromotes/view.ctp:14
+#: Customers/add.ctp:10
+#: Customers/edit.ctp:11
+#: Customers/view.ctp:12
+#: Orders/add.ctp:11
+#: Orders/edit.ctp:12
+#: Orders/index.ctp:12
+#: Orders/view.ctp:14
 msgid "List Customers"
 msgstr ""
 
-#: /CustomerPromotes/add.ctp:12
-#: /CustomerPromotes/edit.ctp:13
-#: /CustomerPromotes/index.ctp:13
-#: /CustomerPromotes/view.ctp:15
-#: /Customers/index.ctp:11
-#: /Customers/view.ctp:13
-#: /Orders/add.ctp:12
-#: /Orders/edit.ctp:13
-#: /Orders/index.ctp:13
-#: /Orders/view.ctp:15
+#: CustomerPromotes/add.ctp:12
+#: CustomerPromotes/edit.ctp:13
+#: CustomerPromotes/index.ctp:13
+#: CustomerPromotes/view.ctp:15
+#: Customers/index.ctp:11
+#: Customers/view.ctp:13
+#: Orders/add.ctp:12
+#: Orders/edit.ctp:13
+#: Orders/index.ctp:13
+#: Orders/view.ctp:15
 msgid "New Customer"
 msgstr ""
 
-#: /CustomerPromotes/add.ctp:13
-#: /CustomerPromotes/edit.ctp:14
-#: /CustomerPromotes/index.ctp:14
-#: /CustomerPromotes/view.ctp:16
-#: /OrderDetails/add.ctp:15
-#: /OrderDetails/edit.ctp:16
-#: /OrderDetails/index.ctp:16
-#: /OrderDetails/view.ctp:18
-#: /Orders/add.ctp:17
-#: /Orders/edit.ctp:18
-#: /Orders/index.ctp:18
-#: /Orders/view.ctp:20
-#: /ProductPromotes/add.ctp:13
-#: /ProductPromotes/edit.ctp:14
-#: /ProductPromotes/index.ctp:14
-#: /ProductPromotes/view.ctp:16
-#: /Promotes/add.ctp:10
-#: /Promotes/edit.ctp:11
-#: /Promotes/view.ctp:12
-#: /Stores/add.ctp:19
-#: /Stores/edit.ctp:20
-#: /Stores/index.ctp:20
-#: /Stores/view.ctp:22
+#: CustomerPromotes/add.ctp:13
+#: CustomerPromotes/edit.ctp:14
+#: CustomerPromotes/index.ctp:14
+#: CustomerPromotes/view.ctp:16
+#: OrderDetails/add.ctp:15
+#: OrderDetails/edit.ctp:16
+#: OrderDetails/index.ctp:16
+#: OrderDetails/view.ctp:18
+#: Orders/add.ctp:17
+#: Orders/edit.ctp:18
+#: Orders/index.ctp:18
+#: Orders/view.ctp:20
+#: ProductPromotes/add.ctp:13
+#: ProductPromotes/edit.ctp:14
+#: ProductPromotes/index.ctp:14
+#: ProductPromotes/view.ctp:16
+#: Promotes/add.ctp:10
+#: Promotes/edit.ctp:11
+#: Promotes/view.ctp:12
+#: Stores/add.ctp:19
+#: Stores/edit.ctp:20
+#: Stores/index.ctp:20
+#: Stores/view.ctp:22
 msgid "List Promotes"
 msgstr ""
 
-#: /CustomerPromotes/add.ctp:14
-#: /CustomerPromotes/edit.ctp:15
-#: /CustomerPromotes/index.ctp:15
-#: /CustomerPromotes/view.ctp:17
-#: /OrderDetails/add.ctp:16
-#: /OrderDetails/edit.ctp:17
-#: /OrderDetails/index.ctp:17
-#: /OrderDetails/view.ctp:19
-#: /Orders/add.ctp:18
-#: /Orders/edit.ctp:19
-#: /Orders/index.ctp:19
-#: /Orders/view.ctp:21
-#: /ProductPromotes/add.ctp:14
-#: /ProductPromotes/edit.ctp:15
-#: /ProductPromotes/index.ctp:15
-#: /ProductPromotes/view.ctp:17
-#: /Promotes/index.ctp:11
-#: /Promotes/view.ctp:13
-#: /Stores/add.ctp:20
-#: /Stores/edit.ctp:21
-#: /Stores/index.ctp:21
-#: /Stores/view.ctp:23;354
+#: CustomerPromotes/add.ctp:14
+#: CustomerPromotes/edit.ctp:15
+#: CustomerPromotes/index.ctp:15
+#: CustomerPromotes/view.ctp:17
+#: OrderDetails/add.ctp:16
+#: OrderDetails/edit.ctp:17
+#: OrderDetails/index.ctp:17
+#: OrderDetails/view.ctp:19
+#: Orders/add.ctp:18
+#: Orders/edit.ctp:19
+#: Orders/index.ctp:19
+#: Orders/view.ctp:21
+#: ProductPromotes/add.ctp:14
+#: ProductPromotes/edit.ctp:15
+#: ProductPromotes/index.ctp:15
+#: ProductPromotes/view.ctp:17
+#: Promotes/index.ctp:11
+#: Promotes/view.ctp:13
+#: Stores/add.ctp:20
+#: Stores/edit.ctp:21
+#: Stores/index.ctp:21
+#: Stores/view.ctp:23;354
 msgid "New Promote"
 msgstr ""
 
-#: /CustomerPromotes/add.ctp:15
-#: /CustomerPromotes/edit.ctp:16
-#: /CustomerPromotes/index.ctp:16
-#: /CustomerPromotes/view.ctp:18
-#: /InoutWarehouses/add.ctp:11
-#: /InoutWarehouses/edit.ctp:12
-#: /InoutWarehouses/index.ctp:12
-#: /InoutWarehouses/view.ctp:14
-#: /Orders/add.ctp:15
-#: /Orders/edit.ctp:16
-#: /Orders/index.ctp:16
-#: /Orders/view.ctp:18
-#: /Promotes/add.ctp:11
-#: /Promotes/edit.ctp:12
-#: /Promotes/index.ctp:12
-#: /Promotes/view.ctp:14
-#: /Reexes/add.ctp:11
-#: /Reexes/edit.ctp:12
-#: /Reexes/index.ctp:12
-#: /Reexes/view.ctp:14
-#: /Stores/add.ctp:10
-#: /Stores/edit.ctp:11
-#: /Stores/view.ctp:12
-#: /Users/add.ctp:11
-#: /Users/edit.ctp:12
-#: /Users/index.ctp:12
-#: /Users/view.ctp:14
-#: /Warehouses/add.ctp:11
-#: /Warehouses/edit.ctp:12
-#: /Warehouses/index.ctp:12
-#: /Warehouses/view.ctp:14
+#: CustomerPromotes/add.ctp:15
+#: CustomerPromotes/edit.ctp:16
+#: CustomerPromotes/index.ctp:16
+#: CustomerPromotes/view.ctp:18
+#: InoutWarehouses/add.ctp:11
+#: InoutWarehouses/edit.ctp:12
+#: InoutWarehouses/index.ctp:12
+#: InoutWarehouses/view.ctp:14
+#: Orders/add.ctp:15
+#: Orders/edit.ctp:16
+#: Orders/index.ctp:16
+#: Orders/view.ctp:18
+#: Promotes/add.ctp:11
+#: Promotes/edit.ctp:12
+#: Promotes/index.ctp:12
+#: Promotes/view.ctp:14
+#: Reexes/add.ctp:11
+#: Reexes/edit.ctp:12
+#: Reexes/index.ctp:12
+#: Reexes/view.ctp:14
+#: Stores/add.ctp:10
+#: Stores/edit.ctp:11
+#: Stores/view.ctp:12
+#: Users/add.ctp:11
+#: Users/edit.ctp:12
+#: Users/index.ctp:12
+#: Users/view.ctp:14
+#: Warehouses/add.ctp:11
+#: Warehouses/edit.ctp:12
+#: Warehouses/index.ctp:12
+#: Warehouses/view.ctp:14
 msgid "List Stores"
 msgstr ""
 
-#: /CustomerPromotes/add.ctp:16
-#: /CustomerPromotes/edit.ctp:17
-#: /CustomerPromotes/index.ctp:17
-#: /CustomerPromotes/view.ctp:19
-#: /InoutWarehouses/add.ctp:12
-#: /InoutWarehouses/edit.ctp:13
-#: /InoutWarehouses/index.ctp:13
-#: /InoutWarehouses/view.ctp:15
-#: /Orders/add.ctp:16
-#: /Orders/edit.ctp:17
-#: /Orders/index.ctp:17
-#: /Orders/view.ctp:19
-#: /Promotes/add.ctp:12
-#: /Promotes/edit.ctp:13
-#: /Promotes/index.ctp:13
-#: /Promotes/view.ctp:15
-#: /Reexes/add.ctp:12
-#: /Reexes/edit.ctp:13
-#: /Reexes/index.ctp:13
-#: /Reexes/view.ctp:15
-#: /Stores/index.ctp:11
-#: /Stores/view.ctp:13
-#: /Users/add.ctp:12
-#: /Users/edit.ctp:13
-#: /Users/index.ctp:13
-#: /Users/view.ctp:15
-#: /Warehouses/add.ctp:12
-#: /Warehouses/edit.ctp:13
-#: /Warehouses/index.ctp:13
-#: /Warehouses/view.ctp:15
+#: CustomerPromotes/add.ctp:16
+#: CustomerPromotes/edit.ctp:17
+#: CustomerPromotes/index.ctp:17
+#: CustomerPromotes/view.ctp:19
+#: InoutWarehouses/add.ctp:12
+#: InoutWarehouses/edit.ctp:13
+#: InoutWarehouses/index.ctp:13
+#: InoutWarehouses/view.ctp:15
+#: Orders/add.ctp:16
+#: Orders/edit.ctp:17
+#: Orders/index.ctp:17
+#: Orders/view.ctp:19
+#: Promotes/add.ctp:12
+#: Promotes/edit.ctp:13
+#: Promotes/index.ctp:13
+#: Promotes/view.ctp:15
+#: Reexes/add.ctp:12
+#: Reexes/edit.ctp:13
+#: Reexes/index.ctp:13
+#: Reexes/view.ctp:15
+#: Stores/index.ctp:11
+#: Stores/view.ctp:13
+#: Users/add.ctp:12
+#: Users/edit.ctp:13
+#: Users/index.ctp:13
+#: Users/view.ctp:15
+#: Warehouses/add.ctp:12
+#: Warehouses/edit.ctp:13
+#: Warehouses/index.ctp:13
+#: Warehouses/view.ctp:15
 msgid "New Store"
 msgstr ""
 
-#: /CustomerPromotes/edit.ctp:5
-#: /CustomerPromotes/view.ctp:10
+#: CustomerPromotes/edit.ctp:5
+#: CustomerPromotes/view.ctp:10
 msgid "Edit Customer Promote"
 msgstr ""
 
-#: /CustomerPromotes/index.ctp:6
+#: CustomerPromotes/index.ctp:6
 msgid "Customer Promotes"
 msgstr ""
 
-#: /CustomerPromotes/index.ctp:11
-#: /CustomerPromotes/view.ctp:13
-#: /Customers/add.ctp:14
-#: /Customers/edit.ctp:15
-#: /Customers/index.ctp:15
-#: /Customers/view.ctp:17;160
-#: /Stores/add.ctp:14
-#: /Stores/edit.ctp:15
-#: /Stores/index.ctp:15
-#: /Stores/view.ctp:17;168
+#: CustomerPromotes/index.ctp:11
+#: CustomerPromotes/view.ctp:13
+#: Customers/add.ctp:14
+#: Customers/edit.ctp:15
+#: Customers/index.ctp:15
+#: Customers/view.ctp:17;160
+#: Stores/add.ctp:14
+#: Stores/edit.ctp:15
+#: Stores/index.ctp:15
+#: Stores/view.ctp:17;168
 msgid "New Customer Promote"
 msgstr ""
 
-#: /CustomerPromotes/view.ctp:5
+#: CustomerPromotes/view.ctp:5
 msgid "Customer Promote"
 msgstr ""
 
-#: /CustomerPromotes/view.ctp:11
+#: CustomerPromotes/view.ctp:11
 msgid "Delete Customer Promote"
 msgstr ""
 
-#: /CustomerPromotes/view.ctp:36
-#: /Customers/view.ctp:5
-#: /Orders/view.ctp:45
+#: CustomerPromotes/view.ctp:36
+#: Customers/view.ctp:5
+#: Orders/view.ctp:45
 msgid "Customer"
 msgstr ""
 
-#: /CustomerPromotes/view.ctp:43
-#: /OrderDetails/view.ctp:76
-#: /Orders/view.ctp:66
-#: /ProductPromotes/view.ctp:39
-#: /Promotes/view.ctp:5
+#: CustomerPromotes/view.ctp:43
+#: OrderDetails/view.ctp:76
+#: Orders/view.ctp:66
+#: ProductPromotes/view.ctp:39
+#: Promotes/view.ctp:5
 msgid "Promote"
 msgstr ""
 
-#: /CustomerPromotes/view.ctp:50
-#: /Customers/view.ctp:125
-#: /Stores/view.ctp:133
+#: CustomerPromotes/view.ctp:50
+#: Customers/view.ctp:125
+#: Stores/view.ctp:133
 msgid "Promote Code"
 msgstr ""
 
-#: /CustomerPromotes/view.ctp:57
-#: /Customers/view.ctp:126
-#: /Stores/view.ctp:134
+#: CustomerPromotes/view.ctp:57
+#: Customers/view.ctp:126
+#: Stores/view.ctp:134
 msgid "Used"
 msgstr ""
 
-#: /CustomerPromotes/view.ctp:64
-#: /InoutWarehouses/view.ctp:48
-#: /Orders/view.ctp:59
-#: /Promotes/view.ctp:113
-#: /Reexes/view.ctp:46
-#: /Stores/view.ctp:5
-#: /Users/view.ctp:95
-#: /Warehouses/view.ctp:34
+#: CustomerPromotes/view.ctp:64
+#: InoutWarehouses/view.ctp:48
+#: Orders/view.ctp:59
+#: Promotes/view.ctp:113
+#: Reexes/view.ctp:46
+#: Stores/view.ctp:5
+#: Users/view.ctp:95
+#: Warehouses/view.ctp:34
 msgid "Store"
 msgstr ""
 
-#: /Customers/add.ctp:5
+#: Customers/add.ctp:5
 msgid "Add Customer"
 msgstr ""
 
-#: /Customers/add.ctp:15
-#: /Customers/edit.ctp:16
-#: /Customers/index.ctp:16
-#: /Customers/view.ctp:18
-#: /OrderDetails/add.ctp:11
-#: /OrderDetails/edit.ctp:12
-#: /OrderDetails/index.ctp:12
-#: /OrderDetails/view.ctp:14
-#: /Orders/add.ctp:10
-#: /Orders/edit.ctp:11
-#: /Orders/view.ctp:12
-#: /Promotes/add.ctp:17
-#: /Promotes/edit.ctp:18
-#: /Promotes/index.ctp:18
-#: /Promotes/view.ctp:20
-#: /Stores/add.ctp:17
-#: /Stores/edit.ctp:18
-#: /Stores/index.ctp:18
-#: /Stores/view.ctp:20
-#: /Users/add.ctp:13
-#: /Users/edit.ctp:14
-#: /Users/index.ctp:14
-#: /Users/view.ctp:16
+#: Customers/add.ctp:15
+#: Customers/edit.ctp:16
+#: Customers/index.ctp:16
+#: Customers/view.ctp:18
+#: OrderDetails/add.ctp:11
+#: OrderDetails/edit.ctp:12
+#: OrderDetails/index.ctp:12
+#: OrderDetails/view.ctp:14
+#: Orders/add.ctp:10
+#: Orders/edit.ctp:11
+#: Orders/view.ctp:12
+#: Promotes/add.ctp:17
+#: Promotes/edit.ctp:18
+#: Promotes/index.ctp:18
+#: Promotes/view.ctp:20
+#: Stores/add.ctp:17
+#: Stores/edit.ctp:18
+#: Stores/index.ctp:18
+#: Stores/view.ctp:20
+#: Users/add.ctp:13
+#: Users/edit.ctp:14
+#: Users/index.ctp:14
+#: Users/view.ctp:16
 msgid "List Orders"
 msgstr ""
 
-#: /Customers/add.ctp:16
-#: /Customers/edit.ctp:17
-#: /Customers/index.ctp:17
-#: /Customers/view.ctp:19;242
-#: /OrderDetails/add.ctp:12
-#: /OrderDetails/edit.ctp:13
-#: /OrderDetails/index.ctp:13
-#: /OrderDetails/view.ctp:15
-#: /Orders/index.ctp:11
-#: /Orders/view.ctp:13
-#: /Promotes/add.ctp:18
-#: /Promotes/edit.ctp:19
-#: /Promotes/index.ctp:19
-#: /Promotes/view.ctp:21;264
-#: /Stores/add.ctp:18
-#: /Stores/edit.ctp:19
-#: /Stores/index.ctp:19
-#: /Stores/view.ctp:21;298
-#: /Users/add.ctp:14
-#: /Users/edit.ctp:15
-#: /Users/index.ctp:15
-#: /Users/view.ctp:17;192
+#: Customers/add.ctp:16
+#: Customers/edit.ctp:17
+#: Customers/index.ctp:17
+#: Customers/view.ctp:19;242
+#: OrderDetails/add.ctp:12
+#: OrderDetails/edit.ctp:13
+#: OrderDetails/index.ctp:13
+#: OrderDetails/view.ctp:15
+#: Orders/index.ctp:11
+#: Orders/view.ctp:13
+#: Promotes/add.ctp:18
+#: Promotes/edit.ctp:19
+#: Promotes/index.ctp:19
+#: Promotes/view.ctp:21;264
+#: Stores/add.ctp:18
+#: Stores/edit.ctp:19
+#: Stores/index.ctp:19
+#: Stores/view.ctp:21;298
+#: Users/add.ctp:14
+#: Users/edit.ctp:15
+#: Users/index.ctp:15
+#: Users/view.ctp:17;192
 msgid "New Order"
 msgstr ""
 
-#: /Customers/edit.ctp:5
-#: /Customers/view.ctp:10
+#: Customers/edit.ctp:5
+#: Customers/view.ctp:10
 msgid "Edit Customer"
 msgstr ""
 
-#: /Customers/index.ctp:6
+#: Customers/index.ctp:6
 msgid "Customers"
 msgstr ""
 
-#: /Customers/view.ctp:11
+#: Customers/view.ctp:11
 msgid "Delete Customer"
 msgstr ""
 
-#: /Customers/view.ctp:41
-#: /Stores/view.ctp:49;428
-#: /Users/view.ctp:67
+#: Customers/view.ctp:41
+#: Stores/view.ctp:49;428
+#: Users/view.ctp:67
 msgid "Phone"
 msgstr ""
 
-#: /Customers/view.ctp:48
+#: Customers/view.ctp:48
 msgid "Email"
 msgstr ""
 
-#: /Customers/view.ctp:55
+#: Customers/view.ctp:55
 msgid "Facebook"
 msgstr ""
 
-#: /Customers/view.ctp:62
-#: /Stores/view.ctp:56;429
-#: /Users/view.ctp:74
+#: Customers/view.ctp:62
+#: Stores/view.ctp:56;429
+#: Users/view.ctp:74
 msgid "Address"
 msgstr ""
 
-#: /Customers/view.ctp:69
-#: /Stores/view.ctp:63;430
-#: /Users/view.ctp:81
+#: Customers/view.ctp:69
+#: Stores/view.ctp:63;430
+#: Users/view.ctp:81
 msgid "District"
 msgstr ""
 
-#: /Customers/view.ctp:76
-#: /Stores/view.ctp:70;431
-#: /Users/view.ctp:88
+#: Customers/view.ctp:76
+#: Stores/view.ctp:70;431
+#: Users/view.ctp:88
 msgid "City"
 msgstr ""
 
-#: /Customers/view.ctp:117
-#: /Stores/view.ctp:125
+#: Customers/view.ctp:117
+#: Stores/view.ctp:125
 msgid "Related Customer Promotes"
 msgstr ""
 
-#: /Customers/view.ctp:123;172
-#: /Promotes/view.ctp:194
-#: /Stores/view.ctp:131;228
-#: /Users/view.ctp:122
+#: Customers/view.ctp:123;172
+#: Promotes/view.ctp:194
+#: Stores/view.ctp:131;228
+#: Users/view.ctp:122
 msgid "Customer Id"
 msgstr ""
 
-#: /Customers/view.ctp:124;175
-#: /Orders/view.ctp:238
-#: /Products/view.ctp:210
-#: /Promotes/view.ctp:145;197
-#: /Stores/view.ctp:132;231
-#: /Users/view.ctp:125
+#: Customers/view.ctp:124;175
+#: Orders/view.ctp:238
+#: Products/view.ctp:210
+#: Promotes/view.ctp:145;197
+#: Stores/view.ctp:132;231
+#: Users/view.ctp:125
 msgid "Promote Id"
 msgstr ""
 
-#: /Customers/view.ctp:127;174
-#: /Products/view.ctp:328
-#: /Promotes/view.ctp:196
-#: /Stores/view.ctp:135;181;230;320;367;432;475
-#: /Users/view.ctp:124
+#: Customers/view.ctp:127;174
+#: Products/view.ctp:328
+#: Promotes/view.ctp:196
+#: Stores/view.ctp:135;181;230;320;367;432;475
+#: Users/view.ctp:124
 msgid "Store Id"
 msgstr ""
 
-#: /Customers/view.ctp:165
-#: /Promotes/view.ctp:187
-#: /Stores/view.ctp:221
-#: /Users/view.ctp:115
+#: Customers/view.ctp:165
+#: Promotes/view.ctp:187
+#: Stores/view.ctp:221
+#: Users/view.ctp:115
 msgid "Related Orders"
 msgstr ""
 
-#: /Customers/view.ctp:171
-#: /OrderDetails/view.ctp:104
-#: /Orders/view.ctp:38;242
-#: /ProductOptions/view.ctp:46
-#: /Products/view.ctp:214;294;334
-#: /Promotes/view.ctp:43;149;193
-#: /Providers/view.ctp:37
-#: /Stores/view.ctp:227;310;481
-#: /Users/view.ctp:121
-#: /Warehouses/view.ctp:76
+#: Customers/view.ctp:171
+#: OrderDetails/view.ctp:104
+#: Orders/view.ctp:38;242
+#: ProductOptions/view.ctp:46
+#: Products/view.ctp:214;294;334
+#: Promotes/view.ctp:43;149;193
+#: Providers/view.ctp:37
+#: Stores/view.ctp:227;310;481
+#: Users/view.ctp:121
+#: Warehouses/view.ctp:76
 msgid "Code"
 msgstr ""
 
-#: /Customers/view.ctp:173
-#: /Promotes/view.ctp:195
-#: /Stores/view.ctp:229
-#: /Users/view.ctp:123
+#: Customers/view.ctp:173
+#: Promotes/view.ctp:195
+#: Stores/view.ctp:229
+#: Users/view.ctp:123
 msgid "User Id"
 msgstr ""
 
-#: /Customers/view.ctp:176
-#: /OrderDetails/view.ctp:90
-#: /Orders/view.ctp:73;240
-#: /Products/view.ctp:212
-#: /Promotes/view.ctp:147;198
-#: /Stores/view.ctp:232
-#: /Users/view.ctp:126
+#: Customers/view.ctp:176
+#: OrderDetails/view.ctp:90
+#: Orders/view.ctp:73;240
+#: Products/view.ctp:212
+#: Promotes/view.ctp:147;198
+#: Stores/view.ctp:232
+#: Users/view.ctp:126
 msgid "Promote Type"
 msgstr ""
 
-#: /Customers/view.ctp:177
-#: /OrderDetails/view.ctp:83
-#: /Orders/view.ctp:80;239
-#: /Products/view.ctp:211
-#: /Promotes/view.ctp:146;199
-#: /Stores/view.ctp:233
-#: /Users/view.ctp:127
+#: Customers/view.ctp:177
+#: OrderDetails/view.ctp:83
+#: Orders/view.ctp:80;239
+#: Products/view.ctp:211
+#: Promotes/view.ctp:146;199
+#: Stores/view.ctp:233
+#: Users/view.ctp:127
 msgid "Promote Value"
 msgstr ""
 
-#: /Customers/view.ctp:178
-#: /Orders/view.ctp:87
-#: /Promotes/view.ctp:200
-#: /Stores/view.ctp:234
-#: /Users/view.ctp:128
+#: Customers/view.ctp:178
+#: Orders/view.ctp:87
+#: Promotes/view.ctp:200
+#: Stores/view.ctp:234
+#: Users/view.ctp:128
 msgid "Basic Total"
 msgstr ""
 
-#: /Customers/view.ctp:179
-#: /InoutWarehouseDetails/view.ctp:74
-#: /InoutWarehouses/view.ctp:55;115
-#: /Orders/view.ctp:94
-#: /Products/view.ctp:160
-#: /Promotes/view.ctp:201
-#: /Reexes/view.ctp:53
-#: /Stores/view.ctp:182;235;368
-#: /Users/view.ctp:129
+#: Customers/view.ctp:179
+#: InoutWarehouseDetails/view.ctp:74
+#: InoutWarehouses/view.ctp:55;115
+#: Orders/view.ctp:94
+#: Products/view.ctp:160
+#: Promotes/view.ctp:201
+#: Reexes/view.ctp:53
+#: Stores/view.ctp:182;235;368
+#: Users/view.ctp:129
 msgid "Total"
 msgstr ""
 
-#: /Customers/view.ctp:180
-#: /Orders/view.ctp:101
-#: /Promotes/view.ctp:202
-#: /Stores/view.ctp:236
-#: /Users/view.ctp:130
+#: Customers/view.ctp:180
+#: Orders/view.ctp:101
+#: Promotes/view.ctp:202
+#: Stores/view.ctp:236
+#: Users/view.ctp:130
 msgid "Total Promote"
 msgstr ""
 
-#: /Customers/view.ctp:181
-#: /Orders/view.ctp:108
-#: /Promotes/view.ctp:203
-#: /Stores/view.ctp:237
-#: /Users/view.ctp:131
+#: Customers/view.ctp:181
+#: Orders/view.ctp:108
+#: Promotes/view.ctp:203
+#: Stores/view.ctp:237
+#: Users/view.ctp:131
 msgid "Amount"
 msgstr ""
 
-#: /Customers/view.ctp:182
-#: /Orders/view.ctp:115
-#: /Promotes/view.ctp:204
-#: /Stores/view.ctp:238
-#: /Users/view.ctp:132
+#: Customers/view.ctp:182
+#: Orders/view.ctp:115
+#: Promotes/view.ctp:204
+#: Stores/view.ctp:238
+#: Users/view.ctp:132
 msgid "Receive"
 msgstr ""
 
-#: /Customers/view.ctp:183
-#: /Orders/view.ctp:122
-#: /Promotes/view.ctp:205
-#: /Stores/view.ctp:239
-#: /Users/view.ctp:133
+#: Customers/view.ctp:183
+#: Orders/view.ctp:122
+#: Promotes/view.ctp:205
+#: Stores/view.ctp:239
+#: Users/view.ctp:133
 msgid "Refund"
 msgstr ""
 
-#: /Customers/view.ctp:184
-#: /Orders/view.ctp:129
-#: /Promotes/view.ctp:206
-#: /Stores/view.ctp:240
-#: /Users/view.ctp:134
+#: Customers/view.ctp:184
+#: Orders/view.ctp:129
+#: Promotes/view.ctp:206
+#: Stores/view.ctp:240
+#: Users/view.ctp:134
 msgid "Ship"
 msgstr ""
 
-#: /Customers/view.ctp:185
-#: /Orders/view.ctp:136
-#: /Promotes/view.ctp:207
-#: /Stores/view.ctp:241
-#: /Users/view.ctp:135
+#: Customers/view.ctp:185
+#: Orders/view.ctp:136
+#: Promotes/view.ctp:207
+#: Stores/view.ctp:241
+#: Users/view.ctp:135
 msgid "Ship Increment Price"
 msgstr ""
 
-#: /Customers/view.ctp:186
-#: /Orders/view.ctp:143
-#: /Promotes/view.ctp:208
-#: /Stores/view.ctp:242
-#: /Users/view.ctp:136
+#: Customers/view.ctp:186
+#: Orders/view.ctp:143
+#: Promotes/view.ctp:208
+#: Stores/view.ctp:242
+#: Users/view.ctp:136
 msgid "Ship Name"
 msgstr ""
 
-#: /Customers/view.ctp:187
-#: /Orders/view.ctp:150
-#: /Promotes/view.ctp:209
-#: /Stores/view.ctp:243
-#: /Users/view.ctp:137
+#: Customers/view.ctp:187
+#: Orders/view.ctp:150
+#: Promotes/view.ctp:209
+#: Stores/view.ctp:243
+#: Users/view.ctp:137
 msgid "Ship Address"
 msgstr ""
 
-#: /Customers/view.ctp:188
-#: /Orders/view.ctp:157
-#: /Promotes/view.ctp:210
-#: /Stores/view.ctp:244
-#: /Users/view.ctp:138
+#: Customers/view.ctp:188
+#: Orders/view.ctp:157
+#: Promotes/view.ctp:210
+#: Stores/view.ctp:244
+#: Users/view.ctp:138
 msgid "Ship Address Alt"
 msgstr ""
 
-#: /Customers/view.ctp:189
-#: /Orders/view.ctp:164
-#: /Promotes/view.ctp:211
-#: /Stores/view.ctp:245
-#: /Users/view.ctp:139
+#: Customers/view.ctp:189
+#: Orders/view.ctp:164
+#: Promotes/view.ctp:211
+#: Stores/view.ctp:245
+#: Users/view.ctp:139
 msgid "Ship District"
 msgstr ""
 
-#: /Customers/view.ctp:190
-#: /Orders/view.ctp:171
-#: /Promotes/view.ctp:212
-#: /Stores/view.ctp:246
-#: /Users/view.ctp:140
+#: Customers/view.ctp:190
+#: Orders/view.ctp:171
+#: Promotes/view.ctp:212
+#: Stores/view.ctp:246
+#: Users/view.ctp:140
 msgid "Ship City"
 msgstr ""
 
-#: /Customers/view.ctp:191
-#: /Orders/view.ctp:178
-#: /Promotes/view.ctp:213
-#: /Stores/view.ctp:247
-#: /Users/view.ctp:141
+#: Customers/view.ctp:191
+#: Orders/view.ctp:178
+#: Promotes/view.ctp:213
+#: Stores/view.ctp:247
+#: Users/view.ctp:141
 msgid "Ship Phone"
 msgstr ""
 
-#: /Elements/navigation.ctp:21
+#: Elements/navigation.ctp:21
 msgid "Edit account"
 msgstr ""
 
-#: /Elements/navigation.ctp:23
+#: Elements/navigation.ctp:23
 msgid "Sign out"
 msgstr ""
 
-#: /Elements/sidebar.ctp:2
+#: Elements/sidebar.ctp:2
 msgid "Action"
 msgstr ""
 
-#: /InoutWarehouseDetails/add.ctp:5
+#: InoutWarehouseDetails/add.ctp:5
 msgid "Add Inout Warehouse Detail"
 msgstr ""
 
-#: /InoutWarehouseDetails/add.ctp:10
-#: /InoutWarehouseDetails/edit.ctp:11
-#: /InoutWarehouseDetails/view.ctp:12
-#: /InoutWarehouses/add.ctp:15
-#: /InoutWarehouses/edit.ctp:16
-#: /InoutWarehouses/index.ctp:16
-#: /InoutWarehouses/view.ctp:18
-#: /Products/add.ctp:17
-#: /Products/edit.ctp:18
-#: /Products/index.ctp:18
-#: /Products/view.ctp:20
+#: InoutWarehouseDetails/add.ctp:10
+#: InoutWarehouseDetails/edit.ctp:11
+#: InoutWarehouseDetails/view.ctp:12
+#: InoutWarehouses/add.ctp:15
+#: InoutWarehouses/edit.ctp:16
+#: InoutWarehouses/index.ctp:16
+#: InoutWarehouses/view.ctp:18
+#: Products/add.ctp:17
+#: Products/edit.ctp:18
+#: Products/index.ctp:18
+#: Products/view.ctp:20
 msgid "List Inout Warehouse Details"
 msgstr ""
 
-#: /InoutWarehouseDetails/add.ctp:11
-#: /InoutWarehouseDetails/edit.ctp:12
-#: /InoutWarehouseDetails/index.ctp:12
-#: /InoutWarehouseDetails/view.ctp:14
-#: /InoutWarehouses/add.ctp:10
-#: /InoutWarehouses/edit.ctp:11
-#: /InoutWarehouses/view.ctp:12
-#: /Stores/add.ctp:15
-#: /Stores/edit.ctp:16
-#: /Stores/index.ctp:16
-#: /Stores/view.ctp:18
+#: InoutWarehouseDetails/add.ctp:11
+#: InoutWarehouseDetails/edit.ctp:12
+#: InoutWarehouseDetails/index.ctp:12
+#: InoutWarehouseDetails/view.ctp:14
+#: InoutWarehouses/add.ctp:10
+#: InoutWarehouses/edit.ctp:11
+#: InoutWarehouses/view.ctp:12
+#: Stores/add.ctp:15
+#: Stores/edit.ctp:16
+#: Stores/index.ctp:16
+#: Stores/view.ctp:18
 msgid "List Inout Warehouses"
 msgstr ""
 
-#: /InoutWarehouseDetails/add.ctp:12
-#: /InoutWarehouseDetails/edit.ctp:13
-#: /InoutWarehouseDetails/index.ctp:13
-#: /InoutWarehouseDetails/view.ctp:15
-#: /InoutWarehouses/index.ctp:11
-#: /InoutWarehouses/view.ctp:13
-#: /Stores/add.ctp:16
-#: /Stores/edit.ctp:17
-#: /Stores/index.ctp:17
-#: /Stores/view.ctp:19;216
+#: InoutWarehouseDetails/add.ctp:12
+#: InoutWarehouseDetails/edit.ctp:13
+#: InoutWarehouseDetails/index.ctp:13
+#: InoutWarehouseDetails/view.ctp:15
+#: InoutWarehouses/index.ctp:11
+#: InoutWarehouses/view.ctp:13
+#: Stores/add.ctp:16
+#: Stores/edit.ctp:17
+#: Stores/index.ctp:17
+#: Stores/view.ctp:19;216
 msgid "New Inout Warehouse"
 msgstr ""
 
-#: /InoutWarehouseDetails/edit.ctp:5
-#: /InoutWarehouseDetails/view.ctp:10
+#: InoutWarehouseDetails/edit.ctp:5
+#: InoutWarehouseDetails/view.ctp:10
 msgid "Edit Inout Warehouse Detail"
 msgstr ""
 
-#: /InoutWarehouseDetails/index.ctp:6
+#: InoutWarehouseDetails/index.ctp:6
 msgid "Inout Warehouse Details"
 msgstr ""
 
-#: /InoutWarehouseDetails/index.ctp:11
-#: /InoutWarehouseDetails/view.ctp:13
-#: /InoutWarehouses/add.ctp:16
-#: /InoutWarehouses/edit.ctp:17
-#: /InoutWarehouses/index.ctp:17
-#: /InoutWarehouses/view.ctp:19;148
-#: /Products/add.ctp:18
-#: /Products/edit.ctp:19
-#: /Products/index.ctp:19
-#: /Products/view.ctp:21;193
+#: InoutWarehouseDetails/index.ctp:11
+#: InoutWarehouseDetails/view.ctp:13
+#: InoutWarehouses/add.ctp:16
+#: InoutWarehouses/edit.ctp:17
+#: InoutWarehouses/index.ctp:17
+#: InoutWarehouses/view.ctp:19;148
+#: Products/add.ctp:18
+#: Products/edit.ctp:19
+#: Products/index.ctp:19
+#: Products/view.ctp:21;193
 msgid "New Inout Warehouse Detail"
 msgstr ""
 
-#: /InoutWarehouseDetails/view.ctp:5
+#: InoutWarehouseDetails/view.ctp:5
 msgid "Inout Warehouse Detail"
 msgstr ""
 
-#: /InoutWarehouseDetails/view.ctp:11
+#: InoutWarehouseDetails/view.ctp:11
 msgid "Delete Inout Warehouse Detail"
 msgstr ""
 
-#: /InoutWarehouseDetails/view.ctp:32
-#: /InoutWarehouses/view.ctp:5
+#: InoutWarehouseDetails/view.ctp:32
+#: InoutWarehouses/view.ctp:5
 msgid "Inout Warehouse"
 msgstr ""
 
-#: /InoutWarehouseDetails/view.ctp:39
-#: /OrderDetails/view.ctp:41
-#: /ProductCategories/view.ctp:32
-#: /ProductOptions/view.ctp:39
-#: /ProductPromotes/view.ctp:32
-#: /Products/view.ctp:5
-#: /Warehouses/view.ctp:41
+#: InoutWarehouseDetails/view.ctp:39
+#: OrderDetails/view.ctp:41
+#: ProductCategories/view.ctp:32
+#: ProductOptions/view.ctp:39
+#: ProductPromotes/view.ctp:32
+#: Products/view.ctp:5
+#: Warehouses/view.ctp:41
 msgid "Product"
 msgstr ""
 
-#: /InoutWarehouseDetails/view.ctp:53
-#: /InoutWarehouses/view.ctp:112
-#: /OrderDetails/view.ctp:69
-#: /Orders/view.ctp:237
-#: /Products/view.ctp:157;209;333
-#: /Promotes/view.ctp:144
-#: /Stores/view.ctp:480
-#: /Warehouses/view.ctp:69
+#: InoutWarehouseDetails/view.ctp:53
+#: InoutWarehouses/view.ctp:112
+#: OrderDetails/view.ctp:69
+#: Orders/view.ctp:237
+#: Products/view.ctp:157;209;333
+#: Promotes/view.ctp:144
+#: Stores/view.ctp:480
+#: Warehouses/view.ctp:69
 msgid "Qty"
 msgstr ""
 
-#: /InoutWarehouseDetails/view.ctp:67
-#: /InoutWarehouses/view.ctp:114
-#: /Products/view.ctp:159
+#: InoutWarehouseDetails/view.ctp:67
+#: InoutWarehouses/view.ctp:114
+#: Products/view.ctp:159
 msgid "Tax"
 msgstr ""
 
-#: /InoutWarehouseDetails/view.ctp:81
-#: /InoutWarehouses/view.ctp:116
-#: /Options/index.ctp:6
-#: /Products/edit.ctp:66
-#: /Products/view.ctp:161;330
-#: /Stores/view.ctp:477
-#: /Warehouses/view.ctp:48
+#: InoutWarehouseDetails/view.ctp:81
+#: InoutWarehouses/view.ctp:116
+#: Options/index.ctp:6
+#: Products/edit.ctp:66
+#: Products/view.ctp:161;330
+#: Stores/view.ctp:477
+#: Warehouses/view.ctp:48
 msgid "Options"
 msgstr ""
 
-#: /InoutWarehouseDetails/view.ctp:88
-#: /InoutWarehouses/view.ctp:117
-#: /Products/view.ctp:162
+#: InoutWarehouseDetails/view.ctp:88
+#: InoutWarehouses/view.ctp:117
+#: Products/view.ctp:162
 msgid "Option Names"
 msgstr ""
 
-#: /InoutWarehouses/add.ctp:5
+#: InoutWarehouses/add.ctp:5
 msgid "Add Inout Warehouse"
 msgstr ""
 
-#: /InoutWarehouses/edit.ctp:5
-#: /InoutWarehouses/view.ctp:10
+#: InoutWarehouses/edit.ctp:5
+#: InoutWarehouses/view.ctp:10
 msgid "Edit Inout Warehouse"
 msgstr ""
 
-#: /InoutWarehouses/index.ctp:6
+#: InoutWarehouses/index.ctp:6
 msgid "Inout Warehouses"
 msgstr ""
 
-#: /InoutWarehouses/view.ctp:11
+#: InoutWarehouses/view.ctp:11
 msgid "Delete Inout Warehouse"
 msgstr ""
 
-#: /InoutWarehouses/view.ctp:34
-#: /Reexes/view.ctp:81
-#: /Stores/view.ctp:179;372
+#: InoutWarehouses/view.ctp:34
+#: Reexes/view.ctp:81
+#: Stores/view.ctp:179;372
 msgid "Note"
 msgstr ""
 
-#: /InoutWarehouses/view.ctp:41
-#: /Stores/view.ctp:180
+#: InoutWarehouses/view.ctp:41
+#: Stores/view.ctp:180
 msgid "Receive Note"
 msgstr ""
 
-#: /InoutWarehouses/view.ctp:103
-#: /Products/view.ctp:148
+#: InoutWarehouses/view.ctp:103
+#: Products/view.ctp:148
 msgid "Related Inout Warehouse Details"
 msgstr ""
 
-#: /InoutWarehouses/view.ctp:109
-#: /Products/view.ctp:154
+#: InoutWarehouses/view.ctp:109
+#: Products/view.ctp:154
 msgid "Inout Warehouse Id"
 msgstr ""
 
-#: /InoutWarehouses/view.ctp:110
-#: /Orders/view.ctp:233
-#: /Products/view.ctp:155;205;258;293;329
-#: /Promotes/view.ctp:140
-#: /Stores/view.ctp:476
+#: InoutWarehouses/view.ctp:110
+#: Orders/view.ctp:233
+#: Products/view.ctp:155;205;258;293;329
+#: Promotes/view.ctp:140
+#: Stores/view.ctp:476
 msgid "Product Id"
 msgstr ""
 
-#: /OptionGroups/add.ctp:5
+#: OptionGroups/add.ctp:5
 msgid "Add Option Group"
 msgstr ""
 
-#: /OptionGroups/add.ctp:10
-#: /OptionGroups/edit.ctp:11
-#: /OptionGroups/view.ctp:12
-#: /Options/add.ctp:11
-#: /Options/edit.ctp:12
-#: /Options/index.ctp:12
-#: /Options/view.ctp:14
+#: OptionGroups/add.ctp:10
+#: OptionGroups/edit.ctp:11
+#: OptionGroups/view.ctp:12
+#: Options/add.ctp:11
+#: Options/edit.ctp:12
+#: Options/index.ctp:12
+#: Options/view.ctp:14
 msgid "List Option Groups"
 msgstr ""
 
-#: /OptionGroups/add.ctp:11
-#: /OptionGroups/edit.ctp:12
-#: /OptionGroups/index.ctp:12
-#: /OptionGroups/view.ctp:14
-#: /Options/add.ctp:10
-#: /Options/edit.ctp:11
-#: /Options/view.ctp:12
-#: /ProductOptions/add.ctp:11
-#: /ProductOptions/edit.ctp:12
-#: /ProductOptions/index.ctp:12
-#: /ProductOptions/view.ctp:14
+#: OptionGroups/add.ctp:11
+#: OptionGroups/edit.ctp:12
+#: OptionGroups/index.ctp:12
+#: OptionGroups/view.ctp:14
+#: Options/add.ctp:10
+#: Options/edit.ctp:11
+#: Options/view.ctp:12
+#: ProductOptions/add.ctp:11
+#: ProductOptions/edit.ctp:12
+#: ProductOptions/index.ctp:12
+#: ProductOptions/view.ctp:14
 msgid "List Options"
 msgstr ""
 
-#: /OptionGroups/add.ctp:12
-#: /OptionGroups/edit.ctp:13
-#: /OptionGroups/index.ctp:13
-#: /OptionGroups/view.ctp:15;74
-#: /Options/index.ctp:11
-#: /Options/view.ctp:13
-#: /ProductOptions/add.ctp:12
-#: /ProductOptions/edit.ctp:13
-#: /ProductOptions/index.ctp:13
-#: /ProductOptions/view.ctp:15
+#: OptionGroups/add.ctp:12
+#: OptionGroups/edit.ctp:13
+#: OptionGroups/index.ctp:13
+#: OptionGroups/view.ctp:15;74
+#: Options/index.ctp:11
+#: Options/view.ctp:13
+#: ProductOptions/add.ctp:12
+#: ProductOptions/edit.ctp:13
+#: ProductOptions/index.ctp:13
+#: ProductOptions/view.ctp:15
 msgid "New Option"
 msgstr ""
 
-#: /OptionGroups/edit.ctp:5
-#: /OptionGroups/view.ctp:10
+#: OptionGroups/edit.ctp:5
+#: OptionGroups/view.ctp:10
 msgid "Edit Option Group"
 msgstr ""
 
-#: /OptionGroups/index.ctp:6
+#: OptionGroups/index.ctp:6
 msgid "Option Groups"
 msgstr ""
 
-#: /OptionGroups/index.ctp:11
-#: /OptionGroups/view.ctp:13
-#: /Options/add.ctp:12
-#: /Options/edit.ctp:13
-#: /Options/index.ctp:13
-#: /Options/view.ctp:15
+#: OptionGroups/index.ctp:11
+#: OptionGroups/view.ctp:13
+#: Options/add.ctp:12
+#: Options/edit.ctp:13
+#: Options/index.ctp:13
+#: Options/view.ctp:15
 msgid "New Option Group"
 msgstr ""
 
-#: /OptionGroups/view.ctp:5
-#: /Options/view.ctp:37
+#: OptionGroups/view.ctp:5
+#: Options/view.ctp:37
 msgid "Option Group"
 msgstr ""
 
-#: /OptionGroups/view.ctp:11
+#: OptionGroups/view.ctp:11
 msgid "Delete Option Group"
 msgstr ""
 
-#: /OptionGroups/view.ctp:43
+#: OptionGroups/view.ctp:43
 msgid "Related Options"
 msgstr ""
 
-#: /OptionGroups/view.ctp:50
+#: OptionGroups/view.ctp:50
 msgid "Option Group Id"
 msgstr ""
 
-#: /OptionGroups/view.ctp:51
-#: /Options/view.ctp:44
+#: OptionGroups/view.ctp:51
+#: Options/view.ctp:44
 msgid "Other"
 msgstr ""
 
-#: /Options/add.ctp:5
+#: Options/add.ctp:5
 msgid "Add Option"
 msgstr ""
 
-#: /Options/edit.ctp:5
-#: /Options/view.ctp:10
+#: Options/edit.ctp:5
+#: Options/view.ctp:10
 msgid "Edit Option"
 msgstr ""
 
-#: /Options/view.ctp:5
-#: /ProductOptions/view.ctp:32
+#: Options/view.ctp:5
+#: ProductOptions/view.ctp:32
 msgid "Option"
 msgstr ""
 
-#: /Options/view.ctp:11
+#: Options/view.ctp:11
 msgid "Delete Option"
 msgstr ""
 
-#: /OrderDetails/add.ctp:5
+#: OrderDetails/add.ctp:5
 msgid "Add Order Detail"
 msgstr ""
 
-#: /OrderDetails/add.ctp:10
-#: /OrderDetails/edit.ctp:11
-#: /OrderDetails/view.ctp:12
-#: /Orders/add.ctp:19
-#: /Orders/edit.ctp:20
-#: /Orders/index.ctp:20
-#: /Orders/view.ctp:22
-#: /Products/add.ctp:19
-#: /Products/edit.ctp:20
-#: /Products/index.ctp:20
-#: /Products/view.ctp:22
-#: /Promotes/add.ctp:15
-#: /Promotes/edit.ctp:16
-#: /Promotes/index.ctp:16
-#: /Promotes/view.ctp:18
+#: OrderDetails/add.ctp:10
+#: OrderDetails/edit.ctp:11
+#: OrderDetails/view.ctp:12
+#: Orders/add.ctp:19
+#: Orders/edit.ctp:20
+#: Orders/index.ctp:20
+#: Orders/view.ctp:22
+#: Products/add.ctp:19
+#: Products/edit.ctp:20
+#: Products/index.ctp:20
+#: Products/view.ctp:22
+#: Promotes/add.ctp:15
+#: Promotes/edit.ctp:16
+#: Promotes/index.ctp:16
+#: Promotes/view.ctp:18
 msgid "List Order Details"
 msgstr ""
 
-#: /OrderDetails/edit.ctp:5
-#: /OrderDetails/view.ctp:10
+#: OrderDetails/edit.ctp:5
+#: OrderDetails/view.ctp:10
 msgid "Edit Order Detail"
 msgstr ""
 
-#: /OrderDetails/index.ctp:6
+#: OrderDetails/index.ctp:6
 msgid "Order Details"
 msgstr ""
 
-#: /OrderDetails/index.ctp:11
-#: /OrderDetails/view.ctp:13
-#: /Orders/add.ctp:20
-#: /Orders/edit.ctp:21
-#: /Orders/index.ctp:21
-#: /Orders/view.ctp:23;275
-#: /Products/add.ctp:20
-#: /Products/edit.ctp:21
-#: /Products/index.ctp:21
-#: /Products/view.ctp:23;247
-#: /Promotes/add.ctp:16
-#: /Promotes/edit.ctp:17
-#: /Promotes/index.ctp:17
-#: /Promotes/view.ctp:19;182
+#: OrderDetails/index.ctp:11
+#: OrderDetails/view.ctp:13
+#: Orders/add.ctp:20
+#: Orders/edit.ctp:21
+#: Orders/index.ctp:21
+#: Orders/view.ctp:23;275
+#: Products/add.ctp:20
+#: Products/edit.ctp:21
+#: Products/index.ctp:21
+#: Products/view.ctp:23;247
+#: Promotes/add.ctp:16
+#: Promotes/edit.ctp:17
+#: Promotes/index.ctp:17
+#: Promotes/view.ctp:19;182
 msgid "New Order Detail"
 msgstr ""
 
-#: /OrderDetails/view.ctp:5
+#: OrderDetails/view.ctp:5
 msgid "Order Detail"
 msgstr ""
 
-#: /OrderDetails/view.ctp:11
+#: OrderDetails/view.ctp:11
 msgid "Delete Order Detail"
 msgstr ""
 
-#: /OrderDetails/view.ctp:34
-#: /Orders/view.ctp:5
+#: OrderDetails/view.ctp:34
+#: Orders/view.ctp:5
 msgid "Order"
 msgstr ""
 
-#: /OrderDetails/view.ctp:97
-#: /Orders/view.ctp:241
-#: /ProductOptions/index.ctp:6
-#: /Products/view.ctp:213
-#: /Promotes/view.ctp:148
+#: OrderDetails/view.ctp:97
+#: Orders/view.ctp:241
+#: ProductOptions/index.ctp:6
+#: Products/view.ctp:213
+#: Promotes/view.ctp:148
 msgid "Product Options"
 msgstr ""
 
-#: /OrderDetails/view.ctp:111
-#: /Orders/view.ctp:243
-#: /Products/view.ctp:215
-#: /Promotes/view.ctp:150
+#: OrderDetails/view.ctp:111
+#: Orders/view.ctp:243
+#: Products/view.ctp:215
+#: Promotes/view.ctp:150
 msgid "Data"
 msgstr ""
 
-#: /Orders/add.ctp:5
+#: Orders/add.ctp:5
 msgid "Add Order"
 msgstr ""
 
-#: /Orders/add.ctp:14
-#: /Orders/edit.ctp:15
-#: /Orders/index.ctp:15
-#: /Orders/view.ctp:17
-#: /Stores/view.ctp:464
-#: /Users/index.ctp:11
-#: /Users/view.ctp:13
+#: Orders/add.ctp:14
+#: Orders/edit.ctp:15
+#: Orders/index.ctp:15
+#: Orders/view.ctp:17
+#: Stores/view.ctp:464
+#: Users/index.ctp:11
+#: Users/view.ctp:13
 msgid "New User"
 msgstr ""
 
-#: /Orders/edit.ctp:5
-#: /Orders/view.ctp:10
+#: Orders/edit.ctp:5
+#: Orders/view.ctp:10
 msgid "Edit Order"
 msgstr ""
 
-#: /Orders/index.ctp:6
+#: Orders/index.ctp:6
 msgid "Orders"
 msgstr ""
 
-#: /Orders/view.ctp:11
+#: Orders/view.ctp:11
 msgid "Delete Order"
 msgstr ""
 
-#: /Orders/view.ctp:52
-#: /Users/view.ctp:5
+#: Orders/view.ctp:52
+#: Users/view.ctp:5
 msgid "User"
 msgstr ""
 
-#: /Orders/view.ctp:226
-#: /Products/view.ctp:198
-#: /Promotes/view.ctp:133
+#: Orders/view.ctp:226
+#: Products/view.ctp:198
+#: Promotes/view.ctp:133
 msgid "Related Order Details"
 msgstr ""
 
-#: /Orders/view.ctp:232
-#: /Products/view.ctp:204
-#: /Promotes/view.ctp:139
+#: Orders/view.ctp:232
+#: Products/view.ctp:204
+#: Promotes/view.ctp:139
 msgid "Order Id"
 msgstr ""
 
-#: /ProductCategories/add.ctp:5
+#: ProductCategories/add.ctp:5
 msgid "Add Product Category"
 msgstr ""
 
-#: /ProductCategories/add.ctp:10
-#: /ProductCategories/edit.ctp:11
-#: /ProductCategories/view.ctp:12
-#: /Products/add.ctp:21
-#: /Products/edit.ctp:22
-#: /Products/index.ctp:22
-#: /Products/view.ctp:24
+#: ProductCategories/add.ctp:10
+#: ProductCategories/edit.ctp:11
+#: ProductCategories/view.ctp:12
+#: Products/add.ctp:21
+#: Products/edit.ctp:22
+#: Products/index.ctp:22
+#: Products/view.ctp:24
 msgid "List Product Categories"
 msgstr ""
 
-#: /ProductCategories/edit.ctp:5
-#: /ProductCategories/view.ctp:10
+#: ProductCategories/edit.ctp:5
+#: ProductCategories/view.ctp:10
 msgid "Edit Product Category"
 msgstr ""
 
-#: /ProductCategories/index.ctp:6
+#: ProductCategories/index.ctp:6
 msgid "Product Categories"
 msgstr ""
 
-#: /ProductCategories/index.ctp:11
-#: /ProductCategories/view.ctp:13
-#: /Products/add.ctp:22
-#: /Products/edit.ctp:23
-#: /Products/index.ctp:23
-#: /Products/view.ctp:25;281
+#: ProductCategories/index.ctp:11
+#: ProductCategories/view.ctp:13
+#: Products/add.ctp:22
+#: Products/edit.ctp:23
+#: Products/index.ctp:23
+#: Products/view.ctp:25;281
 msgid "New Product Category"
 msgstr ""
 
-#: /ProductCategories/view.ctp:5
+#: ProductCategories/view.ctp:5
 msgid "Product Category"
 msgstr ""
 
-#: /ProductCategories/view.ctp:11
+#: ProductCategories/view.ctp:11
 msgid "Delete Product Category"
 msgstr ""
 
-#: /ProductOptions/add.ctp:5
+#: ProductOptions/add.ctp:5
 msgid "Add Product Option"
 msgstr ""
 
-#: /ProductOptions/add.ctp:10
-#: /ProductOptions/edit.ctp:11
-#: /ProductOptions/view.ctp:12
-#: /Products/add.ctp:23
-#: /Products/edit.ctp:24
-#: /Products/index.ctp:24
-#: /Products/view.ctp:26
+#: ProductOptions/add.ctp:10
+#: ProductOptions/edit.ctp:11
+#: ProductOptions/view.ctp:12
+#: Products/add.ctp:23
+#: Products/edit.ctp:24
+#: Products/index.ctp:24
+#: Products/view.ctp:26
 msgid "List Product Options"
 msgstr ""
 
-#: /ProductOptions/edit.ctp:5
-#: /ProductOptions/view.ctp:10
+#: ProductOptions/edit.ctp:5
+#: ProductOptions/view.ctp:10
 msgid "Edit Product Option"
 msgstr ""
 
-#: /ProductOptions/index.ctp:11
-#: /ProductOptions/view.ctp:13
-#: /Products/add.ctp:24
-#: /Products/edit.ctp:25
-#: /Products/index.ctp:25
-#: /Products/view.ctp:27;317
+#: ProductOptions/index.ctp:11
+#: ProductOptions/view.ctp:13
+#: Products/add.ctp:24
+#: Products/edit.ctp:25
+#: Products/index.ctp:25
+#: Products/view.ctp:27;317
 msgid "New Product Option"
 msgstr ""
 
-#: /ProductOptions/view.ctp:5
+#: ProductOptions/view.ctp:5
 msgid "Product Option"
 msgstr ""
 
-#: /ProductOptions/view.ctp:11
+#: ProductOptions/view.ctp:11
 msgid "Delete Product Option"
 msgstr ""
 
-#: /ProductPromotes/add.ctp:5
+#: ProductPromotes/add.ctp:5
 msgid "Add Product Promote"
 msgstr ""
 
-#: /ProductPromotes/add.ctp:10
-#: /ProductPromotes/edit.ctp:11
-#: /ProductPromotes/view.ctp:12
+#: ProductPromotes/add.ctp:10
+#: ProductPromotes/edit.ctp:11
+#: ProductPromotes/view.ctp:12
 msgid "List Product Promotes"
 msgstr ""
 
-#: /ProductPromotes/edit.ctp:5
-#: /ProductPromotes/view.ctp:10
+#: ProductPromotes/edit.ctp:5
+#: ProductPromotes/view.ctp:10
 msgid "Edit Product Promote"
 msgstr ""
 
-#: /ProductPromotes/index.ctp:6
+#: ProductPromotes/index.ctp:6
 msgid "Product Promotes"
 msgstr ""
 
-#: /ProductPromotes/index.ctp:11
-#: /ProductPromotes/view.ctp:13
+#: ProductPromotes/index.ctp:11
+#: ProductPromotes/view.ctp:13
 msgid "New Product Promote"
 msgstr ""
 
-#: /ProductPromotes/view.ctp:5
+#: ProductPromotes/view.ctp:5
 msgid "Product Promote"
 msgstr ""
 
-#: /ProductPromotes/view.ctp:11
+#: ProductPromotes/view.ctp:11
 msgid "Delete Product Promote"
 msgstr ""
 
-#: /Products/add.ctp:5
+#: Products/add.ctp:5
 msgid "Add Product"
 msgstr ""
 
-#: /Products/add.ctp:11
-#: /Products/edit.ctp:12
-#: /Products/index.ctp:12
-#: /Products/view.ctp:14
-#: /Providers/add.ctp:10
-#: /Providers/edit.ctp:11
-#: /Providers/view.ctp:12
+#: Products/add.ctp:11
+#: Products/edit.ctp:12
+#: Products/index.ctp:12
+#: Products/view.ctp:14
+#: Providers/add.ctp:10
+#: Providers/edit.ctp:11
+#: Providers/view.ctp:12
 msgid "List Providers"
 msgstr ""
 
-#: /Products/add.ctp:12
-#: /Products/edit.ctp:13
-#: /Products/index.ctp:13
-#: /Products/view.ctp:15
-#: /Providers/index.ctp:11
-#: /Providers/view.ctp:13
+#: Products/add.ctp:12
+#: Products/edit.ctp:13
+#: Products/index.ctp:13
+#: Products/view.ctp:15
+#: Providers/index.ctp:11
+#: Providers/view.ctp:13
 msgid "New Provider"
 msgstr ""
 
-#: /Products/add.ctp:25
-#: /Products/edit.ctp:26
-#: /Products/index.ctp:26
-#: /Products/view.ctp:28
-#: /Stores/add.ctp:23
-#: /Stores/edit.ctp:24
-#: /Stores/index.ctp:24
-#: /Stores/view.ctp:26
-#: /Warehouses/add.ctp:10
-#: /Warehouses/edit.ctp:11
-#: /Warehouses/view.ctp:12
+#: Products/add.ctp:25
+#: Products/edit.ctp:26
+#: Products/index.ctp:26
+#: Products/view.ctp:28
+#: Stores/add.ctp:23
+#: Stores/edit.ctp:24
+#: Stores/index.ctp:24
+#: Stores/view.ctp:26
+#: Warehouses/add.ctp:10
+#: Warehouses/edit.ctp:11
+#: Warehouses/view.ctp:12
 msgid "List Warehouses"
 msgstr ""
 
-#: /Products/add.ctp:26
-#: /Products/edit.ctp:27
-#: /Products/index.ctp:27
-#: /Products/view.ctp:29;369
-#: /Stores/add.ctp:24
-#: /Stores/edit.ctp:25
-#: /Stores/index.ctp:25
-#: /Stores/view.ctp:27;516
-#: /Warehouses/index.ctp:11
-#: /Warehouses/view.ctp:13
+#: Products/add.ctp:26
+#: Products/edit.ctp:27
+#: Products/index.ctp:27
+#: Products/view.ctp:29;369
+#: Stores/add.ctp:24
+#: Stores/edit.ctp:25
+#: Stores/index.ctp:25
+#: Stores/view.ctp:27;516
+#: Warehouses/index.ctp:11
+#: Warehouses/view.ctp:13
 msgid "New Warehouse"
 msgstr ""
 
-#: /Products/edit.ctp:5
-#: /Products/view.ctp:10
+#: Products/edit.ctp:5
+#: Products/view.ctp:10
 msgid "Edit Product"
 msgstr ""
 
-#: /Products/index.ctp:6
+#: Products/index.ctp:6
 msgid "Products"
 msgstr ""
 
-#: /Products/view.ctp:11
+#: Products/view.ctp:11
 msgid "Delete Product"
 msgstr ""
 
-#: /Products/view.ctp:51
-#: /Providers/view.ctp:5
+#: Products/view.ctp:51
+#: Providers/view.ctp:5
 msgid "Provider"
 msgstr ""
 
-#: /Products/view.ctp:252
+#: Products/view.ctp:252
 msgid "Related Product Categories"
 msgstr ""
 
-#: /Products/view.ctp:286
+#: Products/view.ctp:286
 msgid "Related Product Options"
 msgstr ""
 
-#: /Products/view.ctp:292
+#: Products/view.ctp:292
 msgid "Option Id"
 msgstr ""
 
-#: /Products/view.ctp:322
-#: /Stores/view.ctp:469
+#: Products/view.ctp:322
+#: Stores/view.ctp:469
 msgid "Related Warehouses"
 msgstr ""
 
-#: /Promotes/add.ctp:5
+#: Promotes/add.ctp:5
 msgid "Add Promote"
 msgstr ""
 
-#: /Promotes/edit.ctp:5
-#: /Promotes/view.ctp:10
+#: Promotes/edit.ctp:5
+#: Promotes/view.ctp:10
 msgid "Edit Promote"
 msgstr ""
 
-#: /Promotes/index.ctp:6
+#: Promotes/index.ctp:6
 msgid "Promotes"
 msgstr ""
 
-#: /Promotes/view.ctp:11
+#: Promotes/view.ctp:11
 msgid "Delete Promote"
 msgstr ""
 
-#: /Promotes/view.ctp:50
-#: /Stores/view.ctp:311
+#: Promotes/view.ctp:50
+#: Stores/view.ctp:311
 msgid "Value"
 msgstr ""
 
-#: /Promotes/view.ctp:57
-#: /Reexes/view.ctp:39
-#: /Stores/view.ctp:312;366
+#: Promotes/view.ctp:57
+#: Reexes/view.ctp:39
+#: Stores/view.ctp:312;366
 msgid "Type"
 msgstr ""
 
-#: /Promotes/view.ctp:64
-#: /Stores/view.ctp:313
+#: Promotes/view.ctp:64
+#: Stores/view.ctp:313
 msgid "Begin"
 msgstr ""
 
-#: /Promotes/view.ctp:71
-#: /Stores/view.ctp:314
+#: Promotes/view.ctp:71
+#: Stores/view.ctp:314
 msgid "End"
 msgstr ""
 
-#: /Promotes/view.ctp:120
-#: /Stores/view.ctp:321
+#: Promotes/view.ctp:120
+#: Stores/view.ctp:321
 msgid "Global"
 msgstr ""
 
-#: /Providers/add.ctp:5
+#: Providers/add.ctp:5
 msgid "Add Provider"
 msgstr ""
 
-#: /Providers/edit.ctp:5
-#: /Providers/view.ctp:10
+#: Providers/edit.ctp:5
+#: Providers/view.ctp:10
 msgid "Edit Provider"
 msgstr ""
 
-#: /Providers/index.ctp:6
+#: Providers/index.ctp:6
 msgid "Providers"
 msgstr ""
 
-#: /Providers/view.ctp:11
+#: Providers/view.ctp:11
 msgid "Delete Provider"
 msgstr ""
 
-#: /Reexes/add.ctp:5
+#: Reexes/add.ctp:5
 msgid "Add Reex"
 msgstr ""
 
-#: /Reexes/add.ctp:10
-#: /Reexes/edit.ctp:11
-#: /Reexes/view.ctp:12
-#: /Stores/add.ctp:21
-#: /Stores/edit.ctp:22
-#: /Stores/index.ctp:22
-#: /Stores/view.ctp:24
+#: Reexes/add.ctp:10
+#: Reexes/edit.ctp:11
+#: Reexes/view.ctp:12
+#: Stores/add.ctp:21
+#: Stores/edit.ctp:22
+#: Stores/index.ctp:22
+#: Stores/view.ctp:24
 msgid "List Reexes"
 msgstr ""
 
-#: /Reexes/edit.ctp:5
-#: /Reexes/view.ctp:10
+#: Reexes/edit.ctp:5
+#: Reexes/view.ctp:10
 msgid "Edit Reex"
 msgstr ""
 
-#: /Reexes/index.ctp:6
+#: Reexes/index.ctp:6
 msgid "Reexes"
 msgstr ""
 
-#: /Reexes/index.ctp:11
-#: /Reexes/view.ctp:13
-#: /Stores/add.ctp:22
-#: /Stores/edit.ctp:23
-#: /Stores/index.ctp:23
-#: /Stores/view.ctp:25;412
+#: Reexes/index.ctp:11
+#: Reexes/view.ctp:13
+#: Stores/add.ctp:22
+#: Stores/edit.ctp:23
+#: Stores/index.ctp:23
+#: Stores/view.ctp:25;412
 msgid "New Reex"
 msgstr ""
 
-#: /Reexes/view.ctp:5
+#: Reexes/view.ctp:5
 msgid "Reex"
 msgstr ""
 
-#: /Reexes/view.ctp:11
+#: Reexes/view.ctp:11
 msgid "Delete Reex"
 msgstr ""
 
-#: /Reexes/view.ctp:32
-#: /Stores/view.ctp:365
+#: Reexes/view.ctp:32
+#: Stores/view.ctp:365
 msgid "Number"
 msgstr ""
 
-#: /Reexes/view.ctp:60
-#: /Stores/view.ctp:369
+#: Reexes/view.ctp:60
+#: Stores/view.ctp:369
 msgid "Person One"
 msgstr ""
 
-#: /Reexes/view.ctp:67
-#: /Stores/view.ctp:370
+#: Reexes/view.ctp:67
+#: Stores/view.ctp:370
 msgid "Person Two"
 msgstr ""
 
-#: /Reexes/view.ctp:74
-#: /Stores/view.ctp:371
+#: Reexes/view.ctp:74
+#: Stores/view.ctp:371
 msgid "Company"
 msgstr ""
 
-#: /Reexes/view.ctp:116
-#: /Stores/view.ctp:377
+#: Reexes/view.ctp:116
+#: Stores/view.ctp:377
 msgid "Created Date"
 msgstr ""
 
-#: /Reexes/view.ctp:123
-#: /Stores/view.ctp:378
+#: Reexes/view.ctp:123
+#: Stores/view.ctp:378
 msgid "Cause"
 msgstr ""
 
-#: /Stores/add.ctp:5
+#: Stores/add.ctp:5
 msgid "Add Store"
 msgstr ""
 
-#: /Stores/add.ctp:12
-#: /Stores/edit.ctp:13
-#: /Stores/index.ctp:13
-#: /Stores/view.ctp:15
+#: Stores/add.ctp:12
+#: Stores/edit.ctp:13
+#: Stores/index.ctp:13
+#: Stores/view.ctp:15
 msgid "New Manager"
 msgstr ""
 
-#: /Stores/edit.ctp:5
-#: /Stores/view.ctp:10
+#: Stores/edit.ctp:5
+#: Stores/view.ctp:10
 msgid "Edit Store"
 msgstr ""
 
-#: /Stores/index.ctp:6
+#: Stores/index.ctp:6
 msgid "Stores"
 msgstr ""
 
-#: /Stores/view.ctp:11
+#: Stores/view.ctp:11
 msgid "Delete Store"
 msgstr ""
 
-#: /Stores/view.ctp:77
+#: Stores/view.ctp:77
 msgid "Manager"
 msgstr ""
 
-#: /Stores/view.ctp:173
+#: Stores/view.ctp:173
 msgid "Related Inout Warehouses"
 msgstr ""
 
-#: /Stores/view.ctp:303
+#: Stores/view.ctp:303
 msgid "Related Promotes"
 msgstr ""
 
-#: /Stores/view.ctp:359
+#: Stores/view.ctp:359
 msgid "Related Reexes"
 msgstr ""
 
-#: /Stores/view.ctp:417
+#: Stores/view.ctp:417
 msgid "Related Users"
 msgstr ""
 
-#: /Stores/view.ctp:423
-#: /Users/view.ctp:32
+#: Stores/view.ctp:423
+#: Users/view.ctp:32
 msgid "Username"
 msgstr ""
 
-#: /Stores/view.ctp:424
-#: /Users/view.ctp:39
+#: Stores/view.ctp:424
+#: Users/view.ctp:39
 msgid "Password"
 msgstr ""
 
-#: /Stores/view.ctp:426
-#: /Users/view.ctp:53
+#: Stores/view.ctp:426
+#: Users/view.ctp:53
 msgid "Modified"
 msgstr ""
 
-#: /Users/add.ctp:5
+#: Users/add.ctp:5
 msgid "Add User"
 msgstr ""
 
-#: /Users/edit.ctp:5
-#: /Users/view.ctp:10
+#: Users/edit.ctp:5
+#: Users/view.ctp:10
 msgid "Edit User"
 msgstr ""
 
-#: /Users/index.ctp:6
+#: Users/index.ctp:6
 msgid "Users"
 msgstr ""
 
-#: /Users/view.ctp:11
+#: Users/view.ctp:11
 msgid "Delete User"
 msgstr ""
 
-#: /Warehouses/add.ctp:5
+#: Warehouses/add.ctp:5
 msgid "Add Warehouse"
 msgstr ""
 
-#: /Warehouses/edit.ctp:5
-#: /Warehouses/view.ctp:10
+#: Warehouses/edit.ctp:5
+#: Warehouses/view.ctp:10
 msgid "Edit Warehouse"
 msgstr ""
 
-#: /Warehouses/index.ctp:6
+#: Warehouses/index.ctp:6
 msgid "Warehouses"
 msgstr ""
 
-#: /Warehouses/view.ctp:5
+#: Warehouses/view.ctp:5
 msgid "Warehouse"
 msgstr ""
 
-#: /Warehouses/view.ctp:11
+#: Warehouses/view.ctp:11
 msgid "Delete Warehouse"
 msgstr ""
 
-#: /Errors/error400.ctp:10
-#: /Errors/error500.ctp:10
+#: Errors/error400.ctp:10
+#: Errors/error500.ctp:10
 #: View/Errors/fatal_error.ctp:20
 #: View/Errors/missing_action.ctp:19;23
 #: View/Errors/missing_behavior.ctp:21;25
@@ -2053,11 +2053,12 @@ msgstr ""
 msgid "Error"
 msgstr ""
 
-#: /Errors/error400.ctp:12
+#: Errors/error400.ctp:12
+#, c-format
 msgid "The requested address %s was not found on this server."
 msgstr ""
 
-#: /Errors/error500.ctp:11
+#: Errors/error500.ctp:11
 #: Error/ExceptionRenderer.php:245
 msgid "An Internal Error Has Occurred."
 msgstr ""
@@ -2067,6 +2068,7 @@ msgid "Scaffold :: "
 msgstr ""
 
 #: Controller/Scaffold.php:166;233;302
+#, c-format
 msgid "Invalid %s"
 msgstr ""
 
@@ -2079,6 +2081,7 @@ msgid "saved"
 msgstr ""
 
 #: Controller/Scaffold.php:244
+#, c-format
 msgid "The %1$s has been %2$s"
 msgstr ""
 
@@ -2087,10 +2090,12 @@ msgid "Please correct errors below."
 msgstr ""
 
 #: Controller/Scaffold.php:305
+#, c-format
 msgid "The %1$s with id: %2$s has been deleted."
 msgstr ""
 
 #: Controller/Scaffold.php:308
+#, c-format
 msgid "There was an error deleting the %1$s with id: %2$s"
 msgstr ""
 
@@ -2111,36 +2116,44 @@ msgid "The requested file was not found"
 msgstr ""
 
 #: Utility/CakeNumber.php:119
+#, c-format
 msgid "%s KB"
 msgstr ""
 
 #: Utility/CakeNumber.php:121
+#, c-format
 msgid "%s MB"
 msgstr ""
 
 #: Utility/CakeNumber.php:123
+#, c-format
 msgid "%s GB"
 msgstr ""
 
 #: Utility/CakeNumber.php:125
+#, c-format
 msgid "%s TB"
 msgstr ""
 
 #: Utility/CakeNumber.php:117
+#, c-format
 msgid "%d Byte"
 msgid_plural "%d Bytes"
 msgstr[0] ""
 msgstr[1] ""
 
 #: Utility/CakeTime.php:397
+#, c-format
 msgid "Today, %s"
 msgstr ""
 
 #: Utility/CakeTime.php:400
+#, c-format
 msgid "Yesterday, %s"
 msgstr ""
 
 #: Utility/CakeTime.php:403
+#, c-format
 msgid "Tomorrow, %s"
 msgstr ""
 
@@ -2173,18 +2186,22 @@ msgid "Saturday"
 msgstr ""
 
 #: Utility/CakeTime.php:420
+#, c-format
 msgid "On %s %s"
 msgstr ""
 
 #: Utility/CakeTime.php:743
+#, c-format
 msgid "%s ago"
 msgstr ""
 
 #: Utility/CakeTime.php:744
+#, c-format
 msgid "in %s"
 msgstr ""
 
 #: Utility/CakeTime.php:745
+#, c-format
 msgid "on %s"
 msgstr ""
 
@@ -2245,42 +2262,49 @@ msgid "days"
 msgstr ""
 
 #: Utility/CakeTime.php:895
+#, c-format
 msgid "%d year"
 msgid_plural "%d years"
 msgstr[0] ""
 msgstr[1] ""
 
 #: Utility/CakeTime.php:898
+#, c-format
 msgid "%d month"
 msgid_plural "%d months"
 msgstr[0] ""
 msgstr[1] ""
 
 #: Utility/CakeTime.php:901
+#, c-format
 msgid "%d week"
 msgid_plural "%d weeks"
 msgstr[0] ""
 msgstr[1] ""
 
 #: Utility/CakeTime.php:904
+#, c-format
 msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] ""
 msgstr[1] ""
 
 #: Utility/CakeTime.php:907
+#, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] ""
 msgstr[1] ""
 
 #: Utility/CakeTime.php:910
+#, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] ""
 msgstr[1] ""
 
 #: Utility/CakeTime.php:913
+#, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] ""
@@ -2291,10 +2315,12 @@ msgid "and"
 msgstr ""
 
 #: View/ViewBlock.php:78
+#, c-format
 msgid "A view block with the name '%s' is already/still open."
 msgstr ""
 
 #: View/Helper/FormHelper.php:732
+#, c-format
 msgid "Error in field %s"
 msgstr ""
 
@@ -2302,11 +2328,13 @@ msgstr ""
 #: View/Scaffolds/form.ctp:46
 #: View/Scaffolds/index.ctp:77;92
 #: View/Scaffolds/view.ctp:63;78;188
+#, c-format
 msgid "New %s"
 msgstr ""
 
 #: View/Helper/FormHelper.php:927
 #: View/Scaffolds/view.ctp:51;109
+#, c-format
 msgid "Edit %s"
 msgstr ""
 
@@ -2373,7 +2401,7 @@ msgstr ""
 #: View/Scaffolds/form.ctp:25
 #: View/Scaffolds/index.ctp:24;75
 #: View/Scaffolds/view.ctp:47
-#: /Medias/index.ctp:65
+#: Medias/index.ctp:65
 msgid "Actions"
 msgstr ""
 
@@ -2384,6 +2412,7 @@ msgstr ""
 #: View/Scaffolds/form.ctp:42
 #: View/Scaffolds/index.ctp:85
 #: View/Scaffolds/view.ctp:59;72
+#, c-format
 msgid "List %s"
 msgstr ""
 
@@ -2406,39 +2435,49 @@ msgid "next"
 msgstr ""
 
 #: View/Scaffolds/view.ctp:18
+#, c-format
 msgid "View %s"
 msgstr ""
 
 #: View/Scaffolds/view.ctp:55
+#, c-format
 msgid "Delete %s"
 msgstr ""
 
 #: View/Scaffolds/view.ctp:93;133
+#, c-format
 msgid "Related %s"
 msgstr ""
 
-#: /Layouts/default_.ctp:8
-#: /Layouts/error.ctp:8
+#: Layouts/default_.ctp:8
+#: Layouts/error.ctp:8
 msgid "CakePHP: the rapid development php framework"
 msgstr ""
 
 #: Cache/Cache.php:173
+#, c-format
 msgid "Cache engine %s is not available."
 msgstr ""
 
 #: Cache/Cache.php:177
+#, c-format
 msgid "Cache engines must use %s as a base class."
 msgstr ""
 
 #: Cache/Cache.php:181
-msgid "Cache engine \"%s\" is not properly configured. Ensure required extensions are installed, and credentials/permissions are correct"
+#, c-format
+msgid ""
+"Cache engine \"%s\" is not properly configured. Ensure required extensions are "
+"installed, and credentials/permissions are correct"
 msgstr ""
 
 #: Cache/Cache.php:321
+#, c-format
 msgid "%s cache was unable to write '%s' to %s cache"
 msgstr ""
 
 #: Cache/Cache.php:543
+#, c-format
 msgid "Invalid cache group %s"
 msgstr ""
 
@@ -2451,14 +2490,17 @@ msgid "Files cannot be atomically incremented."
 msgstr ""
 
 #: Cache/Engine/FileEngine.php:362
+#, c-format
 msgid "Could not apply permission mask \"%s\" on cache file \"%s\""
 msgstr ""
 
 #: Cache/Engine/FileEngine.php:385
+#, c-format
 msgid "%s is not writable"
 msgstr ""
 
 #: Cache/Engine/MemcacheEngine.php:166;183
+#, c-format
 msgid "Method %s not implemented for compressed cache in %s"
 msgstr ""
 
@@ -2467,10 +2509,12 @@ msgid "Memcached extension is not build with SASL support"
 msgstr ""
 
 #: Cache/Engine/MemcachedEngine.php:160
+#, c-format
 msgid "%s is not a valid serializer engine for Memcached"
 msgstr ""
 
 #: Cache/Engine/MemcachedEngine.php:166
+#, c-format
 msgid "Memcached extension is not compiled with %s support"
 msgstr ""
 
@@ -2481,10 +2525,12 @@ msgstr ""
 
 #: Configure/IniReader.php:106
 #: Configure/PhpReader.php:69
+#, c-format
 msgid "Could not load configuration file: %s"
 msgstr ""
 
 #: Configure/PhpReader.php:74
+#, c-format
 msgid "No variable %s found in %s"
 msgstr ""
 
@@ -2493,14 +2539,17 @@ msgid "Please install PHPUnit framework v3.7 <info>(http://www.phpunit.de)</info
 msgstr ""
 
 #: Console/Command/TestShell.php:371
+#, c-format
 msgid "Test case %s cannot be run via this shell"
 msgstr ""
 
 #: Console/Command/TestShell.php:384;401
+#, c-format
 msgid "Test case %s not found"
 msgstr ""
 
 #: Console/Command/Task/PluginTask.php:187
+#, c-format
 msgid "%s modified"
 msgstr ""
 
@@ -2513,6 +2562,7 @@ msgid "Invalid type name"
 msgstr ""
 
 #: Controller/Component/AclComponent.php:67
+#, c-format
 msgid "Could not find %s."
 msgstr ""
 
@@ -2521,22 +2571,27 @@ msgid "AclComponent adapters must implement AclInterface"
 msgstr ""
 
 #: Controller/Component/AclComponent.php:162;176
+#, c-format
 msgid "%s is deprecated, use %s instead"
 msgstr ""
 
 #: Controller/Component/AuthComponent.php:496
+#, c-format
 msgid "Authorization adapter \"%s\" was not found."
 msgstr ""
 
 #: Controller/Component/AuthComponent.php:499
+#, c-format
 msgid "Authorization objects must implement an %s method."
 msgstr ""
 
 #: Controller/Component/AuthComponent.php:796
+#, c-format
 msgid "Authentication adapter \"%s\" was not found."
 msgstr ""
 
 #: Controller/Component/AuthComponent.php:799
+#, c-format
 msgid "Authentication objects must implement an %s method."
 msgstr ""
 
@@ -2561,10 +2616,12 @@ msgid "Neither \"allow\" nor \"deny\" rules were provided in configuration."
 msgstr ""
 
 #: Controller/Component/Acl/PhpAcl.php:528
+#, c-format
 msgid "cycle detected when inheriting %s from %s. Path: %s"
 msgstr ""
 
 #: Controller/Component/Auth/BaseAuthenticate.php:172
+#, c-format
 msgid "Password hasher class \"%s\" was not found."
 msgstr ""
 
@@ -2577,26 +2634,38 @@ msgid "$controller needs to be an instance of Controller"
 msgstr ""
 
 #: Controller/Component/Auth/ControllerAuthorize.php:49
+#, c-format
 msgid "$controller does not implement an %s method."
 msgstr ""
 
 #: Controller/Component/Auth/CrudAuthorize.php:83
-msgid "CrudAuthorize::authorize() - Attempted access of un-mapped action \"%1$s\" in controller \"%2$s\""
+#, c-format
+msgid ""
+"CrudAuthorize::authorize() - Attempted access of un-mapped action \"%1$s\" in "
+"controller \"%2$s\""
 msgstr ""
 
 #: Core/Configure.php:73
-msgid "Can't find application core file. Please create %s, and make sure it is readable by PHP."
+#, c-format
+msgid ""
+"Can't find application core file. Please create %s, and make sure it is "
+"readable by PHP."
 msgstr ""
 
 #: Core/Configure.php:93
-msgid "Can't find application bootstrap file. Please create %s, and make sure it is readable by PHP."
+#, c-format
+msgid ""
+"Can't find application bootstrap file. Please create %s, and make sure it is "
+"readable by PHP."
 msgstr ""
 
 #: Core/Configure.php:341
+#, c-format
 msgid "There is no \"%s\" adapter."
 msgstr ""
 
 #: Core/Configure.php:344
+#, c-format
 msgid "The \"%s\" adapter, does not have a %s method."
 msgstr ""
 
@@ -2609,7 +2678,10 @@ msgid "You cannot use \"\" as a domain."
 msgstr ""
 
 #: I18n/I18n.php:269
-msgid "Missing plural form translation for \"%s\" in \"%s\" domain, \"%s\" locale.  Check your po file for correct plurals and valid Plural-Forms header."
+#, c-format
+msgid ""
+"Missing plural form translation for \"%s\" in \"%s\" domain, \"%s\" locale.  Check "
+"your po file for correct plurals and valid Plural-Forms header."
 msgstr ""
 
 #: Log/CakeLog.php:191
@@ -2621,74 +2693,104 @@ msgid "Missing logger class name"
 msgstr ""
 
 #: Log/CakeLog.php:315;333;352
+#, c-format
 msgid "Stream %s not found"
 msgstr ""
 
 #: Log/LogEngineCollection.php:44
+#, c-format
 msgid "logger class %s does not implement a %s method."
 msgstr ""
 
 #: Log/LogEngineCollection.php:69
+#, c-format
 msgid "Could not load class %s"
 msgstr ""
 
 #: Log/Engine/FileLog.php:150
+#, c-format
 msgid "Could not apply permission mask \"%s\" on log file \"%s\""
 msgstr ""
 
 #: Model/AclNode.php:178
+#, c-format
 msgid "AclNode::node() - Couldn't find %s node identified by \"%s\""
 msgstr ""
 
 #: Model/BehaviorCollection.php:226
+#, c-format
 msgid "%s - Method %s not found in any attached behavior"
 msgstr ""
 
 #: Model/CakeSchema.php:613
-msgid "Schema generation error: invalid column type %s for %s.%s does not exist in DBO"
+#, c-format
+msgid ""
+"Schema generation error: invalid column type %s for %s.%s does not exist in "
+"DBO"
 msgstr ""
 
 #: Model/Model.php:1413
-msgid "(Model::getColumnTypes) Unable to build model field data. If you are using a model without a database table, try implementing schema()"
+msgid ""
+"(Model::getColumnTypes) Unable to build model field data. If you are using a "
+"model without a database table, try implementing schema()"
 msgstr ""
 
 #: Model/Model.php:3729
-msgid "Invalid join model settings in %s. The association parameter has the wrong type, expecting a string or array, but was passed type: %s"
+#, c-format
+msgid ""
+"Invalid join model settings in %s. The association parameter has the wrong "
+"type, expecting a string or array, but was passed type: %s"
 msgstr ""
 
 #: Model/Permission.php:84
-msgid "%s - Failed ARO node lookup in permissions check. Node references:\nAro: %s\nAco: %s"
+#, c-format
+msgid ""
+"%s - Failed ARO node lookup in permissions check. Node references:\n"
+"Aro: %s\n"
+"Aco: %s"
 msgstr ""
 
 #: Model/Permission.php:95
-msgid "%s - Failed ACO node lookup in permissions check. Node references:\nAro: %s\nAco: %s"
+#, c-format
+msgid ""
+"%s - Failed ACO node lookup in permissions check. Node references:\n"
+"Aro: %s\n"
+"Aco: %s"
 msgstr ""
 
 #: Model/Permission.php:106
+#, c-format
 msgid "ACO permissions key %s does not exist in %s"
 msgstr ""
 
 #: Model/Permission.php:177
+#, c-format
 msgid "%s - Invalid node"
 msgstr ""
 
 #: Model/Permission.php:195
+#, c-format
 msgid "Invalid permission key \"%s\""
 msgstr ""
 
 #: Model/Behavior/AclBehavior.php:66
+#, c-format
 msgid "Callback %s not defined in %s"
 msgstr ""
 
 #: Model/Behavior/AclBehavior.php:83
-msgid "AclBehavior is setup with more then one type, please specify type parameter for node()"
+msgid ""
+"AclBehavior is setup with more then one type, please specify type parameter "
+"for node()"
 msgstr ""
 
 #: Model/Behavior/ContainableBehavior.php:342
+#, c-format
 msgid "Model \"%s\" is not associated with model \"%s\""
 msgstr ""
 
 #: Model/Behavior/TranslateBehavior.php:71
+#, c-format
 msgid "Datasource %s for TranslateBehavior of model %s is not connected"
 msgstr ""
 
@@ -2697,19 +2799,24 @@ msgid "You cannot bind a translation named \"name\"."
 msgstr ""
 
 #: Model/Behavior/TranslateBehavior.php:628
+#, c-format
 msgid "Association %s is already bound to model %s"
 msgstr ""
 
 #: Model/Datasource/CakeSession.php:516
+#, c-format
 msgid "Unable to configure the session, setting %s failed."
 msgstr ""
 
 #: Model/Datasource/CakeSession.php:575
+#, c-format
 msgid "Could not load %s to handle the session."
 msgstr ""
 
 #: Model/Datasource/CakeSession.php:581
-msgid "Chosen SessionHandler does not implement CakeSessionHandlerInterface it cannot be used with an engine key."
+msgid ""
+"Chosen SessionHandler does not implement CakeSessionHandlerInterface it "
+"cannot be used with an engine key."
 msgstr ""
 
 #: Model/Datasource/DboSource.php:255
@@ -2717,6 +2824,7 @@ msgid "Selected driver is not enabled"
 msgstr ""
 
 #: Model/Datasource/DboSource.php:1263
+#, c-format
 msgid "Error in Model %s"
 msgstr ""
 
@@ -2731,19 +2839,23 @@ msgstr ""
 
 #: Model/Datasource/DboSource.php:3332
 #: Model/Datasource/Database/Sqlite.php:412
+#, c-format
 msgid "Column type %s does not exist"
 msgstr ""
 
 #: Model/Datasource/Database/Mysql.php:342
 #: Model/Datasource/Database/Sqlserver.php:227
+#, c-format
 msgid "Could not describe table for %s"
 msgstr ""
 
 #: Model/Validator/CakeValidationRule.php:281
+#, c-format
 msgid "Could not find validation handler %s for %s"
 msgstr ""
 
 #: Network/CakeRequest.php:449
+#, c-format
 msgid "Method %s does not exist"
 msgstr ""
 
@@ -2760,6 +2872,7 @@ msgid "The requested file contains `..` and will not be read."
 msgstr ""
 
 #: Network/CakeResponse.php:1353
+#, c-format
 msgid "The requested file %s was not found or not readable"
 msgstr ""
 
@@ -2796,6 +2909,7 @@ msgid "Return-Path requires only 1 email address."
 msgstr ""
 
 #: Network/Email/CakeEmail.php:614
+#, c-format
 msgid "Invalid email: \"%s\""
 msgstr ""
 
@@ -2808,15 +2922,19 @@ msgid "Format not available."
 msgstr ""
 
 #: Network/Email/CakeEmail.php:954
+#, c-format
 msgid "Class \"%s\" not found."
 msgstr ""
 
 #: Network/Email/CakeEmail.php:956
+#, c-format
 msgid "The \"%s\" does not have a %s method."
 msgstr ""
 
 #: Network/Email/CakeEmail.php:977
-msgid "Invalid format for Message-ID. The text should be something like \"<uuid@server.com>\""
+msgid ""
+"Invalid format for Message-ID. The text should be something like "
+"\"<uuid@server.com>\""
 msgstr ""
 
 #: Network/Email/CakeEmail.php:1056
@@ -2828,6 +2946,7 @@ msgid "No filename specified."
 msgstr ""
 
 #: Network/Email/CakeEmail.php:1066
+#, c-format
 msgid "File not found: \"%s\""
 msgstr ""
 
@@ -2840,10 +2959,12 @@ msgid "You need to specify at least one destination for to, cc or bcc."
 msgstr ""
 
 #: Network/Email/CakeEmail.php:1227
+#, c-format
 msgid "%s not found."
 msgstr ""
 
 #: Network/Email/CakeEmail.php:1231
+#, c-format
 msgid "Unknown email configuration \"%s\"."
 msgstr ""
 
@@ -2852,7 +2973,9 @@ msgid "Unable to connect to SMTP server."
 msgstr ""
 
 #: Network/Email/SmtpTransport.php:176
-msgid "SMTP server did not accept the connection or trying to connect to non TLS SMTP server using TLS."
+msgid ""
+"SMTP server did not accept the connection or trying to connect to non TLS "
+"SMTP server using TLS."
 msgstr ""
 
 #: Network/Email/SmtpTransport.php:181
@@ -2872,7 +2995,9 @@ msgid "SMTP authentication method not allowed, check if SMTP server requires TLS
 msgstr ""
 
 #: Network/Email/SmtpTransport.php:209
-msgid "AUTH command not recognized or not implemented, SMTP server may not require authentication."
+msgid ""
+"AUTH command not recognized or not implemented, SMTP server may not require "
+"authentication."
 msgstr ""
 
 #: Network/Email/SmtpTransport.php:360
@@ -2880,11 +3005,14 @@ msgid "SMTP timeout."
 msgstr ""
 
 #: Network/Email/SmtpTransport.php:373
+#, c-format
 msgid "SMTP Error: %s"
 msgstr ""
 
 #: Network/Http/HttpResponse.php:21
-msgid "HttpResponse is deprecated due to naming conflicts. Use HttpSocketResponse instead."
+msgid ""
+"HttpResponse is deprecated due to naming conflicts. Use HttpSocketResponse "
+"instead."
 msgstr ""
 
 #: Network/Http/HttpSocket.php:244
@@ -2892,6 +3020,7 @@ msgid "Invalid resource."
 msgstr ""
 
 #: Network/Http/HttpSocket.php:410
+#, c-format
 msgid "Class %s not found."
 msgstr ""
 
@@ -2900,6 +3029,7 @@ msgid "Unknown authentication method."
 msgstr ""
 
 #: Network/Http/HttpSocket.php:638
+#, c-format
 msgid "The %s does not support authentication."
 msgstr ""
 
@@ -2908,15 +3038,22 @@ msgid "Unknown authentication method for proxy."
 msgstr ""
 
 #: Network/Http/HttpSocket.php:667
+#, c-format
 msgid "The %s does not support proxy authentication."
 msgstr ""
 
 #: Network/Http/HttpSocket.php:918
-msgid "HttpSocket::_buildRequestLine - Passed an invalid request line string. Activate quirks mode to do this."
+msgid ""
+"HttpSocket::_buildRequestLine - Passed an invalid request line string. "
+"Activate quirks mode to do this."
 msgstr ""
 
 #: Network/Http/HttpSocket.php:936
-msgid "HttpSocket::_buildRequestLine - The \"*\" asterisk character is only allowed for the following methods: %s. Activate quirks mode to work outside of HTTP/1.1 specs."
+#, c-format
+msgid ""
+"HttpSocket::_buildRequestLine - The \"*\" asterisk character is only allowed "
+"for the following methods: %s. Activate quirks mode to work outside of "
+"HTTP/1.1 specs."
 msgstr ""
 
 #: Network/Http/HttpSocketResponse.php:151
@@ -2936,10 +3073,13 @@ msgid "No unit type."
 msgstr ""
 
 #: Utility/ClassRegistry.php:117
-msgid "(ClassRegistry::init() Attempted to create instance of a class with a numeric name"
+msgid ""
+"(ClassRegistry::init() Attempted to create instance of a class with a "
+"numeric name"
 msgstr ""
 
 #: Utility/ClassRegistry.php:149
+#, c-format
 msgid "Cannot create instance of %s, as it is abstract or is an interface"
 msgstr ""
 
@@ -2948,38 +3088,51 @@ msgid "Invalid Debugger output format."
 msgstr ""
 
 #: Utility/Debugger.php:846
-msgid "Please change the value of %s in %s to a salt value specific to your application."
+#, c-format
+msgid ""
+"Please change the value of %s in %s to a salt value specific to your "
+"application."
 msgstr ""
 
 #: Utility/Debugger.php:850
-msgid "Please change the value of %s in %s to a numeric (digits only) seed value specific to your application."
+#, c-format
+msgid ""
+"Please change the value of %s in %s to a numeric (digits only) seed value "
+"specific to your application."
 msgstr ""
 
 #: Utility/Folder.php:409;432
+#, c-format
 msgid "%s changed to %s"
 msgstr ""
 
 #: Utility/Folder.php:413;434
+#, c-format
 msgid "%s NOT changed to %s"
 msgstr ""
 
 #: Utility/Folder.php:537
+#, c-format
 msgid "%s is a file"
 msgstr ""
 
 #: Utility/Folder.php:548;732
+#, c-format
 msgid "%s created"
 msgstr ""
 
 #: Utility/Folder.php:552
+#, c-format
 msgid "%s NOT created"
 msgstr ""
 
 #: Utility/Folder.php:624;632;644
+#, c-format
 msgid "%s removed"
 msgstr ""
 
 #: Utility/Folder.php:626;634;646
+#, c-format
 msgid "%s NOT removed"
 msgstr ""
 
@@ -2987,26 +3140,32 @@ msgstr ""
 #: Console/Command/AclShell.php:324;326;534
 #: Console/Command/ApiShell.php:92
 #: Console/Command/Task/DbConfigTask.php:254
+#, c-format
 msgid "%s not found"
 msgstr ""
 
 #: Utility/Folder.php:699
+#, c-format
 msgid "%s not writable"
 msgstr ""
 
 #: Utility/Folder.php:715
+#, c-format
 msgid "%s copied to %s"
 msgstr ""
 
 #: Utility/Folder.php:717
+#, c-format
 msgid "%s NOT copied to %s"
 msgstr ""
 
 #: Utility/Folder.php:736
+#, c-format
 msgid "%s not created"
 msgstr ""
 
 #: Utility/Hash.php:53
+#, c-format
 msgid "Invalid Parameter %s, should be dot separated path or array."
 msgstr ""
 
@@ -3023,15 +3182,19 @@ msgid "Cannot use modParams with indexes that do not exist."
 msgstr ""
 
 #: Utility/Security.php:159
+#, c-format
 msgid "Invalid value, cost must be between %s and %s"
 msgstr ""
 
 #: Utility/Security.php:186;219
+#, c-format
 msgid "You cannot use an empty key for %s"
 msgstr ""
 
 #: Utility/Security.php:223
-msgid "You must specify the operation for Security::rijndael(), either encrypt or decrypt"
+msgid ""
+"You must specify the operation for Security::rijndael(), either encrypt or "
+"decrypt"
 msgstr ""
 
 #: Utility/Security.php:227
@@ -3039,10 +3202,14 @@ msgid "You must use a key larger than 32 bytes for Security::rijndael()"
 msgstr ""
 
 #: Utility/Security.php:286
-msgid "Invalid salt: %s for %s Please visit http://www.php.net/crypt and read the appropriate section for building %s salts."
+#, c-format
+msgid ""
+"Invalid salt: %s for %s Please visit http://www.php.net/crypt and read the "
+"appropriate section for building %s salts."
 msgstr ""
 
 #: Utility/Security.php:339
+#, c-format
 msgid "Invalid key for %s, key must be at least 256 bits (32 bytes) long."
 msgstr ""
 
@@ -3051,18 +3218,22 @@ msgid "The data to decrypt cannot be empty."
 msgstr ""
 
 #: Utility/Validation.php:272
+#, c-format
 msgid "You must define the $operator parameter for %s"
 msgstr ""
 
 #: Utility/Validation.php:290
+#, c-format
 msgid "You must define a regular expression for %s"
 msgstr ""
 
 #: Utility/Validation.php:869
+#, c-format
 msgid "Could not find %s class, unable to complete validation."
 msgstr ""
 
 #: Utility/Validation.php:873
+#, c-format
 msgid "Method %s does not exist on %s unable to complete validation."
 msgstr ""
 
@@ -3095,14 +3266,17 @@ msgid "The input is not instance of SimpleXMLElement, DOMDocument or DOMNode."
 msgstr ""
 
 #: View/Helper.php:192
+#, c-format
 msgid "Method %1$s::%2$s does not exist"
 msgstr ""
 
 #: View/View.php:425
+#, c-format
 msgid "Element Not Found: %s"
 msgstr ""
 
 #: View/View.php:731
+#, c-format
 msgid "You cannot extend an element which does not exist (%s)."
 msgstr ""
 
@@ -3115,10 +3289,12 @@ msgid "You cannot have views extend in a loop."
 msgstr ""
 
 #: View/View.php:942
+#, c-format
 msgid "The \"%s\" block was left open. Blocks are not allowed to cross files."
 msgstr ""
 
 #: View/Elements/sql_dump.ctp:81
+#, c-format
 msgid "Encountered unexpected %s. Cannot generate SQL log."
 msgstr ""
 
@@ -3171,18 +3347,22 @@ msgstr ""
 #: View/Errors/pdo_error.ctp:34
 #: View/Errors/private_action.ctp:24
 #: View/Errors/scaffold_error.ctp:24
+#, c-format
 msgid "If you want to customize this error message, create %s"
 msgstr ""
 
 #: View/Errors/missing_action.ctp:18
+#, c-format
 msgid "Missing Method in %s"
 msgstr ""
 
 #: View/Errors/missing_action.ctp:20
+#, c-format
 msgid "The action %1$s is not defined in controller %2$s"
 msgstr ""
 
 #: View/Errors/missing_action.ctp:24
+#, c-format
 msgid "Create %1$s%2$s in file: %3$s."
 msgstr ""
 
@@ -3194,6 +3374,7 @@ msgstr ""
 #: View/Errors/missing_component.ctp:22
 #: View/Errors/missing_controller.ctp:22
 #: View/Errors/missing_helper.ctp:22
+#, c-format
 msgid "%s could not be found."
 msgstr ""
 
@@ -3201,6 +3382,7 @@ msgstr ""
 #: View/Errors/missing_component.ctp:26
 #: View/Errors/missing_controller.ctp:26
 #: View/Errors/missing_helper.ctp:26
+#, c-format
 msgid "Create the class %s below in file: %s"
 msgstr ""
 
@@ -3214,14 +3396,17 @@ msgid "Missing Database Connection"
 msgstr ""
 
 #: View/Errors/missing_connection.ctp:20
+#, c-format
 msgid "A Database connection using \"%s\" was missing or unable to connect."
 msgstr ""
 
 #: View/Errors/missing_connection.ctp:24
+#, c-format
 msgid "The database server returned this error: %s"
 msgstr ""
 
 #: View/Errors/missing_connection.ctp:31
+#, c-format
 msgid "%s driver is NOT enabled"
 msgstr ""
 
@@ -3236,6 +3421,7 @@ msgstr ""
 #: View/Errors/missing_database.ctp:24
 #: View/Errors/missing_layout.ctp:24
 #: View/Errors/missing_view.ctp:24
+#, c-format
 msgid "Confirm you have created the file: %s"
 msgstr ""
 
@@ -3244,6 +3430,7 @@ msgid "Missing Datasource"
 msgstr ""
 
 #: View/Errors/missing_datasource.ctp:22
+#, c-format
 msgid "Datasource class %s could not be found."
 msgstr ""
 
@@ -3252,6 +3439,7 @@ msgid "Missing Datasource Configuration"
 msgstr ""
 
 #: View/Errors/missing_datasource_config.ctp:20
+#, c-format
 msgid "The datasource configuration %1$s was not found in database.php."
 msgstr ""
 
@@ -3264,6 +3452,7 @@ msgid "Missing Layout"
 msgstr ""
 
 #: View/Errors/missing_layout.ctp:20
+#, c-format
 msgid "The layout file %s can not be found or does not exist."
 msgstr ""
 
@@ -3272,10 +3461,12 @@ msgid "Missing Plugin"
 msgstr ""
 
 #: View/Errors/missing_plugin.ctp:20
+#, c-format
 msgid "The application is trying to load a file from the %s plugin"
 msgstr ""
 
 #: View/Errors/missing_plugin.ctp:24
+#, c-format
 msgid "Make sure your plugin %s is in the %s directory and was loaded"
 msgstr ""
 
@@ -3284,7 +3475,10 @@ msgid "Loading all plugins"
 msgstr ""
 
 #: View/Errors/missing_plugin.ctp:33
-msgid "If you wish to load all plugins at once, use the following line in your %s file"
+#, c-format
+msgid ""
+"If you wish to load all plugins at once, use the following line in your %s "
+"file"
 msgstr ""
 
 #: View/Errors/missing_table.ctp:17
@@ -3292,6 +3486,7 @@ msgid "Missing Database Table"
 msgstr ""
 
 #: View/Errors/missing_table.ctp:20
+#, c-format
 msgid "Table %1$s for model %2$s was not found in datasource %3$s."
 msgstr ""
 
@@ -3300,6 +3495,7 @@ msgid "Missing View"
 msgstr ""
 
 #: View/Errors/missing_view.ctp:20
+#, c-format
 msgid "The view for %1$s%2$s was not found."
 msgstr ""
 
@@ -3316,10 +3512,12 @@ msgid "SQL Query Params"
 msgstr ""
 
 #: View/Errors/private_action.ctp:17
+#, c-format
 msgid "Private Method in %s"
 msgstr ""
 
 #: View/Errors/private_action.ctp:20
+#, c-format
 msgid "%s%s cannot be accessed directly."
 msgstr ""
 
@@ -3332,10 +3530,12 @@ msgid "Method _scaffoldError in was not found in the controller"
 msgstr ""
 
 #: View/Helper/CacheHelper.php:161
+#, c-format
 msgid "Unable to write view cache file: \"%s\" for \"%s\""
 msgstr ""
 
 #: View/Helper/FormHelper.php:1628
+#, c-format
 msgid "Missing field name for FormHelper::%s"
 msgstr ""
 
@@ -3348,10 +3548,12 @@ msgid "Cannot load the configuration file. Unknown reader."
 msgstr ""
 
 #: View/Helper/JsHelper.php:152
+#, c-format
 msgid "JsHelper:: Missing Method %s is undefined"
 msgstr ""
 
 #: View/Helper/MootoolsEngineHelper.php:311
+#, c-format
 msgid "%s requires a \"drag\" option to properly function"
 msgstr ""
 
@@ -3359,117 +3561,125 @@ msgstr ""
 #: View/Helper/TextHelper.php:78
 #: View/Helper/TimeHelper.php:61
 #: Console/Command/ApiShell.php:211
+#, c-format
 msgid "%s could not be found"
 msgstr ""
 
 #: View/Helper/PaginatorHelper.php:99
+#, c-format
 msgid "%s does not implement a %s method, it is incompatible with %s"
 msgstr ""
 
-#: /Medias/index.ctp:9
-#: /Medias/media.ctp:28
+#: Medias/index.ctp:9
+#: Medias/media.ctp:28
 msgid "Nom du fichier"
 msgstr ""
 
-#: /Medias/index.ctp:15
-#: /Medias/media.ctp:35
+#: Medias/index.ctp:15
+#: Medias/media.ctp:35
 msgid "Titre"
 msgstr ""
 
-#: /Medias/index.ctp:19
-#: /Medias/media.ctp:39
+#: Medias/index.ctp:19
+#: Medias/media.ctp:39
 msgid "Texte alternatif"
 msgstr ""
 
-#: /Medias/index.ctp:23
-#: /Medias/media.ctp:43
+#: Medias/index.ctp:23
+#: Medias/media.ctp:43
 msgid "Cible du lien"
 msgstr ""
 
-#: /Medias/index.ctp:27
-#: /Medias/media.ctp:47
+#: Medias/index.ctp:27
+#: Medias/media.ctp:47
 msgid "Alignement"
 msgstr ""
 
-#: /Medias/index.ctp:30
+#: Medias/index.ctp:30
 msgid "Aucun"
 msgstr ""
 
-#: /Medias/index.ctp:33
+#: Medias/index.ctp:33
 msgid "Gauche"
 msgstr ""
 
-#: /Medias/index.ctp:36
+#: Medias/index.ctp:36
 msgid "Centre"
 msgstr ""
 
-#: /Medias/index.ctp:39
+#: Medias/index.ctp:39
 msgid "Droite"
 msgstr ""
 
-#: /Medias/index.ctp:45
-#: /Medias/media.ctp:65
+#: Medias/index.ctp:45
+#: Medias/media.ctp:65
 msgid "Insérer dans l'article"
 msgstr ""
 
-#: /Medias/index.ctp:54
+#: Medias/index.ctp:54
 msgid "Déplacer les fichiers ici"
 msgstr ""
 
-#: /Medias/index.ctp:55
+#: Medias/index.ctp:55
 msgid "ou"
 msgstr ""
 
-#: /Medias/index.ctp:56
+#: Medias/index.ctp:56
 msgid "Parcourir"
 msgstr ""
 
-#: /Medias/index.ctp:57
+#: Medias/index.ctp:57
+#, c-format
 msgid "%s seulement"
 msgstr ""
 
-#: /Medias/index.ctp:63
+#: Medias/index.ctp:63
 msgid "Médias"
 msgstr ""
 
-#: /Medias/index.ctp:157
+#: Medias/index.ctp:157
 msgid "Voulez vous vraiment supprimer ce média ?"
 msgstr ""
 
-#: /Medias/index.ctp:169;178
-#: /Medias/media.ctp:19
+#: Medias/index.ctp:169;178
+#: Medias/media.ctp:19
 msgid "Afficher"
 msgstr ""
 
-#: /Medias/index.ctp:170
+#: Medias/index.ctp:170
 msgid "Cacher"
 msgstr ""
 
-#: /Medias/media.ctp:12
+#: Medias/media.ctp:12
 msgid "Mettre en image à la une"
 msgstr ""
 
-#: /Medias/media.ctp:14;65
+#: Medias/media.ctp:14;65
 msgid "Supprimer"
 msgstr ""
 
-#: /Medias/media.ctp:17
+#: Medias/media.ctp:17
 msgid "Insérer le lien l'article"
 msgstr ""
 
-#: /Medias/media.ctp:29
+#: Medias/media.ctp:29
 msgid "Taille de l'image"
 msgstr ""
 
 #: Console/ConsoleErrorHandler.php:57
-msgid "<error>Error:</error> %s\n%s"
+#, c-format
+msgid ""
+"<error>Error:</error> %s\n"
+"%s"
 msgstr ""
 
 #: Console/ConsoleErrorHandler.php:83
+#, c-format
 msgid "%s in [%s, line %s]"
 msgstr ""
 
 #: Console/ConsoleErrorHandler.php:84
+#, c-format
 msgid "<error>%s Error:</error> %s\n"
 msgstr ""
 
@@ -3479,22 +3689,27 @@ msgstr ""
 
 #: Console/ConsoleInputArgument.php:101
 #: Console/ConsoleInputOption.php:130
+#, c-format
 msgid " <comment>(choices: %s)</comment>"
 msgstr ""
 
 #: Console/ConsoleInputArgument.php:145
+#, c-format
 msgid "\"%s\" is not a valid value for %s. Please use one of \"%s\""
 msgstr ""
 
 #: Console/ConsoleInputOption.php:95
+#, c-format
 msgid "Short option \"%s\" is invalid, short options must be one letter."
 msgstr ""
 
 #: Console/ConsoleInputOption.php:127
+#, c-format
 msgid " <comment>(default: %s)</comment>"
 msgstr ""
 
 #: Console/ConsoleInputOption.php:190
+#, c-format
 msgid "\"%s\" is not a valid value for --%s. Please use one of \"%s\""
 msgstr ""
 
@@ -3511,14 +3726,17 @@ msgid "Enable quiet output."
 msgstr ""
 
 #: Console/ConsoleOptionParser.php:493
+#, c-format
 msgid "Missing required arguments. %s is required."
 msgstr ""
 
 #: Console/ConsoleOptionParser.php:576
+#, c-format
 msgid "Unknown short option `%s`"
 msgstr ""
 
 #: Console/ConsoleOptionParser.php:592
+#, c-format
 msgid "Unknown option `%s`"
 msgstr ""
 
@@ -3535,6 +3753,7 @@ msgid "<info>Subcommands:</info>"
 msgstr ""
 
 #: Console/HelpFormatter.php:86
+#, c-format
 msgid "To see help on a subcommand use <info>`cake %s [subcommand] --help`</info>"
 msgstr ""
 
@@ -3548,11 +3767,13 @@ msgstr ""
 
 #: Console/Shell.php:239
 #: Console/Command/ServerShell.php:112
+#, c-format
 msgid "<info>Welcome to CakePHP %s Console</info>"
 msgstr ""
 
 #: Console/Shell.php:241
 #: Console/Command/ServerShell.php:114
+#, c-format
 msgid "App : %s"
 msgstr ""
 
@@ -3560,14 +3781,17 @@ msgstr ""
 #: Console/Command/ServerShell.php:115
 #: Console/Command/Task/PluginTask.php:64
 #: Console/Command/Task/TestTask.php:112
+#, c-format
 msgid "Path: %s"
 msgstr ""
 
 #: Console/Shell.php:705
+#, c-format
 msgid "<error>Error:</error> %s"
 msgstr ""
 
 #: Console/Shell.php:743
+#, c-format
 msgid "<warning>File `%s` exists</warning>"
 msgstr ""
 
@@ -3580,18 +3804,22 @@ msgid "<error>Quitting</error>."
 msgstr ""
 
 #: Console/Shell.php:750
+#, c-format
 msgid "Skip `%s`"
 msgstr ""
 
 #: Console/Shell.php:754
+#, c-format
 msgid "Creating file %s"
 msgstr ""
 
 #: Console/Shell.php:761
+#, c-format
 msgid "<success>Wrote</success> `%s`"
 msgstr ""
 
 #: Console/Shell.php:765
+#, c-format
 msgid "<error>Could not write to `%s`</error>."
 msgstr ""
 
@@ -3600,18 +3828,24 @@ msgid "PHPUnit is not installed. Do you want to bake unit test files anyway?"
 msgstr ""
 
 #: Console/Shell.php:791
+#, c-format
 msgid "You can download PHPUnit from %s"
 msgstr ""
 
 #: Console/Command/AclShell.php:77
-msgid "Error: Your current CakePHP configuration is set to an ACL implementation other than DB."
+msgid ""
+"Error: Your current CakePHP configuration is set to an ACL implementation "
+"other than DB."
 msgstr ""
 
 #: Console/Command/AclShell.php:78
-msgid "Please change your core config to reflect your decision to use DbAcl before attempting to use this script"
+msgid ""
+"Please change your core config to reflect your decision to use DbAcl before "
+"attempting to use this script"
 msgstr ""
 
 #: Console/Command/AclShell.php:80
+#, c-format
 msgid "Current ACL Classname: %s"
 msgstr ""
 
@@ -3626,14 +3860,16 @@ msgid "/ can not be used as an alias!"
 msgstr ""
 
 #: Console/Command/AclShell.php:133
-msgid "\t/ is the root, please supply a sub alias"
+msgid "	/ is the root, please supply a sub alias"
 msgstr ""
 
 #: Console/Command/AclShell.php:139
+#, c-format
 msgid "<success>New %s</success> '%s' created."
 msgstr ""
 
 #: Console/Command/AclShell.php:141
+#, c-format
 msgid "There was a problem creating a new %s '%s'."
 msgstr ""
 
@@ -3642,26 +3878,33 @@ msgid "Node Not Deleted. "
 msgstr ""
 
 #: Console/Command/AclShell.php:161
+#, c-format
 msgid "There was an error deleting the %s."
 msgstr ""
 
 #: Console/Command/AclShell.php:163
+#, c-format
 msgid "<success>%s deleted.</success>"
 msgstr ""
 
 #: Console/Command/AclShell.php:165
+#, c-format
 msgid "There was an error deleting the %s. Node does not exist."
 msgstr ""
 
 #: Console/Command/AclShell.php:187
-msgid "Error in setting new parent. Please make sure the parent node exists, and is not a descendant of the node specified."
+msgid ""
+"Error in setting new parent. Please make sure the parent node exists, and is "
+"not a descendant of the node specified."
 msgstr ""
 
 #: Console/Command/AclShell.php:189
+#, c-format
 msgid "Node parent set to %s"
 msgstr ""
 
 #: Console/Command/AclShell.php:207
+#, c-format
 msgid "Supplied Node '%s' not found"
 msgstr ""
 
@@ -3674,10 +3917,12 @@ msgid "Path:"
 msgstr ""
 
 #: Console/Command/AclShell.php:245
+#, c-format
 msgid "%s is <success>allowed</success>."
 msgstr ""
 
 #: Console/Command/AclShell.php:247
+#, c-format
 msgid "%s is <error>not allowed</error>."
 msgstr ""
 
@@ -3722,7 +3967,9 @@ msgid "Creates a new ACL object <node> under the parent"
 msgstr ""
 
 #: Console/Command/AclShell.php:385
-msgid "You can use `root` as the parent when creating nodes to create top level nodes."
+msgid ""
+"You can use `root` as the parent when creating nodes to create top level "
+"nodes."
 msgstr ""
 
 #: Console/Command/AclShell.php:389
@@ -3770,7 +4017,9 @@ msgid "Returns the path to the ACL object specified by <node>."
 msgstr ""
 
 #: Console/Command/AclShell.php:431
-msgid "This command is useful in determining the inheritance of permissions for a certain object in the tree."
+msgid ""
+"This command is useful in determining the inheritance of permissions for a "
+"certain object in the tree."
 msgstr ""
 
 #: Console/Command/AclShell.php:436
@@ -3802,7 +4051,10 @@ msgid "Grant an ARO permissions to an ACO."
 msgstr ""
 
 #: Console/Command/AclShell.php:457
-msgid "Use this command to grant ACL permissions. Once executed, the ARO specified (and its children, if any) will have ALLOW access to the specified ACO action (and the ACO's children, if any)."
+msgid ""
+"Use this command to grant ACL permissions. Once executed, the ARO specified "
+"(and its children, if any) will have ALLOW access to the specified ACO "
+"action (and the ACO's children, if any)."
 msgstr ""
 
 #: Console/Command/AclShell.php:460
@@ -3822,7 +4074,10 @@ msgid "Deny an ARO permissions to an ACO."
 msgstr ""
 
 #: Console/Command/AclShell.php:469
-msgid "Use this command to deny ACL permissions. Once executed, the ARO specified (and its children, if any) will have DENY access to the specified ACO action (and the ACO's children, if any)."
+msgid ""
+"Use this command to deny ACL permissions. Once executed, the ARO specified "
+"(and its children, if any) will have DENY access to the specified ACO action "
+"(and the ACO's children, if any)."
 msgstr ""
 
 #: Console/Command/AclShell.php:472
@@ -3842,7 +4097,9 @@ msgid "Inherit an ARO's parent permissions."
 msgstr ""
 
 #: Console/Command/AclShell.php:481
-msgid "Use this command to force a child ARO object to inherit its permissions settings from its parent."
+msgid ""
+"Use this command to force a child ARO object to inherit its permissions "
+"settings from its parent."
 msgstr ""
 
 #: Console/Command/AclShell.php:484
@@ -3882,15 +4139,19 @@ msgid "Initialize the DbAcl tables. Uses this command : cake schema create DbAcl
 msgstr ""
 
 #: Console/Command/AclShell.php:570
+#, c-format
 msgid "Could not find node using reference \"%s\""
 msgstr ""
 
 #: Console/Command/ApiShell.php:100
+#, c-format
 msgid "%s::%s() could not be found"
 msgstr ""
 
 #: Console/Command/ApiShell.php:117
-msgid "Select a number to see the more information about a specific method. q to quit. l to list."
+msgid ""
+"Select a number to see the more information about a specific method. q to "
+"quit. l to list."
 msgstr ""
 
 #: Console/Command/ApiShell.php:119
@@ -3902,7 +4163,9 @@ msgid "Lookup doc block comments for classes in CakePHP."
 msgstr ""
 
 #: Console/Command/ApiShell.php:150
-msgid "Either a full path or type of class (model, behavior, controller, component, view, helper)"
+msgid ""
+"Either a full path or type of class (model, behavior, controller, component, "
+"view, helper)"
 msgstr ""
 
 #: Console/Command/ApiShell.php:152
@@ -3914,6 +4177,7 @@ msgid "The specific method you want help on."
 msgstr ""
 
 #: Console/Command/ApiShell.php:194
+#, c-format
 msgid "Command %s not found"
 msgstr ""
 
@@ -3959,7 +4223,9 @@ msgid "What would you like to Bake?"
 msgstr ""
 
 #: Console/Command/BakeShell.php:129
-msgid "You have made an invalid selection. Please choose a type of class to Bake by entering D, M, V, F, T, or C."
+msgid ""
+"You have made an invalid selection. Please choose a type of class to Bake by "
+"entering D, M, V, F, T, or C."
 msgstr ""
 
 #: Console/Command/BakeShell.php:197
@@ -3971,7 +4237,12 @@ msgid "Bake All could not continue without a valid model"
 msgstr ""
 
 #: Console/Command/BakeShell.php:214
-msgid "The Bake script generates controllers, views and models for your application. If run with no command line arguments, Bake guides the user through the class creation process. You can customize the generation process by telling Bake where different parts of your application are using command line arguments."
+msgid ""
+"The Bake script generates controllers, views and models for your application."
+" If run with no command line arguments, Bake guides the user through the "
+"class creation process. You can customize the generation process by telling "
+"Bake where different parts of your application are using command line "
+"arguments."
 msgstr ""
 
 #: Console/Command/BakeShell.php:218
@@ -3979,11 +4250,15 @@ msgid "Bake a complete MVC. optional <name> of a Model"
 msgstr ""
 
 #: Console/Command/BakeShell.php:220
-msgid "Bake a new app folder in the path supplied or in current directory if no path is specified"
+msgid ""
+"Bake a new app folder in the path supplied or in current directory if no "
+"path is specified"
 msgstr ""
 
 #: Console/Command/BakeShell.php:223
-msgid "Bake a new plugin folder in the path supplied or in current directory if no path is specified."
+msgid ""
+"Bake a new plugin folder in the path supplied or in current directory if no "
+"path is specified."
 msgstr ""
 
 #: Console/Command/BakeShell.php:226
@@ -4033,10 +4308,13 @@ msgid "<info>Changing Paths:</info>"
 msgstr ""
 
 #: Console/Command/CommandListShell.php:59
-msgid "Your working path should be the same as your application path. To change your path use the '-app' param."
+msgid ""
+"Your working path should be the same as your application path. To change "
+"your path use the '-app' param."
 msgstr ""
 
 #: Console/Command/CommandListShell.php:60
+#, c-format
 msgid "Example: %s or %s"
 msgstr ""
 
@@ -4109,7 +4387,9 @@ msgid "Model classes:"
 msgstr ""
 
 #: Console/Command/ConsoleShell.php:99
-msgid "There was an error loading the routes config. Please check that the file exists and contains no errors."
+msgid ""
+"There was an error loading the routes config. Please check that the file "
+"exists and contains no errors."
 msgstr ""
 
 #: Console/Command/ConsoleShell.php:211
@@ -4117,6 +4397,7 @@ msgid "Invalid command"
 msgstr ""
 
 #: Console/Command/ConsoleShell.php:276
+#, c-format
 msgid "Created %s association between %s and %s"
 msgstr ""
 
@@ -4125,11 +4406,14 @@ msgid "Please verify you are using valid models and association types"
 msgstr ""
 
 #: Console/Command/ConsoleShell.php:313
+#, c-format
 msgid "Removed %s association between %s and %s"
 msgstr ""
 
 #: Console/Command/ConsoleShell.php:316
-msgid "Please verify you are using valid models, valid current association, and valid association types"
+msgid ""
+"Please verify you are using valid models, valid current association, and "
+"valid association types"
 msgstr ""
 
 #: Console/Command/ConsoleShell.php:375
@@ -4137,10 +4421,12 @@ msgid "No result set found"
 msgstr ""
 
 #: Console/Command/ConsoleShell.php:378
+#, c-format
 msgid "%s is not a valid model"
 msgstr ""
 
 #: Console/Command/ConsoleShell.php:402
+#, c-format
 msgid "Saved record for %s"
 msgstr ""
 
@@ -4149,10 +4435,13 @@ msgid "Please verify that you selected a valid model"
 msgstr ""
 
 #: Console/Command/ConsoleShell.php:441
-msgid "There was an error loading the routes config. Please check that the file exists and is free of parse errors."
+msgid ""
+"There was an error loading the routes config. Please check that the file "
+"exists and is free of parse errors."
 msgstr ""
 
 #: Console/Command/ConsoleShell.php:443
+#, c-format
 msgid "Routes configuration reloaded, %d routes connected"
 msgstr ""
 
@@ -4177,11 +4466,15 @@ msgid "What would you like to do?"
 msgstr ""
 
 #: Console/Command/I18nShell.php:87
-msgid "You have made an invalid selection. Please choose a command to execute by entering E, I, H, or Q."
+msgid ""
+"You have made an invalid selection. Please choose a command to execute by "
+"entering E, I, H, or Q."
 msgstr ""
 
 #: Console/Command/I18nShell.php:111
-msgid "I18n Shell initializes i18n database table for your application and generates .pot files(s) with translations."
+msgid ""
+"I18n Shell initializes i18n database table for your application and "
+"generates .pot files(s) with translations."
 msgstr ""
 
 #: Console/Command/I18nShell.php:113
@@ -4193,6 +4486,7 @@ msgid "Extract the po translations from your application"
 msgstr ""
 
 #: Console/Command/SchemaShell.php:109
+#, c-format
 msgid "Schema file (%s) could not be found."
 msgstr ""
 
@@ -4201,10 +4495,16 @@ msgid "Generating Schema..."
 msgstr ""
 
 #: Console/Command/SchemaShell.php:135
-msgid "Schema file exists.\n [O]verwrite\n [S]napshot\n [Q]uit\nWould you like to do?"
+msgid ""
+"Schema file exists.\n"
+" [O]verwrite\n"
+" [S]napshot\n"
+" [Q]uit\n"
+"Would you like to do?"
 msgstr ""
 
 #: Console/Command/SchemaShell.php:189;192
+#, c-format
 msgid "Schema file: %s generated"
 msgstr ""
 
@@ -4213,6 +4513,7 @@ msgid "Schema could not be loaded"
 msgstr ""
 
 #: Console/Command/SchemaShell.php:233
+#, c-format
 msgid "SQL dump file created in %s"
 msgstr ""
 
@@ -4225,14 +4526,18 @@ msgid "Performing a dry run."
 msgstr ""
 
 #: Console/Command/SchemaShell.php:295
-msgid "<error>Error</error>: The chosen schema could not be loaded. Attempted to load:"
+msgid ""
+"<error>Error</error>: The chosen schema could not be loaded. Attempted to "
+"load:"
 msgstr ""
 
 #: Console/Command/SchemaShell.php:296
+#, c-format
 msgid "- file: %s"
 msgstr ""
 
 #: Console/Command/SchemaShell.php:297
+#, c-format
 msgid "- name: %s"
 msgstr ""
 
@@ -4293,14 +4598,17 @@ msgid "Sql could not be run"
 msgstr ""
 
 #: Console/Command/SchemaShell.php:429
+#, c-format
 msgid "%s is up to date."
 msgstr ""
 
 #: Console/Command/SchemaShell.php:432
+#, c-format
 msgid "Dry run for %s :"
 msgstr ""
 
 #: Console/Command/SchemaShell.php:450
+#, c-format
 msgid "%s updated."
 msgstr ""
 
@@ -4321,7 +4629,9 @@ msgid "File name to read and write."
 msgstr ""
 
 #: Console/Command/SchemaShell.php:482
-msgid "Classname to use. If its Plugin.class, both name and plugin options will be set."
+msgid ""
+"Classname to use. If its Plugin.class, both name and plugin options will be "
+"set."
 msgstr ""
 
 #: Console/Command/SchemaShell.php:488
@@ -4333,7 +4643,9 @@ msgid "Specify models as comma separated list."
 msgstr ""
 
 #: Console/Command/SchemaShell.php:495
-msgid "Perform a dry run on create and update commands. Queries will be output instead of run."
+msgid ""
+"Perform a dry run on create and update commands. Queries will be output "
+"instead of run."
 msgstr ""
 
 #: Console/Command/SchemaShell.php:502
@@ -4353,7 +4665,9 @@ msgid "Do not prompt for confirmation. Be careful!"
 msgstr ""
 
 #: Console/Command/SchemaShell.php:518
-msgid "The Schema Shell generates a schema object from the database and updates the database from the schema."
+msgid ""
+"The Schema Shell generates a schema object from the database and updates the "
+"database from the schema."
 msgstr ""
 
 #: Console/Command/SchemaShell.php:520
@@ -4389,14 +4703,17 @@ msgid "Alter the tables based on the schema file."
 msgstr ""
 
 #: Console/Command/ServerShell.php:116
+#, c-format
 msgid "DocumentRoot: %s"
 msgstr ""
 
 #: Console/Command/ServerShell.php:127
+#, c-format
 msgid "<warning>This command is available on %s or above</warning>"
 msgstr ""
 
 #: Console/Command/ServerShell.php:139
+#, c-format
 msgid "built-in server is running in http://%s%s/"
 msgstr ""
 
@@ -4579,7 +4896,9 @@ msgid "CakePHP Test Shell"
 msgstr ""
 
 #: Console/Command/TestShell.php:299
-msgid "No test cases available \n\n"
+msgid ""
+"No test cases available \n"
+"\n"
 msgstr ""
 
 #: Console/Command/TestShell.php:313
@@ -4587,7 +4906,9 @@ msgid "What test case would you like to run?"
 msgstr ""
 
 #: Console/Command/TestsuiteShell.php:44
-msgid "<warning>This shell is for backwards-compatibility only</warning>\nuse the test shell instead"
+msgid ""
+"<warning>This shell is for backwards-compatibility only</warning>\n"
+"use the test shell instead"
 msgstr ""
 
 #: Console/Command/UpgradeShell.php:73
@@ -4599,10 +4920,12 @@ msgid "<warning>No git repository detected!</warning>"
 msgstr ""
 
 #: Console/Command/UpgradeShell.php:91
+#, c-format
 msgid "Running %s"
 msgstr ""
 
 #: Console/Command/UpgradeShell.php:140
+#, c-format
 msgid "Upgrading locations for plugin %s"
 msgstr ""
 
@@ -4611,18 +4934,22 @@ msgid "Upgrading locations for app directory"
 msgstr ""
 
 #: Console/Command/UpgradeShell.php:162;618;645;737
+#, c-format
 msgid "Moving %s to %s"
 msgstr ""
 
 #: Console/Command/UpgradeShell.php:760
+#, c-format
 msgid "Updating %s..."
 msgstr ""
 
 #: Console/Command/UpgradeShell.php:801
+#, c-format
 msgid " * Updating %s"
 msgstr ""
 
 #: Console/Command/UpgradeShell.php:805
+#, c-format
 msgid "Done updating %s"
 msgstr ""
 
@@ -4631,7 +4958,9 @@ msgid "The plugin to update. Only the specified plugin will be updated."
 msgstr ""
 
 #: Console/Command/UpgradeShell.php:827
-msgid "The extension(s) to search. A pipe delimited list, or a preg_match compatible subpattern"
+msgid ""
+"The extension(s) to search. A pipe delimited list, or a preg_match "
+"compatible subpattern"
 msgstr ""
 
 #: Console/Command/UpgradeShell.php:832
@@ -4643,7 +4972,10 @@ msgid "Dry run the update, no files will actually be modified."
 msgstr ""
 
 #: Console/Command/UpgradeShell.php:844
-msgid "A tool to help automate upgrading an application or plugin from CakePHP 1.3 to 2.0. Be sure to have a backup of your application before running these commands."
+msgid ""
+"A tool to help automate upgrading an application or plugin from CakePHP 1.3 "
+"to 2.0. Be sure to have a backup of your application before running these "
+"commands."
 msgstr ""
 
 #: Console/Command/UpgradeShell.php:848
@@ -4699,18 +5031,25 @@ msgid "Baking basic crud methods for "
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:81;121
+#, c-format
 msgid "Adding %s methods"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:132
-msgid "No Controllers were baked, Models need to exist before Controllers can be baked."
+msgid ""
+"No Controllers were baked, Models need to exist before Controllers can be "
+"baked."
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:144
-msgid "Bake Controller\nPath: %s"
+#, c-format
+msgid ""
+"Bake Controller\n"
+"Path: %s"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:153
+#, c-format
 msgid "Baking %sController"
 msgstr ""
 
@@ -4719,6 +5058,7 @@ msgid "Would you like to build your controller interactively?"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:165
+#, c-format
 msgid "Warning: Choosing no will overwrite the %sController."
 msgstr ""
 
@@ -4744,7 +5084,10 @@ msgid "The following controller will be created:"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:239
-msgid "Controller Name:\n\t%s"
+#, c-format
+msgid ""
+"Controller Name:\n"
+"	%s"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:246
@@ -4756,7 +5099,9 @@ msgid "Components:"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:274
-msgid "Would you like to create some basic class methods \n(index(), add(), view(), edit())?"
+msgid ""
+"Would you like to create some basic class methods \n"
+"(index(), add(), view(), edit())?"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:278
@@ -4764,27 +5109,40 @@ msgid "Would you like to create the basic class methods for admin routing?"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:300
-msgid "You must have a model for this class to build basic methods. Please try again."
+msgid ""
+"You must have a model for this class to build basic methods. Please try "
+"again."
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:332
+#, c-format
 msgid "Baking controller class for %s..."
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:376
-msgid "Would you like this controller to use other helpers\nbesides HtmlHelper and FormHelper?"
+msgid ""
+"Would you like this controller to use other helpers\n"
+"besides HtmlHelper and FormHelper?"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:377
-msgid "Please provide a comma separated list of the other\nhelper names you'd like to use.\nExample: 'Text, Js, Time'"
+msgid ""
+"Please provide a comma separated list of the other\n"
+"helper names you'd like to use.\n"
+"Example: 'Text, Js, Time'"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:389
-msgid "Would you like this controller to use other components\nbesides PaginatorComponent?"
+msgid ""
+"Would you like this controller to use other components\n"
+"besides PaginatorComponent?"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:390
-msgid "Please provide a comma separated list of the component names you'd like to use.\nExample: 'Acl, Security, RequestHandler'"
+msgid ""
+"Please provide a comma separated list of the component names you'd like to "
+"use.\n"
+"Example: 'Acl, Security, RequestHandler'"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:425
@@ -4792,7 +5150,9 @@ msgid "Possible Controllers based on your current database:"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:449
-msgid "Enter a number from the list above,\ntype in the name of another controller, or 'q' to exit"
+msgid ""
+"Enter a number from the list above,\n"
+"type in the name of another controller, or 'q' to exit"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:451
@@ -4801,15 +5161,21 @@ msgid "Exit"
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:456
-msgid "The Controller name you supplied was empty,\nor the number you selected was not an option. Please try again."
+msgid ""
+"The Controller name you supplied was empty,\n"
+"or the number you selected was not an option. Please try again."
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:478
-msgid "Bake a controller for a model. Using options you can bake public, admin or both."
+msgid ""
+"Bake a controller for a model. Using options you can bake public, admin or "
+"both."
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:480
-msgid "Name of the controller to bake. Can use Plugin.name to bake controllers into plugins."
+msgid ""
+"Name of the controller to bake. Can use Plugin.name to bake controllers into "
+"plugins."
 msgstr ""
 
 #: Console/Command/Task/ControllerTask.php:482
@@ -4917,46 +5283,57 @@ msgid "The following database configuration will be created:"
 msgstr ""
 
 #: Console/Command/Task/DbConfigTask.php:212
+#, c-format
 msgid "Name:         %s"
 msgstr ""
 
 #: Console/Command/Task/DbConfigTask.php:213
+#, c-format
 msgid "Datasource:   %s"
 msgstr ""
 
 #: Console/Command/Task/DbConfigTask.php:214
+#, c-format
 msgid "Persistent:   %s"
 msgstr ""
 
 #: Console/Command/Task/DbConfigTask.php:215
+#, c-format
 msgid "Host:         %s"
 msgstr ""
 
 #: Console/Command/Task/DbConfigTask.php:218
+#, c-format
 msgid "Port:         %s"
 msgstr ""
 
 #: Console/Command/Task/DbConfigTask.php:221
+#, c-format
 msgid "User:         %s"
 msgstr ""
 
 #: Console/Command/Task/DbConfigTask.php:222
+#, c-format
 msgid "Pass:         %s"
 msgstr ""
 
 #: Console/Command/Task/DbConfigTask.php:223
+#, c-format
 msgid "Database:     %s"
 msgstr ""
 
 #: Console/Command/Task/DbConfigTask.php:226
+#, c-format
 msgid "Table prefix: %s"
 msgstr ""
 
 #: Console/Command/Task/DbConfigTask.php:230
+#, c-format
 msgid "Schema:       %s"
 msgstr ""
 
 #: Console/Command/Task/DbConfigTask.php:234
+#, c-format
 msgid "Encoding:     %s"
 msgstr ""
 
@@ -4969,7 +5346,11 @@ msgid "Bake new database configuration settings."
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:123
-msgid "Current paths: %s\nWhat is the path you would like to extract?\n[Q]uit [D]one"
+#, c-format
+msgid ""
+"Current paths: %s\n"
+"What is the path you would like to extract?\n"
+"[Q]uit [D]one"
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:130;207
@@ -4989,14 +5370,19 @@ msgid "Would you like to extract the messages from the CakePHP core?"
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:203
-msgid "What is the path you would like to output?\n[Q]uit"
+msgid ""
+"What is the path you would like to output?\n"
+"[Q]uit"
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:223
-msgid "Would you like to merge all domain and category strings into the default.pot file?"
+msgid ""
+"Would you like to merge all domain and category strings into the default.pot "
+"file?"
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:233
+#, c-format
 msgid "The output directory %s was not found or writable."
 msgstr ""
 
@@ -5041,23 +5427,34 @@ msgid "Comma separated list of files."
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:326
-msgid "Ignores all files in plugins if this command is run inside from the same app directory."
+msgid ""
+"Ignores all files in plugins if this command is run inside from the same app "
+"directory."
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:328
-msgid "Extracts tokens only from the plugin specified and puts the result in the plugin's Locale directory."
+msgid ""
+"Extracts tokens only from the plugin specified and puts the result in the "
+"plugin's Locale directory."
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:332
-msgid "Ignores validation messages in the $validate property. If this flag is not set and the command is run from the same app directory, all messages in model validation rules will be extracted as tokens."
+msgid ""
+"Ignores validation messages in the $validate property. If this flag is not "
+"set and the command is run from the same app directory, all messages in "
+"model validation rules will be extracted as tokens."
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:337
-msgid "If set to a value, the localization domain to be used for model validation messages."
+msgid ""
+"If set to a value, the localization domain to be used for model validation "
+"messages."
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:339
-msgid "Comma separated list of directories to exclude. Any path containing a path segment with the provided values will be skipped. E.g. test,vendors"
+msgid ""
+"Comma separated list of directories to exclude. Any path containing a path "
+"segment with the provided values will be skipped. E.g. test,vendors"
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:345
@@ -5069,10 +5466,12 @@ msgid "Extract messages from the CakePHP core libs."
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:362
+#, c-format
 msgid "Processing %s..."
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:659
+#, c-format
 msgid "Error: %s already exists in this location. Overwrite? [Y]es, [N]o, [A]ll"
 msgstr ""
 
@@ -5081,11 +5480,16 @@ msgid "What would you like to name this file?"
 msgstr ""
 
 #: Console/Command/Task/ExtractTask.php:762
-msgid "Invalid marker content in %s:%s\n* %s("
+#, c-format
+msgid ""
+"Invalid marker content in %s:%s\n"
+"* %s("
 msgstr ""
 
 #: Console/Command/Task/FixtureTask.php:71
-msgid "Generate fixtures for use with the test suite. You can use `bake fixture all` to bake all fixtures."
+msgid ""
+"Generate fixtures for use with the test suite. You can use `bake fixture "
+"all` to bake all fixtures."
 msgstr ""
 
 #: Console/Command/Task/FixtureTask.php:73
@@ -5093,7 +5497,9 @@ msgid "Name of the fixture to bake. Can use Plugin.name to bake plugin fixtures.
 msgstr ""
 
 #: Console/Command/Task/FixtureTask.php:75
-msgid "When using generated data, the number of records to include in the fixture(s)."
+msgid ""
+"When using generated data, the number of records to include in the "
+"fixture(s)."
 msgstr ""
 
 #: Console/Command/Task/FixtureTask.php:79
@@ -5109,11 +5515,16 @@ msgid "Importing schema for fixtures rather than hardcoding it."
 msgstr ""
 
 #: Console/Command/Task/FixtureTask.php:96
-msgid "Used with --count and <name>/all commands to pull [n] records from the live tables, where [n] is either --count or the default of 10."
+msgid ""
+"Used with --count and <name>/all commands to pull [n] records from the live "
+"tables, where [n] is either --count or the default of 10."
 msgstr ""
 
 #: Console/Command/Task/FixtureTask.php:160
-msgid "Bake Fixture\nPath: %s"
+#, c-format
+msgid ""
+"Bake Fixture\n"
+"Path: %s"
 msgstr ""
 
 #: Console/Command/Task/FixtureTask.php:184
@@ -5125,15 +5536,19 @@ msgid "Would you like to use record importing for this fixture?"
 msgstr ""
 
 #: Console/Command/Task/FixtureTask.php:198
+#, c-format
 msgid "Would you like to build this fixture with data from %s's table?"
 msgstr ""
 
 #: Console/Command/Task/FixtureTask.php:286
+#, c-format
 msgid "Baking test fixture for %s..."
 msgstr ""
 
 #: Console/Command/Task/FixtureTask.php:419
-msgid "Please provide a SQL fragment to use as conditions\nExample: WHERE 1=1"
+msgid ""
+"Please provide a SQL fragment to use as conditions\n"
+"Example: WHERE 1=1"
 msgstr ""
 
 #: Console/Command/Task/FixtureTask.php:423
@@ -5141,6 +5556,7 @@ msgid "How many records do you want to import?"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:128
+#, c-format
 msgid "Baking %s"
 msgstr ""
 
@@ -5149,19 +5565,29 @@ msgid "Make a selection from the choices above"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:193
-msgid "Bake Model\nPath: %s"
+#, c-format
+msgid ""
+"Bake Model\n"
+"Path: %s"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:208
-msgid "The table %s doesn't exist or could not be automatically detected\ncontinue anyway?"
+#, c-format
+msgid ""
+"The table %s doesn't exist or could not be automatically detected\n"
+"continue anyway?"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:234
-msgid "Would you like to supply validation criteria \nfor the fields in your model?"
+msgid ""
+"Would you like to supply validation criteria \n"
+"for the fields in your model?"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:240
-msgid "Would you like to define model associations\n(hasMany, hasOne, belongsTo, etc.)?"
+msgid ""
+"Would you like to define model associations\n"
+"(hasMany, hasOne, belongsTo, etc.)?"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:249
@@ -5169,22 +5595,27 @@ msgid "The following Model will be created:"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:251
+#, c-format
 msgid "Name:       %s"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:254
+#, c-format
 msgid "DB Config:  %s"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:257
+#, c-format
 msgid "DB Table:   %s"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:260
+#, c-format
 msgid "Primary Key: %s"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:263
+#, c-format
 msgid "Validation: %s"
 msgstr ""
 
@@ -5197,7 +5628,9 @@ msgid "What is the primaryKey?"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:331
-msgid "A displayField could not be automatically detected\nwould you like to choose one?"
+msgid ""
+"A displayField could not be automatically detected\n"
+"would you like to choose one?"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:336
@@ -5205,14 +5638,18 @@ msgid "Choose a field from the options above:"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:411
-msgid "or enter in a valid regex validation string.\nAlternatively [s] skip the rest of the fields.\n"
+msgid ""
+"or enter in a valid regex validation string.\n"
+"Alternatively [s] skip the rest of the fields.\n"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:420
+#, c-format
 msgid "Field: <info>%s</info>"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:421
+#, c-format
 msgid "Type: <info>%s</info>"
 msgstr ""
 
@@ -5221,11 +5658,14 @@ msgid "Please select one of the following validation options:"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:435
+#, c-format
 msgid "%s - Do not do any validation on this field."
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:473
-msgid "You have already chosen that validation rule,\nplease choose again"
+msgid ""
+"You have already chosen that validation rule,\n"
+"please choose again"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:477
@@ -5233,7 +5673,9 @@ msgid "Please make a valid selection."
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:499
-msgid "Would you like to add another validation rule\nor skip the rest of the fields?"
+msgid ""
+"Would you like to add another validation rule\n"
+"or skip the rest of the fields?"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:521
@@ -5261,7 +5703,9 @@ msgid "Enter a number"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:733
-msgid "For the following options be very careful to match your setup exactly.\nAny spelling mistakes will cause errors."
+msgid ""
+"For the following options be very careful to match your setup exactly.\n"
+"Any spelling mistakes will cause errors."
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:737
@@ -5269,6 +5713,7 @@ msgid "What is the alias for this association?"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:738
+#, c-format
 msgid "What className will %s use?"
 msgstr ""
 
@@ -5301,6 +5746,7 @@ msgid "Define another association?"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:859
+#, c-format
 msgid "Baking model class for %s..."
 msgstr ""
 
@@ -5309,7 +5755,10 @@ msgid "Possible Models based on your current database:"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:925
-msgid "Given your model named '%s',\nCake would expect a database table named '%s'"
+#, c-format
+msgid ""
+"Given your model named '%s',\n"
+"Cake would expect a database table named '%s'"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:926
@@ -5325,11 +5774,15 @@ msgid "Your database does not have any tables."
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:980
-msgid "Enter a number from the list above,\ntype in the name of another model, or 'q' to exit"
+msgid ""
+"Enter a number from the list above,\n"
+"type in the name of another model, or 'q' to exit"
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:989
-msgid "The model name you supplied was empty,\nor the number you selected was not an option. Please try again."
+msgid ""
+"The model name you supplied was empty,\n"
+"or the number you selected was not an option. Please try again."
 msgstr ""
 
 #: Console/Command/Task/ModelTask.php:1010
@@ -5353,6 +5806,7 @@ msgid "The connection the model table is on."
 msgstr ""
 
 #: Console/Command/Task/PluginTask.php:63
+#, c-format
 msgid "Plugin: %s already exists, no action taken"
 msgstr ""
 
@@ -5361,19 +5815,23 @@ msgid "Enter the name of the plugin in CamelCase format"
 msgstr ""
 
 #: Console/Command/Task/PluginTask.php:85
+#, c-format
 msgid "An error occurred trying to bake: %s in %s"
 msgstr ""
 
 #: Console/Command/Task/PluginTask.php:101
+#, c-format
 msgid "<info>Plugin Name:</info> %s"
 msgstr ""
 
 #: Console/Command/Task/PluginTask.php:102
+#, c-format
 msgid "<info>Plugin Directory:</info> %s"
 msgstr ""
 
 #: Console/Command/Task/PluginTask.php:169
 #: Console/Command/Task/ProjectTask.php:207
+#, c-format
 msgid "<success>Created:</success> %s in %s"
 msgstr ""
 
@@ -5382,7 +5840,9 @@ msgid "Choose a plugin path from the paths above."
 msgstr ""
 
 #: Console/Command/Task/PluginTask.php:229
-msgid "Create the directory structure, AppModel and AppController classes for a new plugin. Can create plugins in any of your bootstrapped plugin paths."
+msgid ""
+"Create the directory structure, AppModel and AppController classes for a new "
+"plugin. Can create plugins in any of your bootstrapped plugin paths."
 msgstr ""
 
 #: Console/Command/Task/PluginTask.php:232
@@ -5394,6 +5854,7 @@ msgid "What is the path to the project you want to bake?"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:68
+#, c-format
 msgid "<warning>A project already exists in this location:</warning> %s Overwrite?"
 msgstr ""
 
@@ -5402,7 +5863,10 @@ msgid " * Random hash key created for 'Security.salt'"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:82
-msgid "Unable to generate random hash for 'Security.salt', you should change it in %s"
+#, c-format
+msgid ""
+"Unable to generate random hash for 'Security.salt', you should change it in "
+"%s"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:87
@@ -5410,7 +5874,10 @@ msgid " * Random seed created for 'Security.cipherSeed'"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:89
-msgid "Unable to generate random seed for 'Security.cipherSeed', you should change it in %s"
+#, c-format
+msgid ""
+"Unable to generate random seed for 'Security.cipherSeed', you should change "
+"it in %s"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:94
@@ -5430,11 +5897,15 @@ msgid "Unable to set console path for app/Console."
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:109
-msgid "<info>CakePHP is on your `include_path`. CAKE_CORE_INCLUDE_PATH will be set, but commented out.</info>"
+msgid ""
+"<info>CakePHP is on your `include_path`. CAKE_CORE_INCLUDE_PATH will be set, "
+"but commented out.</info>"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:111
-msgid "<warning>CakePHP is not on your `include_path`, CAKE_CORE_INCLUDE_PATH will be hard coded.</warning>"
+msgid ""
+"<warning>CakePHP is not on your `include_path`, CAKE_CORE_INCLUDE_PATH will "
+"be hard coded.</warning>"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:112
@@ -5442,18 +5913,23 @@ msgid "You can fix this by adding CakePHP to your `include_path`."
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:117;118
+#, c-format
 msgid " * CAKE_CORE_INCLUDE_PATH set to %s in %s"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:120
+#, c-format
 msgid "Unable to set CAKE_CORE_INCLUDE_PATH, you should change it in %s"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:124
-msgid "   * <warning>Remember to check these values after moving to production server</warning>"
+msgid ""
+"   * <warning>Remember to check these values after moving to production "
+"server</warning>"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:129
+#, c-format
 msgid "Could not set permissions on %s"
 msgstr ""
 
@@ -5486,6 +5962,7 @@ msgid "<info>Will be copied to</info>: "
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:210
+#, c-format
 msgid "<error>Could not create</error> '%s' properly."
 msgstr ""
 
@@ -5502,6 +5979,7 @@ msgid "Please choose a prefix to bake with."
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:406;416
+#, c-format
 msgid "You need to enable %s in %s to use prefix routing."
 msgstr ""
 
@@ -5510,6 +5988,7 @@ msgid "What would you like the prefix route to be?"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:410
+#, c-format
 msgid "Example: %s"
 msgstr ""
 
@@ -5518,6 +5997,7 @@ msgid "Enter a routing prefix:"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:415
+#, c-format
 msgid "<error>Unable to write to</error> %s."
 msgstr ""
 
@@ -5534,7 +6014,9 @@ msgid "Create empty files in each of the directories. Good if you are using git"
 msgstr ""
 
 #: Console/Command/Task/ProjectTask.php:446
-msgid "The directory layout to use for the new application skeleton. Defaults to cake/Console/Templates/skel of CakePHP used to create the project."
+msgid ""
+"The directory layout to use for the new application skeleton. Defaults to "
+"cake/Console/Templates/skel of CakePHP used to create the project."
 msgstr ""
 
 #: Console/Command/Task/TemplateTask.php:176
@@ -5550,6 +6032,7 @@ msgid "Which bake theme would you like to use?"
 msgstr ""
 
 #: Console/Command/Task/TemplateTask.php:213
+#, c-format
 msgid "Could not find template for %s"
 msgstr ""
 
@@ -5558,6 +6041,7 @@ msgid "Bake Tests"
 msgstr ""
 
 #: Console/Command/Task/TestTask.php:118
+#, c-format
 msgid "Incorrect type provided. Please choose one of %s"
 msgstr ""
 
@@ -5566,6 +6050,7 @@ msgid "Bake is detecting possible fixtures..."
 msgstr ""
 
 #: Console/Command/Task/TestTask.php:162
+#, c-format
 msgid "Baking test case for %s %s ..."
 msgstr ""
 
@@ -5578,6 +6063,7 @@ msgid "Enter the type of object to bake a test for or (q)uit"
 msgstr ""
 
 #: Console/Command/Task/TestTask.php:222
+#, c-format
 msgid "Choose a %s class"
 msgstr ""
 
@@ -5590,7 +6076,10 @@ msgid "Bake could not detect fixtures, would you like to add some?"
 msgstr ""
 
 #: Console/Command/Task/TestTask.php:456
-msgid "Please provide a comma separated list of the fixtures names you'd like to use.\nExample: 'app.comment, app.post, plugin.forums.post'"
+msgid ""
+"Please provide a comma separated list of the fixtures names you'd like to "
+"use.\n"
+"Example: 'app.comment, app.post, plugin.forums.post'"
 msgstr ""
 
 #: Console/Command/Task/TestTask.php:554
@@ -5598,7 +6087,9 @@ msgid "Bake test case skeletons for classes."
 msgstr ""
 
 #: Console/Command/Task/TestTask.php:556
-msgid "Type of class to bake, can be any of the following: controller, model, helper, component or behavior."
+msgid ""
+"Type of class to bake, can be any of the following: controller, model, "
+"helper, component or behavior."
 msgstr ""
 
 #: Console/Command/Task/TestTask.php:565
@@ -5610,11 +6101,18 @@ msgid "CamelCased name of the plugin to bake tests for."
 msgstr ""
 
 #: Console/Command/Task/ViewTask.php:209
-msgid "Would you like bake to build your views interactively?\nWarning: Choosing no will overwrite %s views if they exist."
+#, c-format
+msgid ""
+"Would you like bake to build your views interactively?\n"
+"Warning: Choosing no will overwrite %s views if they exist."
 msgstr ""
 
 #: Console/Command/Task/ViewTask.php:216
-msgid "Would you like to create some CRUD views\n(index, add, view, edit) for this controller?\nNOTE: Before doing so, you'll need to create your controller\nand model classes (including associated models)."
+msgid ""
+"Would you like to create some CRUD views\n"
+"(index, add, view, edit) for this controller?\n"
+"NOTE: Before doing so, you'll need to create your controller\n"
+"and model classes (including associated models)."
 msgstr ""
 
 #: Console/Command/Task/ViewTask.php:219
@@ -5630,7 +6128,10 @@ msgid "Controller not found"
 msgstr ""
 
 #: Console/Command/Task/ViewTask.php:267
-msgid "The file '%s' could not be found.\nIn order to bake a view, you'll need to first create the controller."
+#, c-format
+msgid ""
+"The file '%s' could not be found.\n"
+"In order to bake a view, you'll need to first create the controller."
 msgstr ""
 
 #: Console/Command/Task/ViewTask.php:319
@@ -5646,14 +6147,17 @@ msgid "The following view will be created:"
 msgstr ""
 
 #: Console/Command/Task/ViewTask.php:328
+#, c-format
 msgid "Controller Name: %s"
 msgstr ""
 
 #: Console/Command/Task/ViewTask.php:329
+#, c-format
 msgid "Action Name:     %s"
 msgstr ""
 
 #: Console/Command/Task/ViewTask.php:330
+#, c-format
 msgid "Path:            %s"
 msgstr ""
 
@@ -5662,6 +6166,7 @@ msgid "Bake Aborted."
 msgstr ""
 
 #: Console/Command/Task/ViewTask.php:354
+#, c-format
 msgid "Baking `%s` view file..."
 msgstr ""
 
@@ -5670,7 +6175,9 @@ msgid "Bake views for a controller, using built-in or custom templates."
 msgstr ""
 
 #: Console/Command/Task/ViewTask.php:425
-msgid "Name of the controller views to bake. Can be Plugin.name as a shortcut for plugin baking."
+msgid ""
+"Name of the controller views to bake. Can be Plugin.name as a shortcut for "
+"plugin baking."
 msgstr ""
 
 #: Console/Command/Task/ViewTask.php:427
@@ -5694,6 +6201,16 @@ msgid "The connection the connected model is on."
 msgstr ""
 
 #: Console/Command/Task/ViewTask.php:446
-msgid "Bake all CRUD action views for all controllers. Requires models and controllers to exist."
+msgid ""
+"Bake all CRUD action views for all controllers. Requires models and "
+"controllers to exist."
 msgstr ""
 
+#: AdminMenus/add.ctp:5
+msgid "Add Admin Menu"
+msgstr "Thêm menu admin"
+
+#: AdminMenus/index.ctp:10
+#: AdminMenus/view.ctp:13
+msgid "New Admin Menu"
+msgstr "Thêm menu admin"

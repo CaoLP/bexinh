@@ -579,7 +579,8 @@ if (!function_exists('__')) {
  * @link http://book.cakephp.org/2.0/en/core-libraries/global-constants-and-functions.html#__
  */
 	function __($singular, $args = null) {
-		if (!$singular) {
+
+        if (!$singular) {
 			return;
 		}
 

@@ -207,7 +207,6 @@ class I18n {
 		if (is_numeric($category)) {
 			$_this->category = $_this->_categories[$category];
 		}
-
 		if (empty($language)) {
 			if (CakeSession::started()) {
 				$language = CakeSession::read('Config.language');
@@ -381,7 +380,6 @@ class I18n {
 		$merge = array();
 		$searchPaths = App::path('locales');
 		$plugins = CakePlugin::loaded();
-
 		if (!empty($plugins)) {
 			foreach ($plugins as $plugin) {
 				$pluginDomain = Inflector::underscore($plugin);

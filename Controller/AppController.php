@@ -43,7 +43,6 @@ class AppController extends Controller
         ),
         'DebugKit.Toolbar'
     );
-
     public function beforeRender()
     {
         $this->set('statuses', array(
