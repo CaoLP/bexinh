@@ -15,6 +15,12 @@ class OptionGroupsController extends AppController {
  */
 	public $components = array('Paginator');
 
+    public function beforeFilter(){
+        $this->set('inventory',array(
+            __('Not for Inventory'),
+            __('Use for inventory'),
+        ));
+    }
 /**
  * index method
  *

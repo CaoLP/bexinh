@@ -81,8 +81,12 @@
                                             else
                                                 echo '';
                                         }
-                                        ?> name="data[ProductOption][]" id="flat-checkbox-<?php echo $s_key; ?>" value="<?php echo $s_key; ?>">
-                                        <label for="flat-checkbox-<?php echo $s_key; ?>"><?php echo $opt ?></label>
+                                        ?> name="data[ProductOption][]"
+                                               <?php if(!empty($opt['Option']['parent_id'])) echo ' disabled="true" class="parent-'.$opt['Option']['parent_id'].'" ';
+                                               else echo ' class="option-checkbox" '
+                                               ?>
+                                               id="flat-checkbox-<?php echo $s_key; ?>" value="<?php echo $s_key; ?>">
+                                        <label for="flat-checkbox-<?php echo $s_key; ?>"><?php echo $opt['Option']['name'] ?></label>
                                     </div>
                                 </div>
                             <?php
