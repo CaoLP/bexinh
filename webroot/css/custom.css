@@ -64,3 +64,11 @@ span.title-option {
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px;
 }
+
+.list-option .checkbox {
+    width: 150px;
+    text-align: left;
+}
+.icheckbox_flat {
+    float: left;
+}

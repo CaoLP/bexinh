@@ -6,7 +6,9 @@ App::uses('AppModel', 'Model');
  * @property OptionGroup $OptionGroup
  */
 class Option extends AppModel {
-
+    public $actsAs = array(
+        'Tree'
+    );
 /**
  * Validation rules
  *
@@ -49,7 +51,29 @@ class Option extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		)
+		),
+        'ParentOption' => array(
+            'className' => 'Option',
+            'foreignKey' => 'parent_id',
+            'conditions' => '',
+            'fields' => '',
+            'order' => ''
+        )
 	);
+    public $hasMany = array(
+        'ChildOption' => array(
+            'className' => 'Option',
+            'foreignKey' => 'parent_id',
+            'dependent' => false,
+            'conditions' => '',
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        )
+    );
 
 }

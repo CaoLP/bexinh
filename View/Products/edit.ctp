@@ -5,109 +5,100 @@
         <?php echo __('Edit Product'); ?>    </h3>
 </div>
 <div class="panel-body">
+    <?php echo $this->Form->create('Product', array('role' => 'form')); ?>
     <div class="col-md-12">
-        <ul class="nav nav-pills nav-justified">
-            <li><?php echo $this->Form->postLink('<span class="glyphicon glyphicon-remove"></span>'.__('Delete'), array('action' => 'delete', $this->Form->value('Product.id')), array('escape' => false), __('Are you sure you want to delete # %s?', $this->Form->value('Product.id'))); ?></li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Products'), array('action' => 'index'), array('escape' => false)); ?></li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Providers'), array('controller' => 'providers', 'action' => 'index'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Provider'), array('controller' => 'providers', 'action' => 'add'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Categories'), array('controller' => 'categories', 'action' => 'index'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Category'), array('controller' => 'categories', 'action' => 'add'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Users'), array('controller' => 'users', 'action' => 'index'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Trackable Creator'), array('controller' => 'users', 'action' => 'add'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Inout Warehouse Details'), array('controller' => 'inout_warehouse_details', 'action' => 'index'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Inout Warehouse Detail'), array('controller' => 'inout_warehouse_details', 'action' => 'add'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Order Details'), array('controller' => 'order_details', 'action' => 'index'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Order Detail'), array('controller' => 'order_details', 'action' => 'add'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Product Categories'), array('controller' => 'product_categories', 'action' => 'index'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Product Category'), array('controller' => 'product_categories', 'action' => 'add'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Product Options'), array('controller' => 'product_options', 'action' => 'index'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Product Option'), array('controller' => 'product_options', 'action' => 'add'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-list"></span>'.__('List Warehouses'), array('controller' => 'warehouses', 'action' => 'index'), array('escape' => false)); ?> </li>
-            <li><?php echo $this->Html->link('<span class="glyphicon glyphicon-plus"></span>'.__('New Warehouse'), array('controller' => 'warehouses', 'action' => 'add'), array('escape' => false)); ?> </li>
+        <ul class="nav nav-pills pull-right">
+            <li><button class="btn btn-info" type="submit" name="submit" value="save"><span class="glyphicon glyphicon-plus"></span> <?php echo __('Save product')?></button></li>
+            <li><button class="btn btn-info"  type="submit" name="submit" value="addnew"><span class="glyphicon glyphicon-plus"></span> <?php echo __('Save product and Add new')?></button></li>
         </ul>
     </div>
-    <div class="col-md-12">
-        <?php echo $this->Form->create('Product', array('role' => 'form')); ?>
-
-        <div class="form-group">
-            <?php echo $this->Form->input('id', array('class' => 'form-control', 'placeholder' => 'Id')); ?>
-        </div>
-        <div class="form-group">
-            <?php echo $this->Form->input('sku', array('class' => 'form-control', 'placeholder' => 'Sku')); ?>
-        </div>
-        <div class="form-group">
-            <?php echo $this->Form->input('category_id', array('class' => 'form-control', 'placeholder' => 'Category Id')); ?>
-        </div>
-        <div class="form-group">
-            <?php echo $this->Form->input('provider_id', array('class' => 'form-control', 'placeholder' => 'Provider Id')); ?>
-        </div>
-        <div class="form-group">
-            <?php echo $this->Form->input('name', array('class' => 'form-control', 'placeholder' => 'Name')); ?>
-        </div>
-        <div class="form-group">
-            <?php echo $this->Form->input('price', array('type' => 'text', 'class' => 'form-control currency', 'placeholder' => 'Price')); ?>
-        </div>
-        <div class="form-group">
-            <?php echo $this->Form->input('retail_price', array('type' => 'text', 'class' => 'form-control currency', 'placeholder' => 'Retail Price')); ?>
-        </div>
-        <div class="form-group">
-            <?php echo $this->Form->input('source_price', array('type' => 'text', 'class' => 'form-control currency', 'placeholder' => 'Source Price')); ?>
-        </div>
-        <div class="form-group">
-            <?php echo $this->Form->input('excert', array('class' => 'form-control', 'placeholder' => 'Excert')); ?>
-        </div>
-        <div class="form-group">
-            <?php echo $this->Media->ckeditor('descriptions', array('label' => __('Descriptions'))); ?>
-            <?php //echo $this->Form->input('descriptions', array('class' => 'form-control', 'placeholder' => 'Descriptions')); ?>
-        </div>
-        <div class="form-group">
-            <div class="panel panel-default">
-                <div class="panel-heading"><?php echo __('Options') ?></div>
-                <div class="panel-body">
-                    <?php foreach ($product_options as $key => $opt_gr) {
-                        ?>
-                        <h4><?php echo $key ?></h4>
-                        <?php
-                        foreach ($opt_gr as $s_key => $opt) {
-                            ?>
-                            <div class="list-option">
-                                <span class="title-option"><?php echo $opt ?></span>
-                                <label class="toggle">
-                                    <input type="checkbox" <?php
-                                    foreach ($this->request->data['ProductOption'] as $op) {
-                                        if ($op['option_id'] == $s_key) echo 'checked';
-                                        else
-                                            echo '';
-                                    }
-                                    ?> name="data[ProductOption][]" value="<?php echo $s_key; ?>">
-                                    <span class="handle"></span>
-                                </label>
-                            </div>
-                        <?php
-                        }
-                    } ?>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="form-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><?php echo __('Images') ?></div>
+                    <div class="panel-body">
+                        <?php echo $this->Media->iframe('Product', $this->request->data['Product']['id']); ?>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="form-group">
-            <?php echo $this->Form->input('status', array('class' => 'form-control', 'placeholder' => 'Status')); ?>
-        </div>
-        <div class="form-group">
-            <div class="panel panel-default">
-                <div class="panel-heading"><?php echo __('Images') ?></div>
-                <div class="panel-body">
-                    <?php echo $this->Media->iframe('Product', $this->request->data['Product']['id']); ?>
-                </div>
+        <div class="col-lg-8">
+            <div class="form-group">
+                <?php echo $this->Form->input('id', array('class' => 'form-control', 'placeholder' => 'Id')); ?>
             </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('sku', array('class' => 'form-control', 'placeholder' => 'Sku')); ?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('category_id', array('class' => 'form-control', 'placeholder' => 'Category Id')); ?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('provider_id', array('class' => 'form-control', 'placeholder' => 'Provider Id')); ?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('name', array('class' => 'form-control', 'placeholder' => 'Name')); ?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('price', array('type' => 'text', 'class' => 'form-control currency', 'placeholder' => 'Price')); ?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('retail_price', array('type' => 'text', 'class' => 'form-control currency', 'placeholder' => 'Retail Price')); ?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('source_price', array('type' => 'text', 'class' => 'form-control currency', 'placeholder' => 'Source Price')); ?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Form->input('status', array('class' => 'form-control', 'placeholder' => 'Status')); ?>
+            </div>
+
         </div>
-        <div class="form-group">
-            <?php echo $this->Form->submit(__('Submit'), array('class' => 'btn btn-default')); ?>
-        </div>
-
-        <?php echo $this->Form->end() ?>
-
-
     </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="form-group">
+                <?php echo $this->Form->input('excert', array('class' => 'form-control', 'placeholder' => 'Excert')); ?>
+            </div>
+            <div class="form-group">
+                <?php echo $this->Media->ckeditor('descriptions', array('label' => __('Descriptions'))); ?>
+                <?php //echo $this->Form->input('descriptions', array('class' => 'form-control', 'placeholder' => 'Descriptions')); ?>
+            </div>
+            <div class="form-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><?php echo __('Options') ?></div>
+                    <div class="panel-body">
+                        <?php foreach ($product_options as $key => $opt_gr) {
+                            ?>
+                            <h4><?php echo $key ?></h4>
+                            <?php
+                            foreach ($opt_gr as $s_key => $opt) {
+                                ?>
+                                <div class="list-option">
+                                    <div class="checkbox">
+                                        <input type="checkbox" <?php
+                                        foreach ($this->request->data['ProductOption'] as $op) {
+                                            if ($op['option_id'] == $s_key) echo 'checked';
+                                            else
+                                                echo '';
+                                        }
+                                        ?> name="data[ProductOption][]" id="flat-checkbox-<?php echo $s_key; ?>" value="<?php echo $s_key; ?>">
+                                        <label for="flat-checkbox-<?php echo $s_key; ?>"><?php echo $opt ?></label>
+                                    </div>
+                                </div>
+                            <?php
+                            }
+                        } ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <ul class="nav nav-pills pull-right">
+            <li><button class="btn btn-info" type="submit" name="submit" value="save"><span class="glyphicon glyphicon-plus"></span> <?php echo __('Save product')?></button></li>
+            <li><button class="btn btn-info"  type="submit" name="submit" value="addnew"><span class="glyphicon glyphicon-plus"></span> <?php echo __('Save product and Add new')?></button></li>
+        </ul>
+    </div>
+    <?php echo $this->Form->end() ?>
 </div>
 

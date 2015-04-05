@@ -24,7 +24,7 @@
             <?php echo $this->Form->input('id', array('class' => 'form-control', 'placeholder' => 'Id')); ?>
         </div>
         <div class="form-group">
-            <?php echo $this->Form->input('parent_id', array('class' => 'form-control', 'placeholder' => 'Parent Id')); ?>
+            <?php echo $this->Form->input('parent_id', array('class' => 'form-control','empty'=>__('__Select parent__'), 'placeholder' => 'Parent Id')); ?>
         </div>
         <div class="form-group">
             <?php echo $this->Form->input('name', array('class' => 'form-control', 'placeholder' => 'Name')); ?>

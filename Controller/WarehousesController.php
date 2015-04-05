@@ -56,7 +56,11 @@ class WarehousesController extends AppController {
 			}
 		}
 		$stores = $this->Warehouse->Store->find('list');
-		$products = $this->Warehouse->Product->find('list');
+		$products = $this->Warehouse->Product->find('list',array(
+            'conditions' => array(
+                'Product.status <>' => 0
+            ),
+        ));
 		$this->set(compact('stores', 'products'));
 	}
 
@@ -83,7 +87,11 @@ class WarehousesController extends AppController {
 			$this->request->data = $this->Warehouse->find('first', $options);
 		}
 		$stores = $this->Warehouse->Store->find('list');
-		$products = $this->Warehouse->Product->find('list');
+        $products = $this->Warehouse->Product->find('list',array(
+            'conditions' => array(
+                'Product.status <>' => 0
+            ),
+        ));
 		$this->set(compact('stores', 'products'));
 	}
 

@@ -120,7 +120,11 @@ class ProductsController extends AppController
                 $product_id = $this->Product->id;
                 $this->Product->ProductOption->updateOptions($this->request->data['ProductOption'], $product_id);
                 $this->Session->setFlash(__('The product has been saved.'), 'default', array('class' => 'alert alert-success'));
-                return $this->redirect(array('action' => 'index'));
+                if($this->request->data['submit'] == 'save'){
+                    return $this->redirect(array('action' => 'index'));
+                }else{
+                    return $this->redirect(array('action' => 'add'));
+                }
             } else {
                 $this->Session->setFlash(__('The product could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
             }
@@ -132,6 +136,7 @@ class ProductsController extends AppController
         $categories = $this->Product->Category->find('list');
 
         $product_options = $this->Product->ProductOption->Option->find('all');
+        print_r($product_options);die;
         $product_options = Set::combine($product_options,'{n}.Option.id','{n}.Option.name','{n}.OptionGroup.name');
         $this->set(compact('providers', 'categories','product_options'));
     }

@@ -103,8 +103,8 @@ class CategoriesController extends AppController {
 			$options = array('conditions' => array('Category.' . $this->Category->primaryKey => $id));
 			$this->request->data = $this->Category->find('first', $options);
 		}
-		$parentCategories = $this->Category->ParentCategory->find('list');
-		$this->set(compact('parentCategories'));
+		$parents = $this->Category->ParentCategory->find('list');
+		$this->set(compact('parents'));
 	}
 
 /**
