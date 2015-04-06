@@ -50,7 +50,7 @@ class Option extends AppModel {
 			'foreignKey' => 'option_group_id',
 			'conditions' => '',
 			'fields' => '',
-			'order' => ''
+			'order' => array('OptionGroup.lft')
 		),
         'ParentOption' => array(
             'className' => 'Option',

@@ -6,6 +6,9 @@ App::uses('AppModel', 'Model');
  * @property Option $Option
  */
 class OptionGroup extends AppModel {
+    public $actsAs = array(
+        'Tree'
+    );
 
 /**
  * Validation rules

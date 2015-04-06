@@ -65,10 +65,13 @@ span.title-option {
     right: 0px;
 }
 
-.list-option .checkbox {
-    width: 150px;
+.list-option .checkbox, .list-option .radio {
+    width: 120px;
     text-align: left;
 }
 .icheckbox_flat {
+    float: left;
+}
+.list-option input[type=radio]{
     float: left;
 }

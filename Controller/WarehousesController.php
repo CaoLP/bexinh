@@ -46,7 +46,12 @@ class WarehousesController extends AppController {
  * @return void
  */
 	public function add() {
+
+        if($this->request->isAjax()){
+            $this->layout = 'ajax';
+        }
 		if ($this->request->is('post')) {
+            debug($this->request->data);die;
 			$this->Warehouse->create();
 			if ($this->Warehouse->save($this->request->data)) {
 				$this->Session->setFlash(__('The warehouse has been saved.'), 'default', array('class' => 'alert alert-success'));
@@ -61,7 +66,10 @@ class WarehousesController extends AppController {
                 'Product.status <>' => 0
             ),
         ));
-		$this->set(compact('stores', 'products'));
+        $this->loadModel('Option');
+        $product_options = $this->Option->find('all',array('conditions'=>array('inventory'=>1)));
+        $product_options = Set::combine($product_options,'{n}.Option.id','{n}','{n}.OptionGroup.name');
+        $this->set(compact('stores', 'products','product_options'));
 	}
 
 /**
@@ -92,7 +100,10 @@ class WarehousesController extends AppController {
                 'Product.status <>' => 0
             ),
         ));
-		$this->set(compact('stores', 'products'));
+        $this->loadModel('Option');
+        $product_options = $this->Option->find('all');
+        $product_options = Set::combine($product_options,'{n}.Option.id','{n}','{n}.OptionGroup.name');
+		$this->set(compact('stores', 'products','product_options'));
 	}
 
 /**
