@@ -22,11 +22,10 @@
                 <th><?php echo $this->Paginator->sort('id'); ?></th>
                 <th><?php echo $this->Paginator->sort('store_id'); ?></th>
                 <th><?php echo $this->Paginator->sort('product_id'); ?></th>
-                <th><?php echo $this->Paginator->sort('options'); ?></th>
+                <th><?php echo __('Options')?></th>
                 <th><?php echo $this->Paginator->sort('price'); ?></th>
                 <th><?php echo $this->Paginator->sort('retail_price'); ?></th>
                 <th><?php echo $this->Paginator->sort('qty'); ?></th>
-                <th><?php echo $this->Paginator->sort('code'); ?></th>
                 <th><?php echo $this->Paginator->sort('created'); ?></th>
                 <th><?php echo $this->Paginator->sort('created_by'); ?></th>
                 <th><?php echo $this->Paginator->sort('updated'); ?></th>
@@ -44,11 +43,10 @@
                     <td>
                         <?php echo $this->Html->link($warehouse['Product']['name'], array('controller' => 'products', 'action' => 'view', $warehouse['Product']['id'])); ?>
                     </td>
-                    <td><?php echo h($warehouse['Warehouse']['options']); ?>&nbsp;</td>
+                    <td><?php echo implode(',',$warehouse['WarehouseOption']); ?>&nbsp;</td>
                     <td><?php echo h($warehouse['Warehouse']['price']); ?>&nbsp;</td>
                     <td><?php echo h($warehouse['Warehouse']['retail_price']); ?>&nbsp;</td>
                     <td><?php echo h($warehouse['Warehouse']['qty']); ?>&nbsp;</td>
-                    <td><?php echo h($warehouse['Warehouse']['code']); ?>&nbsp;</td>
                     <td><?php echo h($warehouse['Warehouse']['created']); ?>&nbsp;</td>
                     <td>
                         <?php echo $this->Html->link($warehouse['TrackableCreator']['name'], array('controller' => 'users', 'action' => 'view', $warehouse['TrackableCreator']['id'])); ?>

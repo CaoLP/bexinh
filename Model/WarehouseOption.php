@@ -32,4 +32,43 @@ class WarehouseOption extends AppModel {
 		)
 	);
 
+    public function updateOptions($data, $warehouse_id)
+    {
+        $old_options = $this->find('list',
+            array(
+                'fields' => 'option_id,id',
+                'conditions' =>
+                    array(
+                        'warehouse_id' => $warehouse_id
+                    )
+            )
+        );
+        $saveData = array();
+        foreach($data as $d){
+            if(in_array($d,array_keys($old_options))){
+                $saveData[] = array(
+                    'id' => $old_options[$d],
+                    'option_id' => $d,
+                    'disable' => 0
+                );
+            }else{
+                $saveData[] = array(
+                    'warehouse_id' => $warehouse_id,
+                    'option_id' => $d,
+                    'disable' => 0
+                );
+            }
+        }
+        $removeData = array();
+        foreach(array_keys($old_options) as $d){
+            if(!in_array($d,$data)){
+                $removeData[] = $old_options[$d];
+            }
+        }
+        $this->saveMany($saveData);
+        $this->deleteAll(array(
+            'WarehouseOption.id' => $removeData
+        ));
+    }
+
 }

@@ -69,6 +69,9 @@ span.title-option {
     width: 120px;
     text-align: left;
 }
+.list-option .radio {
+     margin-left: 20px;
+ }
 .icheckbox_flat {
     float: left;
 }
