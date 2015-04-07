@@ -46,4 +46,16 @@ $(function() {
         }
     });
 
+    $(document).on('change','#WarehouseProductId',function(){
+        if($(this).val()){
+            var href = $('#warehouse-options').data('href');
+            $('#warehouse-options').load(href + '/' + $(this).val(),function(){
+                $('#warehouse-options input').iCheck({radioClass:'iradio_flat'});
+            });
+
+        }else{
+            $('#warehouse-options').html('');
+        }
+    });
+
 });

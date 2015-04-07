@@ -107,4 +107,30 @@ class ProductOptionsController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+
+    public function load_options($product_id){
+        $this->layout = 'ajax';
+        $product_options = $this->ProductOption->find('all', array(
+                'fields' => 'Option.id, Option.name, Option.option_group_id  ,OptionGroup.id, OptionGroup.name',
+                'conditions' => array(
+                    'product_id' => $product_id,
+                    'Option.parent_id' => '',
+                ),
+                'joins' => array(
+                    array(
+                        'table' => 'option_groups',
+                        'alias'=> 'OptionGroup',
+                        'type' => 'INNER',
+                        'conditions' => array(
+                            'OptionGroup.id = Option.option_group_id',
+                            'OptionGroup.inventory' => 1
+                        )
+                    )
+                ),
+                'order' =>  array('OptionGroup.lft')
+            )
+        );
+        $product_options = Set::combine($product_options, '{n}.Option.id', '{n}', '{n}.OptionGroup.name');
+        $this->set(compact('product_options'));
+    }
 }

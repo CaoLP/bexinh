@@ -40,16 +40,6 @@ class Warehouse extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-		),
-		'price' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
 		)
 	);
 
@@ -104,6 +94,7 @@ class Warehouse extends AppModel {
                 ),
                 'recursive' => -1
             ));
+
 //            $log = $this->getDataSource()->getLog(false, false);
 //            debug($log);
 //            debug($this->data['WarehouseOption']);
@@ -111,9 +102,30 @@ class Warehouse extends AppModel {
             if(count($find) > 0){
                 $this->data[$this->alias]['id'] = $find[$this->alias]['id'];
                 $this->data[$this->alias]['qty'] = $this->data[$this->alias]['qty'] + $find[$this->alias]['qty'];
+                if(empty($this->data[$this->alias]['price']) || empty($this->data[$this->alias]['retail_price'])){
+                    if(empty($this->data[$this->alias]['price'])) $this->data[$this->alias]['price'] = $find[$this->alias]['price'];
+                    if(empty($this->data[$this->alias]['retail_price'])) $this->data[$this->alias]['retail_price'] = $find[$this->alias]['retail_price'];
+                }
                 $this->delete($this->data[$this->alias]['id']);
+            }else{
+                if(empty($this->data[$this->alias]['price']) || empty($this->data[$this->alias]['retail_price'])){
+                    $product = $this->Product->find('first',array(
+                        'conditions' => array(
+                            'Product.id'=>$this->data[$this->alias]['product_id']
+                        ),
+                        'recursive' => -1
+                    ));
+                    if(count($product)>0){
+                        if(empty($this->data[$this->alias]['price'])) $this->data[$this->alias]['price'] = $product['Product']['price'];
+                        if(empty($this->data[$this->alias]['retail_price'])) $this->data[$this->alias]['retail_price'] = $product['Product']['retail_price'];
+                    }else{
+                        if(empty($this->data[$this->alias]['price'])) $this->data[$this->alias]['price'] =0;
+                        if(empty($this->data[$this->alias]['retail_price'])) $this->data[$this->alias]['retail_price'] = 0;
+                    }
+                }
             }
         } else {
+
         }
         parent::beforeSave($options);
     }

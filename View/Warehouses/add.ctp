@@ -18,42 +18,19 @@
             <?php echo $this->Form->input('store_id', array('class' => 'form-control', 'placeholder' => 'Store Id')); ?>
         </div>
         <div class="form-group">
-            <?php echo $this->Form->input('product_id', array('class' => 'form-control', 'placeholder' => 'Product Id')); ?>
+            <?php echo $this->Form->input('product_id', array('class' => 'form-control', 'placeholder' => 'Product Id','empty' => __('__Select Product__'))); ?>
         </div>
         <div class="form-group">
-            <?php echo $this->Form->input('price', array('class' => 'form-control currency', 'placeholder' => __('Price'), 'type'=>'text')); ?>
+            <?php echo $this->Form->input('price', array('class' => 'form-control currency', 'placeholder' => __('Leave empty if use basic price'), 'type'=>'text')); ?>
         </div>
         <div class="form-group">
-            <?php echo $this->Form->input('retail_price', array('class' => 'form-control currency', 'placeholder' => __('Retail Price'), 'type'=>'text')); ?>
+            <?php echo $this->Form->input('retail_price', array('class' => 'form-control currency', 'placeholder' => __('Leave empty if use basic price'), 'type'=>'text')); ?>
         </div>
         <div class="form-group">
             <?php echo $this->Form->input('qty', array('class' => 'form-control', 'placeholder' => 'Qty', 'type'=>'text')); ?>
         </div>
         <div class="form-group">
-            <div class="panel panel-default">
-                <div class="panel-heading"><?php echo __('Options') ?></div>
-                <div class="panel-body">
-                    <?php foreach ($product_options as $key => $opt_gr) {
-                        ?>
-                        <h4><?php echo $key ?></h4>
-                        <?php
-                        foreach ($opt_gr as $s_key => $opt) {
-                            ?>
-                            <div class="list-option">
-                                <div class="radio">
-                                    <input type="radio"  name="data[WarehouseOption][<?php echo $opt['Option']['option_group_id']?>][]"
-                                        <?php if(!empty($opt['Option']['parent_id'])) echo ' disabled="true" class="parent-'.$opt['Option']['parent_id'].'" ';
-                                        else echo ' class="option-checkbox" '
-                                        ?>
-                                           id="flat-radio-<?php echo $s_key; ?>" value="<?php echo $s_key; ?>">
-                                    <label for="flat-radio-<?php echo $s_key; ?>"><?php echo $opt['Option']['name'] ?></label>
-                                </div>
-                            </div>
-                        <?php
-                        }
-                    } ?>
-                </div>
-            </div>
+            <div id="warehouse-options" data-href="<?php echo $this->Html->url(array('controller'=>'product_options','action'=>'load_options'))?>"></div>
         </div>
         <div class="form-group">
             <?php if($this->request->isAjax()){ ?>
