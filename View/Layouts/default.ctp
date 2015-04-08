@@ -30,6 +30,7 @@ if (AuthComponent::user()) {
 
 <div class="container-fluid">
     <div class="row row-offcanvas row-offcanvas-left">
+
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas">
             <?php echo $this->Element('sidebar'); ?>
         </div>
