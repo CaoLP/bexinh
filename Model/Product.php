@@ -143,7 +143,7 @@ class Product extends AppModel
             'className' => 'ProductOption',
             'foreignKey' => 'product_id',
             'dependent' => false,
-            'conditions' => array('disable'=>0),
+            'conditions' => array('disable' => 0),
             'fields' => '',
             'order' => '',
             'limit' => '',
@@ -167,6 +167,21 @@ class Product extends AppModel
         )
     );
 
-
-
+    public function beforeSave($options = array())
+    {
+        if (isset($this->data[$this->name]['id'])) {
+            $product = $this->find('first', array('recursive' => -1, 'conditions' => array('Product.id' => $this->data[$this->name]['id'])));
+            if (empty($product[$this->name]['media_id'])) {
+                Controller::loadModel('Media');
+                $media = $this->Media->find('first',
+                    array('conditions' => array(
+                        'ref' => $this->name,
+                        'ref_id' => $this->data[$this->name]['id']
+                    )
+                    )
+                );
+                $this->data[$this->name]['media_id'] = $media['Media']['id'];
+            }
+        }
+    }
 }

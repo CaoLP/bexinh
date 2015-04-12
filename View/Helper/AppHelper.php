@@ -22,6 +22,9 @@ App::uses('Helper', 'View');
  */
 class AppHelper extends Helper {
     public function format_money($price){
+        if(empty($price)){
+            return 0;
+        }
         return number_format($price, 0, '.', ',');
     }
 }

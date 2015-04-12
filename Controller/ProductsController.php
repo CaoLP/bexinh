@@ -63,10 +63,10 @@ class ProductsController extends AppController
                 'provider_id' => '0',
                 'name' => '0',
                 'price' => '0',
-                'retail_price' => '0',
-                'source_price' => '0',
-                'excert' => '0',
-                'descriptions' => '0',
+                'retail_price' => '',
+                'source_price' => '',
+                'excert' => '',
+                'descriptions' => '',
                 'status' => '0',
                 'category_id' => '0'
             )
@@ -113,6 +113,9 @@ class ProductsController extends AppController
             $this->request->data['Product']['retail_price'] = str_replace(' VNĐ','',$this->request->data['Product']['retail_price']);
             $this->request->data['Product']['source_price'] = str_replace(',','',$this->request->data['Product']['source_price']);
             $this->request->data['Product']['source_price'] = str_replace(' VNĐ','',$this->request->data['Product']['source_price']);
+            if(empty($this->request->data['Product']['sku']) || $this->request->data['Product']['sku'] == 0){
+                $this->request->data['Product']['sku'] = $this->request->data['Product']['id'];
+            }
             if ($this->Product->save($this->request->data)) {
                 if(!isset($this->request->data['ProductOption'])){
                     $this->request->data['ProductOption'] = array();
@@ -123,6 +126,7 @@ class ProductsController extends AppController
                 if($this->request->data['submit'] == 'save'){
                     return $this->redirect(array('action' => 'index'));
                 }else{
+                    $this->request->data = array();
                     return $this->redirect(array('action' => 'add'));
                 }
             } else {
