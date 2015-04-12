@@ -57,7 +57,8 @@ class OptionsController extends AppController {
 		}
 		$optionGroups = $this->Option->OptionGroup->find('list');
         $parents= $this->Option->ParentOption->find('list');
-        $this->set(compact('optionGroups','parents'));
+        $categories= $this->Option->Category->find('list');
+        $this->set(compact('optionGroups','parents','categories'));
 	}
 
 /**
@@ -84,7 +85,8 @@ class OptionsController extends AppController {
 		}
 		$optionGroups = $this->Option->OptionGroup->find('list');
         $parents = $this->Option->ParentOption->find('list');
-        $this->set(compact('optionGroups','parents'));
+        $categories= $this->Option->Category->find('list');
+        $this->set(compact('optionGroups','parents','categories'));
 	}
 
 /**

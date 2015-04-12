@@ -2545,3 +2545,11 @@ msgstr "Xuất hiện lỗi"
 msgid "CakePHP: the rapid development php framework"
 msgstr ""
 
+msgid "__Common__"
+msgstr "__Dùng chung__"
+
+msgid "Parent"
+msgstr "Mục cha"
+
+msgid "Parent name"
+msgstr "Tên mục cha"

@@ -59,7 +59,7 @@ class ProductsController extends AppController
     {
         $temp = array(
             'Product' => array(
-                'sku' => '0',
+                'sku' => '',
                 'provider_id' => '0',
                 'name' => '0',
                 'price' => '0',
@@ -71,7 +71,7 @@ class ProductsController extends AppController
                 'category_id' => '0'
             )
         );
-        $data = $this->Product->find('first',array('conditions'=>array('Product.sku'=>'0')));
+        $data = $this->Product->find('first',array('conditions'=>array('Product.sku'=>'')));
         if($data){
             $id = $data['Product']['id'];
         }else{
@@ -113,7 +113,7 @@ class ProductsController extends AppController
             $this->request->data['Product']['retail_price'] = str_replace(' VNĐ','',$this->request->data['Product']['retail_price']);
             $this->request->data['Product']['source_price'] = str_replace(',','',$this->request->data['Product']['source_price']);
             $this->request->data['Product']['source_price'] = str_replace(' VNĐ','',$this->request->data['Product']['source_price']);
-            if(empty($this->request->data['Product']['sku']) || $this->request->data['Product']['sku'] == 0){
+            if(empty($this->request->data['Product']['sku']) || $this->request->data['Product']['sku'] == ''){
                 $this->request->data['Product']['sku'] = $this->request->data['Product']['id'];
             }
             if ($this->Product->save($this->request->data)) {

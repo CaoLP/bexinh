@@ -22,6 +22,9 @@
             <?php echo $this->Form->input('option_group_id', array('class' => 'form-control', 'placeholder' => 'Option Group Id')); ?>
         </div>
         <div class="form-group">
+            <?php echo $this->Form->input('category_id', array('class' => 'form-control', 'empty'=>__('__Common__'),'placeholder' => __('Category name'))); ?>
+        </div>
+        <div class="form-group">
             <?php echo $this->Form->input('parent_id', array('class' => 'form-control','empty'=>__('__Select parent__'),'placeholder' => 'Parent Option Id')); ?>
         </div>
         <div class="form-group">
