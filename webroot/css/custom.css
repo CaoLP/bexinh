@@ -78,3 +78,6 @@ span.title-option {
 .list-option input[type=radio]{
     float: left;
 }
+.no-margins{
+    margin: 0;
+}
