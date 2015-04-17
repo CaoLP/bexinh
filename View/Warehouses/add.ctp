@@ -27,9 +27,6 @@
             <?php echo $this->Form->input('retail_price', array('class' => 'form-control currency', 'placeholder' => __('Leave empty if use basic price'), 'type'=>'text')); ?>
         </div>
         <div class="form-group">
-            <?php echo $this->Form->input('qty', array('class' => 'form-control', 'placeholder' => 'Qty', 'type'=>'text')); ?>
-        </div>
-        <div class="form-group">
             <div id="warehouse-options" data-href="<?php echo $this->Html->url(array('controller'=>'product_options','action'=>'load_options'))?>"></div>
         </div>
         <div class="form-group">
@@ -40,10 +37,7 @@
                 <?php echo $this->Form->submit(__('Submit'), array('class' => 'btn btn-default')); ?>
             <?php } ?>
         </div>
-
         <?php echo $this->Form->end() ?>
-
-
     </div>
 </div>
 

@@ -86,7 +86,7 @@
 
 <!-- Default bootstrap modal example -->
 <div class="modal fade" id="wareHouseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-href="<?php echo $this->Html->url(array('action' => 'add'));?>">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>

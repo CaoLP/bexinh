@@ -27,4 +27,21 @@ class AppHelper extends Helper {
         }
         return number_format($price, 0, '.', ',');
     }
+    public function genOptions($options, $pos = 0, &$res = array() ,&$index = 0){
+        $result = '';
+        if($pos < count($options)){
+            foreach($options[array_keys($options)[$pos]] as $optionGrCur){
+                if($pos == 0){
+                    $res[$index]['name'] = array($optionGrCur['Option']['name']);
+                    $res[$index]['option'] = array($optionGrCur['Option']['id']);
+                }else{
+                    array_push($res[$index]['name'],$optionGrCur['Option']['name']);
+                    array_push($res[$index]['option'],$optionGrCur['Option']['id']);
+                    $index++;
+                }
+                $this->genOptions($options, $pos + 1 , $res , $index);
+            }
+        }
+        return $res;
+    }
 }

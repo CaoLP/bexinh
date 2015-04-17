@@ -81,6 +81,7 @@ class WarehousesController extends AppController
             $this->layout = 'ajax';
         }
         if ($this->request->is('post')) {
+            debug($this->data);die;
             $this->request->data['Warehouse']['price'] = str_replace(',', '', $this->request->data['Warehouse']['price']);
             $this->request->data['Warehouse']['price'] = str_replace(' VNĐ', '', $this->request->data['Warehouse']['price']);
             $this->request->data['Warehouse']['retail_price'] = str_replace(',', '', $this->request->data['Warehouse']['retail_price']);
