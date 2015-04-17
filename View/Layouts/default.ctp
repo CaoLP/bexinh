@@ -46,7 +46,7 @@ if (AuthComponent::user()) {
 <!-- /.container -->
 
 <?php
-echo $this->Html->script(array('site.min','jquery.maskMoney.min'));
+echo $this->Html->script(array('site.min','jquery.maskMoney.min','jquery.form'));
 echo $this->Html->script(array('action'));
 ?>
 </body>

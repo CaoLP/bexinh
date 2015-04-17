@@ -21,7 +21,7 @@
                             </div>
                             <div class="col-md-6">
                                 <input class="form-control input-sm"
-                                       name="data[WarehouseOption][<?php echo $key ?>][qty]" value="0" type="number" min="0">
+                                       name="data[WarehouseOption][<?php echo $key ?>][qty]" value="" placeholder="Số lượng" data-type="number" min="0">
                             </div>
                         </div>
                     </div>

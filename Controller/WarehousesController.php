@@ -81,38 +81,32 @@ class WarehousesController extends AppController
             $this->layout = 'ajax';
         }
         if ($this->request->is('post')) {
-            debug($this->data);die;
             $this->request->data['Warehouse']['price'] = str_replace(',', '', $this->request->data['Warehouse']['price']);
             $this->request->data['Warehouse']['price'] = str_replace(' VNĐ', '', $this->request->data['Warehouse']['price']);
             $this->request->data['Warehouse']['retail_price'] = str_replace(',', '', $this->request->data['Warehouse']['retail_price']);
             $this->request->data['Warehouse']['retail_price'] = str_replace(' VNĐ', '', $this->request->data['Warehouse']['retail_price']);
-            $temp = array();
+            $saveData = array();
             foreach ($this->request->data['WarehouseOption'] as $ops) {
-                foreach ($ops as $op) {
-                    array_push($temp, $op);
+                if( $ops['qty'] > 0){
+                    $temp = $this->request->data;
+                    $temp['WarehouseOption'] = explode(',',$ops['options']);
+                    $temp['Warehouse']['qty'] = $ops['qty'];
+                    $saveData[] = $temp;
                 }
             }
-            $this->request->data['WarehouseOption'] = $temp;
-            $this->Warehouse->create();
-            if ($this->Warehouse->save($this->request->data)) {
-
-                if (!isset($this->request->data['WarehouseOption'])) {
-                    $this->request->data['WarehouseOption'] = array();
+            foreach($saveData as $d){
+                $this->Warehouse->create();
+                if ($this->Warehouse->save($d)) {
+                    if (!isset($d['WarehouseOption'])) {
+                        $d['WarehouseOption'] = array();
+                    }
+                    $warehouse_id = $this->Warehouse->id;
+                    $this->Warehouse->WarehouseOption->updateOptions($d['WarehouseOption'], $warehouse_id);
+                } else {
                 }
-                $warehouse_id = $this->Warehouse->id;
-                $this->Warehouse->WarehouseOption->updateOptions($this->request->data['WarehouseOption'], $warehouse_id);
-
-                $this->Session->setFlash(__('The warehouse has been saved.'), 'default', array('class' => 'alert alert-success'));
-                return $this->redirect(array('action' => 'index'));
-            } else {
-                $this->Session->setFlash(__('The warehouse could not be saved. Please, try again.'), 'default', array('class' => 'alert alert-danger'));
             }
-            $temp = array();
-            foreach ($this->request->data['WarehouseOption'] as $ops) {
-                $temp[] = array('option_id' => $ops);
-            }
-            $this->request->data['WarehouseOption'] = $temp;
         }
+        $this->request->data = array();
         $stores = $this->Warehouse->Store->find('list');
         $products = $this->Warehouse->Product->find('list', array(
             'conditions' => array(

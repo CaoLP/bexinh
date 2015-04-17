@@ -9,6 +9,7 @@ $(function() {
                 url : link,
                 success: function(data){
                     body.html(data);
+                    setUpFormAjax($(body).find('form'),body);
                     $('.currency').maskMoney({thousands:',', decimal:'.','precision':0, allowZero:false, suffix: ' VNĐ'}).focus();
                 }
             }
@@ -52,12 +53,11 @@ $(function() {
             $('#warehouse-options').load(href + '/' + $(this).val(),function(){
                 $('#warehouse-options input').iCheck({checkboxClass:'icheckbox_flat'});
             });
-
         }else{
             $('#warehouse-options').html('');
         }
     });
-    $(document).on('keydown','*[type=number]',function(e){
+    $(document).on('keydown','*[data-type=number]',function(e){
         // Allow: backspace, delete, tab, escape, enter and .
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
             // Allow: Ctrl+A
@@ -77,3 +77,26 @@ $(function() {
         }
     });
 });
+var setUpFormAjax = function(form,div,popup, callback){
+    $(form).ajaxForm(
+        {
+            beforeSubmit: function (e) {
+
+            },
+            beforeSend: function () {
+
+            },
+            uploadProgress: function (event, position, total, percentComplete) {
+
+
+            },
+            success: function () {
+
+            },
+            complete: function (xhr) {
+                $(div).html(xhr.responseText);
+                setUpFormAjax($(div).find('form'),div,popup, callback);
+            }
+        }
+    );
+};
