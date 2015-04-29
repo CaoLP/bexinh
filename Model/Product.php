@@ -170,6 +170,7 @@ class Product extends AppModel
                     )
                     )
                 );
+                if(count($media)> 0)
                 $this->data[$this->name]['media_id'] = $media['Media']['id'];
             }
         }

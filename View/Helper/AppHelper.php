@@ -27,21 +27,27 @@ class AppHelper extends Helper {
         }
         return number_format($price, 0, '.', ',');
     }
-    public function genOptions($options, $pos = 0, &$res = array() ,&$index = 0){
-        $result = '';
+    public function genOptions($options){
+        $result = array();
+        foreach($options[array_keys($options)[0]] as $optionGroupOne){
+            $temp = array(
+                'name' => array($optionGroupOne['Option']['name']),
+                'option' => array($optionGroupOne['Option']['id']),
+            );
+            $data  = $options;
+            unset($data[array_keys($options)[0]]);
+            $this->loopOptions($data ,0, $temp);
+            $result[] =$temp;
+        }
+        return $result;
+    }
+    public function loopOptions($options, $pos = 0 ,&$result = array()){
         if($pos < count($options)){
-            foreach($options[array_keys($options)[$pos]] as $optionGrCur){
-                if($pos == 0){
-                    $res[$index]['name'] = array($optionGrCur['Option']['name']);
-                    $res[$index]['option'] = array($optionGrCur['Option']['id']);
-                }else{
-                    array_push($res[$index]['name'],$optionGrCur['Option']['name']);
-                    array_push($res[$index]['option'],$optionGrCur['Option']['id']);
-                    $index++;
-                }
-                $this->genOptions($options, $pos + 1 , $res , $index);
+            foreach($options[array_keys($options)[$pos]] as $optionGroupOne){
+                array_push($result['name'],$optionGroupOne['Option']['name']);
+                array_push($result['option'],$optionGroupOne['Option']['id']);
+                $this->loopOptions($options ,$pos + 1, $result);
             }
         }
-        return $res;
     }
 }

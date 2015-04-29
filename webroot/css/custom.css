@@ -81,3 +81,9 @@ span.title-option {
 .no-margins{
     margin: 0;
 }
+.input-group-sm{
+    padding-top: 5px;
+}
+.m-b-0{
+  margin-bottom: 0;
+}

@@ -114,7 +114,7 @@ class ProductOptionsController extends AppController {
                 'fields' => 'Option.id, Option.name, Option.option_group_id  ,OptionGroup.id, OptionGroup.name',
                 'conditions' => array(
                     'product_id' => $product_id,
-                    'Option.parent_id' => '',
+                    'Option.parent_id' => ''
                 ),
                 'joins' => array(
                     array(
@@ -123,7 +123,7 @@ class ProductOptionsController extends AppController {
                         'type' => 'INNER',
                         'conditions' => array(
                             'OptionGroup.id = Option.option_group_id',
-                            'OptionGroup.inventory' => 1
+                            'OptionGroup.inventory' => 1,
                         )
                     )
                 ),
