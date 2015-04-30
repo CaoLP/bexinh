@@ -2,7 +2,7 @@
     <div class="panel-heading"><?php echo __('Options') ?></div>
     <div class="panel-body">
         <div class="list-group">
-            <div class="list-group-item">
+            <div class="list-group-item options">
                 <div class="row">
                     <div class="col-lg-12">
                         <?php
@@ -29,7 +29,7 @@
         </div>
     </div>
     <div class="hidden" id="template">
-        <div class="list-group-item">
+        <div class="list-group-item optionsdisabled">
             <div class="row">
                 <div class="col-lg-12">
                     <?php
@@ -37,7 +37,7 @@
                         $opts = Set::combine($optG, '{n}.Option.id', '{n}.Option.name');
                         ?>
                         <div class="col-md-2 input-group-sm">
-                            <?php echo $this->Form->input('Item.{{no}}.Option.', array('disabled'=>true,'options' => $opts, 'empty' => $key, 'class' => 'form-control input-sm', 'label' => false)); ?>
+                            <?php echo $this->Form->input('Item.{{no}}.Option.', array('disabled','options' => $opts, 'empty' => $key, 'class' => 'form-control input-sm', 'label' => false)); ?>
                         </div>
                     <?php
                     }
@@ -54,7 +54,7 @@
             </div>
         </div>
     </div>
-    <div class="panel-footer">
-            <a href="javascript:;" class="btn btn-primary">Thêm</a>
+    <div class="panel-footer text-right">
+            <a href="javascript:;" id="more-option" class="btn btn-primary">Thêm</a>
     </div>
 </div>
