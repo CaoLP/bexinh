@@ -78,23 +78,41 @@ $(function () {
     });
 
     $(document).on('click', '#more-option', function () {
-
-
+        var render = true;
+        $('.options select').each(function(index){
+            if($(this).val() == '') {
+                alert('Vui lòng hoàn chọn xong các thuôc tính');
+                render = false;
+                return false;
+            }
+        });
+        if(render){
         var uId = new Date().getTime() + Math.round(Math.random());
         var template = $('#template').html();
         template = template.replace(/{{no}}/g, uId);
         template = template.replace(/disabled/g, '');
         $('#warehouse-options .list-group').append(template);
-
+        }
 
     });
-    $(document).on('change', '.options select', function () {
+    var lastSel;
+    $(document).on('click', '.options select', function (e) {
+        lastSel = $(this).find('option:selected');
+    });
+    $(document).on('change', '.options select', function (e) {
+        var curVals = $(this).closest('.options').find('select').map(function () {
+            return this.value;
+        }).get().join(',');
         $('.options').each(function(index){
             var vals = $(this).find('select').map(function () {
                 return this.value;
             }).get().join(',');
             if(index < $('.options').length -1){
                 console.log(vals);
+                if(vals == curVals){
+                    alert('Thuộc tính này đã được chọn rồi');
+                    lastSel.attr("selected", true);
+                }
             }
         });
     });

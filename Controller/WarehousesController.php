@@ -81,21 +81,24 @@ class WarehousesController extends AppController
             $this->layout = 'ajax';
         }
         if ($this->request->is('post')) {
-            debug($this->request->data);
-            die;
+
             $this->request->data['Warehouse']['price'] = str_replace(',', '', $this->request->data['Warehouse']['price']);
             $this->request->data['Warehouse']['price'] = str_replace(' VNĐ', '', $this->request->data['Warehouse']['price']);
             $this->request->data['Warehouse']['retail_price'] = str_replace(',', '', $this->request->data['Warehouse']['retail_price']);
             $this->request->data['Warehouse']['retail_price'] = str_replace(' VNĐ', '', $this->request->data['Warehouse']['retail_price']);
             $saveData = array();
-            foreach ($this->request->data['WarehouseOption'] as $ops) {
-                if( $ops['qty'] > 0){
-                    $temp = $this->request->data;
-                    $temp['WarehouseOption'] = explode(',',$ops['options']);
-                    $temp['Warehouse']['qty'] = $ops['qty'];
-                    $saveData[] = $temp;
-                }
+            foreach ($this->request->data['Item'] as $ops) {
+                if (array_search('', $ops['Option'])==false){
+                    if( $ops['qty'] > 0){
+                        $temp = $this->request->data;
+                        unset($temp['Item']);
+                        $temp['WarehouseOption'] = $ops['Option'];
+                        $temp['Warehouse']['qty'] = $ops['qty'];
+                        $saveData[] = $temp;
+                    }
+                };
             }
+
             foreach($saveData as $d){
                 $this->Warehouse->create();
                 if ($this->Warehouse->save($d)) {
