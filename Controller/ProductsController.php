@@ -24,6 +24,13 @@ class ProductsController extends AppController
      */
     public function index()
     {
+//        $ps = $this->Product->find('all');
+//        foreach($ps as $p){
+//            $t = $p;
+//            $t['Product']['slug'] = $this->make_slug($t['Product']['name']) .'-'.$t['Product']['id'];
+//            $this->Product->save($t);
+//        }
+
         $this->Product->recursive = 0;
         $this->Paginator->settings = array(
             'contain' => array('Thumb'),
@@ -116,6 +123,9 @@ class ProductsController extends AppController
             if(empty($this->request->data['Product']['sku']) || $this->request->data['Product']['sku'] == ''){
                 $this->request->data['Product']['sku'] = $this->request->data['Product']['id'];
             }
+            if(empty($this->request->data['Product']['slug']))
+                $this->request->data['Product']['slug'] = $this->make_slug($this->request->data['Product']['name']).'-'.$this->request->data['Product']['id'];
+
             if ($this->Product->save($this->request->data)) {
                 if(!isset($this->request->data['ProductOption'])){
                     $this->request->data['ProductOption'] = array();

@@ -21,6 +21,12 @@ class CategoriesController extends AppController {
  * @return void
  */
 	public function index() {
+//        $ps = $this->Category->find('all');
+//        foreach($ps as $p){
+//            $t = $p;
+//            $t['Category']['slug'] = $this->make_slug($t['Category']['name']);
+//            $this->Category->save($t);
+//        }
 		$this->Category->recursive = 0;
         $this->Paginator->settings = array(
             'contain' => array('Thumb'),
@@ -93,6 +99,8 @@ class CategoriesController extends AppController {
 			throw new NotFoundException(__('Invalid category'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
+            if(empty($this->request->data['Category']['slug']))
+                $this->request->data['Category']['slug'] = $this->make_slug($this->request->data['Category']['name'] );
 			if ($this->Category->save($this->request->data)) {
 				$this->Session->setFlash(__('The category has been saved.'), 'default', array('class' => 'alert alert-success'));
 				return $this->redirect(array('action' => 'index'));

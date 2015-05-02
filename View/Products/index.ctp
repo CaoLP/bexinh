@@ -20,6 +20,7 @@
                 <th><?php echo $this->Paginator->sort('provider_id'); ?></th>
                 <th><?php echo $this->Paginator->sort('category_id'); ?></th>
                 <th><?php echo $this->Paginator->sort('name'); ?></th>
+                <th><?php echo $this->Paginator->sort('slug'); ?></th>
                 <th><?php echo $this->Paginator->sort('price'); ?></th>
                 <th><?php echo $this->Paginator->sort('retail_price'); ?></th>
                 <th><?php echo $this->Paginator->sort('source_price'); ?></th>
@@ -42,6 +43,7 @@
                         <?php echo $this->Html->link($product['Category']['name'], array('controller' => 'categories', 'action' => 'view', $product['Category']['id'])); ?>
                     </td>
                     <td><?php echo h($product['Product']['name']); ?>&nbsp;</td>
+                    <td><?php echo h($product['Product']['slug']); ?>&nbsp;</td>
                     <td class="currency"><?php echo $this->App->format_money(h($product['Product']['price'])); ?>&nbsp;</td>
                     <td class="currency"><?php echo $this->App->format_money(h($product['Product']['retail_price'])); ?>&nbsp;</td>
                     <td class="currency"><?php echo $this->App->format_money(h($product['Product']['source_price'])); ?>&nbsp;</td>

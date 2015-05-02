@@ -25,6 +25,7 @@
                 <th><?php echo $this->Paginator->sort('id'); ?></th>
                 <th><?php echo $this->Paginator->sort('parent_id'); ?></th>
                 <th><?php echo $this->Paginator->sort('name'); ?></th>
+                <th><?php echo $this->Paginator->sort('slug'); ?></th>
                 <th><?php echo $this->Paginator->sort('descriptions'); ?></th>
                 <th><?php echo $this->Paginator->sort('excerpt'); ?></th>
                 <th><?php echo $this->Paginator->sort('status'); ?></th>
@@ -43,6 +44,7 @@
                         <?php echo $this->Html->link($category['ParentCategory']['name'], array('controller' => 'categories', 'action' => 'view', $category['ParentCategory']['id'])); ?>
                     </td>
                     <td><?php echo h($category['Category']['name']); ?>&nbsp;</td>
+                    <td><?php echo h($category['Category']['slug']); ?>&nbsp;</td>
                     <td><?php echo h($category['Category']['descriptions']); ?>&nbsp;</td>
                     <td><?php echo h($category['Category']['excerpt']); ?>&nbsp;</td>
                     <td><?php echo h($category['Category']['status']); ?>&nbsp;</td>
