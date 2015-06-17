@@ -33,6 +33,8 @@
     echo $this->fetch('script');
     echo $this->Html->css(array('bootstrap.min', 'jquery.smartmenus.bootstrap', 'bexinh.core'));
     ?>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+
     <script>
         var slide = "<?php echo $this->Html->url(
             array(
@@ -48,15 +50,16 @@
 <header class="container-fluid">
     <?php echo $this->element('header') ?>
 </header>
-<?php echo $this->element('top_menu'); ?>
 <div class="container-fluid" id="main">
     <div class="container" id="sub-main">
-        <?php echo $this->element('category_menu'); ?>
-        <div class="row">
-            <?php echo $this->element('slide'); ?>
-        </div>
-        <div class="row" id="content">
-            <?php echo $this->fetch('content') ?>
+        <div class="women-in">
+            <div class="col-md-9 col-d">
+                <?php echo $this->element('slide'); ?>
+                <?php echo $this->fetch('content') ?>
+            </div>
+            <div class="col-md-3 col-m-left">
+
+            </div>
         </div>
     </div>
 </div>

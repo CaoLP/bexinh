@@ -21,10 +21,14 @@
             ?>
             <div class="item <?php echo $class;?>">
                 <?php echo $this->Media->image($promote['Thumb']['file'], 900, 334, array()); ?>
-
-                <div class="carousel-caption">
-                    <h5><?php echo $promote['Promote']['name']; ?></h5>
+                <div class="banner-matter">
+                    <?php echo $promote['Promote']['descriptions'];?>
                 </div>
+                <div class="you">
+                    <span><?php echo $promote['Promote']['value'];?><label>%</label></span>
+                    <small>off</small>
+                </div>
+                <p class="para-in"><?php echo $promote['Promote']['name']; ?></p>
             </div>
         <?php
         }
