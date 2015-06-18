@@ -27,10 +27,10 @@ class AppHelper extends Helper {
     }
     public function format_detail_money($price, $promote = 0){
         $price = $price - ($price * ($promote/100));
-        return '<li><span>'.number_format($price, 0, '.', ',</span></li><li><span>').' VNĐ</span></li>';
+        return number_format($price, 0, '.', ',').' VNĐ';
     }
     public function format_cart_money($price, $promote = 0){
         $price = $price - ($price * ($promote/100));
-        return '<span>'.number_format($price, 0, '.', ',</span><span>').' VND</span>';
+        return number_format($price, 0, '.', ',').' VND';
     }
 }
