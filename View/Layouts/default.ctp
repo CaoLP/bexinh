@@ -29,9 +29,8 @@
     <meta name="theme-color" content="#ffffff">
     <?php
     echo $this->fetch('meta');
-    echo $this->fetch('css');
-    echo $this->fetch('script');
     echo $this->Html->css(array('bootstrap.min', 'jquery.smartmenus.bootstrap', 'bexinh.core'));
+    echo $this->fetch('css');
     ?>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 
@@ -52,13 +51,22 @@
 </header>
 <div class="container-fluid" id="main">
     <div class="container" id="sub-main">
-        <div class="women-in">
-            <div class="col-md-9 col-d">
+        <div class="row women-in">
+            <div class="col-md-9">
                 <?php echo $this->element('slide'); ?>
-                <?php echo $this->fetch('content') ?>
             </div>
-            <div class="col-md-3 col-m-left">
+            <div class="col-md-3">
 
+            </div>
+        </div>
+        <div class="row">
+            <div class="single">
+                <div class="col-md-9">
+                    <?php echo $this->fetch('content') ?>
+                </div>
+                <div class="col-md-3">
+
+                </div>
             </div>
         </div>
     </div>
@@ -74,6 +82,7 @@
 </script>
 <?php
 echo $this->Html->script(array('jquery-2.1.1.min', 'bootstrap', 'jquery.smartmenus', 'jquery.smartmenus.bootstrap', 'action'));
+echo $this->fetch('script');
 ?>
 </body>
 </html>
