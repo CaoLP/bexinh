@@ -72,10 +72,10 @@
                     <div class="share">
                         <h4>Share Product :</h4>
                         <ul class="share_nav">
-                            <li><a href="#"><?php $this->Html->image('facebook.png', array('alt'=>'Facebook')) ?></a></li>
-                            <li><a href="#"><?php $this->Html->image('twitter.png', array('alt'=>'Twiiter')) ?></a></li>
-                            <li><a href="#"><?php $this->Html->image('rss.png', array('alt'=>'Rss')) ?></a></li>
-                            <li><a href="#"><?php $this->Html->image('gpluse.png', array('alt'=>'Google+')) ?></a></li>
+                            <li><a href="#"><?php echo $this->Html->image('facebook.png', array('alt'=>'Facebook')) ?></a></li>
+                            <li><a href="#"><?php echo $this->Html->image('twitter.png', array('alt'=>'Twiiter')) ?></a></li>
+                            <li><a href="#"><?php echo $this->Html->image('rss.png', array('alt'=>'Rss')) ?></a></li>
+                            <li><a href="#"><?php echo $this->Html->image('gpluse.png', array('alt'=>'Google+')) ?></a></li>
                         </ul>
                     </div>
                     <div class="clearfix"></div>
