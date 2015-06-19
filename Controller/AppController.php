@@ -54,6 +54,10 @@ class AppController extends Controller
             0 => __('Disable')
         ));
         //sample
+        if(!$this->request->is('ajax')){
+            $this->loadCategory();
+            $this->loadPromote();
+        }
     }
     public function canUploadMedias($model, $id){
 //        if($model == 'User' & $id = $this->Session->read('Auth.User.id')){
@@ -64,5 +68,36 @@ class AppController extends Controller
     }
     public function setTitle($title){
         $this->set('title_for_layout',$title);
+    }
+    public function loadCategory()
+    {
+        $this->loadModel('Category');
+        $categories = $this->Category->find('threaded',
+            array(
+                'fields' => array('id', 'name', 'slug', 'parent_id'),
+                'conditions' => array(
+                    'Category.name <>' => '0',
+                    'Category.status' => '1',
+                ),
+                'recursive' => -1
+            )
+        );
+        $this->set(compact('categories'));
+    }
+    public function loadPromote()
+    {
+        $this->loadModel('Promote');
+        $promotes = $this->Promote->find('all', array(
+            'conditions' => array(
+                'Promote.begin <=' => date('Y-m-d H:i:s'),
+                'Promote.end >=' => date('Y-m-d H:i:s'),
+                'Promote.status' => 1
+            ),
+            'order' => array(
+                'Promote.created' => 'DESC'
+            ),
+            'limit' => 3
+        ));
+        $this->set(compact('promotes'));
     }
 }

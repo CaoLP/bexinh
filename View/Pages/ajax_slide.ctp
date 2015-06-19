@@ -20,9 +20,9 @@
                 $class = "";
             ?>
             <div class="item <?php echo $class;?>">
-                <?php echo $this->Media->image($promote['Thumb']['file'], 900, 334, array()); ?>
+                <?php echo $this->Media->image($promote['Thumb']['file'], 848, 315, array()); ?>
                 <div class="banner-matter">
-                    <?php echo $promote['Promote']['descriptions'];?>
+                    <?php echo $promote['Promote']['excert'];?>
                 </div>
                 <div class="you">
                     <span><?php echo $promote['Promote']['value'];?><label>%</label></span>

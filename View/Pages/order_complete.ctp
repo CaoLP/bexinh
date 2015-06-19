@@ -1,9 +1,9 @@
-<div class="col-md-12" id="p-content">
-    <div class="panel">
-        <div class="order-success"></div>
-        <div class="panel-heading has-icon">ĐẶT HÀNG THÀNH CÔNG</small>
+<div id="p-content">
+    <div class="panel in-line">
+        <div class="panel-heading para-an has-icon">
+            <h3>ĐẶT HÀNG THÀNH CÔNG</h3>
         </div>
-        <div class="panel-body">
+        <div class="panel-body lady-in">
             <div class="text-center">
                 <h3>Đặt hàng thành công</h3>
                 <p><span>Cảm ơn bạn đã mua hàng tại <a href="<?php echo $this->Html->url('/',true)?>"><?php Configure::read('site.name')?></a>. Chúng tôi sẽ liên hệ bạn trong vòng 24h</span></p>

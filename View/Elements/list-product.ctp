@@ -59,7 +59,7 @@
                         echo "<span class=\"price\">";
                         echo $this->App->format_money(h($p['Product']['price']));
                     }
-                    ?>  | <a href="#" class="pull-right btn-buy"><label class="cat-in"></label> Thêm vào giỏ</a></span>
+                    ?>  | <a href="#" class="pull-right btn-buy add-cart"><label class="cat-in"></label> Thêm vào giỏ</a></span>
                 </div>
         <?php endforeach; ?>
         <?php if(isset($data['use_paginate'])){?>

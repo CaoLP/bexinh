@@ -28,14 +28,14 @@ if(count($cart) > 0)
                     <td class=\"text-center\" class=\"price\">{$this->App->format_money($s_price)}</td>
                     <td class=\"text-center\" class=\"price\">{$this->App->format_money($price)}</td>
                     <td class=\"text-center\">
-                    <a href=\"javascript:;\" class=\"pull-left cart-minus-p\" data-id=\"{$key}\"><i class=\"fa fa-minus\"></i></a>
+                    <a href=\"javascript:;\" class=\"pull-left cart-minus-p\" data-id=\"{$key}\"><i class=\"glyphicon glyphicon-minus-sign\"></i></a>
                     <span class=\"qty\">{$item['OrderDetail']['qty']}</span>
-                    <a href=\"javascript:;\" class=\"pull-right cart-add-p\" data-id=\"{$key}\"><i class=\"fa fa-plus\"></i></a>
+                    <a href=\"javascript:;\" class=\"pull-right cart-add-p\" data-id=\"{$key}\"><i class=\"glyphicon glyphicon-plus-sign\"></i></a>
                     </td>
                     <td class=\"text-right\" class=\"total\">{$this->App->format_money($sum)}</td>
-                   <td><a href=\"javascript:;\" class=\"pull-left btn btn-mini btn-danger cart-remove-p\"
+                   <td><a href=\"javascript:;\" class=\"pull-left btn btn-sm btn-danger cart-remove-p\"
                         data-style=\"1\"
-                        data-id=\"{$key}\"><i class=\"fa fa-trash\"></i></a></td>
+                        data-id=\"{$key}\"><i class=\"glyphicon glyphicon-trash\"></i></a></td>
                 </tr>";
     }
 ?>

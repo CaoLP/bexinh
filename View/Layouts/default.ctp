@@ -54,21 +54,15 @@
         <div class="row women-in">
             <div class="col-md-9">
                 <?php echo $this->element('slide'); ?>
+                <div class="single">
+                        <?php echo $this->fetch('content') ?>
+                </div>
             </div>
             <div class="col-md-3">
-
+                <?php echo $this->element('sidebar')?>
             </div>
         </div>
-        <div class="row">
-            <div class="single">
-                <div class="col-md-9">
-                    <?php echo $this->fetch('content') ?>
-                </div>
-                <div class="col-md-3">
 
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 <footer>

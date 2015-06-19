@@ -38,7 +38,6 @@ class PagesController extends AppController
     public function index()
     {
         $this->setTitle('Trang chủ');
-        $this->loadCategory();
         $best_sale = array();
         $new_products = array();
         $promote_products = array();
@@ -56,26 +55,8 @@ class PagesController extends AppController
         $products = $this->Product->getProduct('Rand()', 8);
         $this->set(compact('best_sale', 'new_products', 'promote_products', 'products'));
     }
-
-    public function loadCategory()
-    {
-        $this->loadModel('Category');
-        $categories = $this->Category->find('threaded',
-            array(
-                'fields' => array('id', 'name', 'slug', 'parent_id'),
-                'conditions' => array(
-                    'Category.name <>' => '0',
-                    'Category.status' => '1',
-                ),
-                'recursive' => -1
-            )
-        );
-        $this->set(compact('categories'));
-    }
-
     public function view($category = null, $slug = null)
     {
-        $this->loadCategory();
         $this->loadModel('Product');
         $product = $this->Product->getProductDetails($category, $slug);
         $this->set(compact('product'));
@@ -93,7 +74,6 @@ class PagesController extends AppController
 
     public function products($slug = null)
     {
-        $this->loadCategory();
         $this->loadModel('Product');
         $this->Paginator->settings = array(
             'fields' => 'Product.*,Category.*,ProductPromote.*,Promote.*,Thumb.file',
@@ -135,7 +115,6 @@ class PagesController extends AppController
         if(isset($this->request->query['q'])){
             $q = $this->request->query['q'];
         }
-        $this->loadCategory();
         $this->loadModel('Product');
         $this->Paginator->settings = array(
             'fields' => 'Product.*,Category.*,ProductPromote.*,Promote.*,Thumb.file',
@@ -248,6 +227,7 @@ class PagesController extends AppController
                     }
                 }
             } else {
+                if(!isset($this->request->data['OrderDetail']['qty'])) $this->request->data['OrderDetail']['qty'] = 1;
                 if (isset($this->request->data['OrderDetail']['product_id'])) {
                     foreach ($cart as $item) {
                         $t = $item;
@@ -343,9 +323,9 @@ class PagesController extends AppController
                     $this->view = 'order_complete';
                     $this->Session->delete('Shop.cart');
                 }
+                $this->view = 'order_complete';
             }
         }
-        $this->view = 'order_complete';
     }
 
     public function news($slug = null)
@@ -365,7 +345,6 @@ class PagesController extends AppController
 
     public function categories($category = null)
     {
-        $this->loadCategory();
         $this->loadModel('Product');
         $this->loadModel('Category');
         $cat = $this->Category->find('first',array(
@@ -420,7 +399,6 @@ class PagesController extends AppController
     public function best_sale()
     {
         $this->setTitle('Sản phẩm bán chạy');
-        $this->loadCategory();
         $this->loadModel('OrderDetail');
         $this->Paginator->settings = array(
             'fields' => 'Product.*,Category.*,Thumb.*, SUM(OrderDetail.qty) as total',
@@ -453,7 +431,6 @@ class PagesController extends AppController
     public function new_products()
     {
         $this->setTitle('Sản phẩm mới');
-        $this->loadCategory();
         $this->loadModel('Product');
         $this->Paginator->settings = array(
             'fields' => 'Product.*,Category.*,ProductPromote.*,Promote.*,Thumb.file',
@@ -492,7 +469,6 @@ class PagesController extends AppController
     public function promote_products()
     {
         $this->setTitle('Sản phẩm khuyến mãi');
-        $this->loadCategory();
         $this->loadModel('ProductPromote');
         $this->Paginator->settings = array(
             'fields' => 'Product.*, Promote.*, Category.*,Thumb.*',
