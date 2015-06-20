@@ -26,6 +26,10 @@ h2,h3,h4,h5,h6,p{
 }
 .header-top{
     background:#2d2d2d;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
 }
 .header-grid{
     float:left;
@@ -340,7 +344,7 @@ p.para-in {
     color: #bc3726;
 }
 .you-in{
-    background:#fff;
+    background: #FF443F;
     border-radius:100px;
     -webkit-border-radius: 100px;
     -o-border-radius: 100px;
@@ -350,19 +354,19 @@ p.para-in {
     height:50px;
     text-align:center;
     position:absolute;
-    top: 1em;
-    left: 11em;
+    top: 0em;
+    right: 0em;
 }
 .you-in span{
     font-size: 1.8em;
-    color: #bc3726;
+    color: #FFFFFF;
     display: block;
     height: 24px;
     font-weight: 600;
 }
 .you-in  small{
     font-size: 0.9em;
-    color: #000;
+    color: #FAFAFA;
     font-weight:400;
     font-family: 'Libre Baskerville', serif;
 }
@@ -2711,4 +2715,23 @@ img.women{
 }
 .cool .promote small{
     font-size: 30px;
+}
+.product-item{
+    border: 1px solid rgba(0, 127, 221, 0.14);
+}
+.pro-name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pro-name .name{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+}
+.pro-name .sku{
+    font-size: 10px;
+}
+#main{
+    margin-top: 55px;
 }

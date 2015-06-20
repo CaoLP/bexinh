@@ -28,7 +28,7 @@
     </div>
     <div class="panel-body lady-in">
         <?php foreach ($data['products'] as $p): ?>
-            <div class="col-md-4 you-para">
+            <div class="col-md-3 text-center product-item">
                     <a href="<?php
                     echo $this->Html->url(
                         array(
@@ -47,19 +47,35 @@
                         <small>off</small>
                     </div>
                 <?php// }  ?>
-                <p><?php echo $p['Product']['name']; ?></p>
-                <?php
-                    if(isset($p['Promote']['value'])){
-                        echo "<span class=\"price\">";
-                        echo $this->App->format_money(h($p['Product']['price']), $p['Promote']['value']);
-                        echo "<small class=\"price2\">";
-                        echo $this->App->format_money(h($p['Product']['price']));
-                        echo "</small>";
-                    }else{
-                        echo "<span class=\"price\">";
-                        echo $this->App->format_money(h($p['Product']['price']));
-                    }
-                    ?>  | <a href="#" class="pull-right btn-buy add-cart"><label class="cat-in"></label> Thêm vào giỏ</a></span>
+                    <div class="pro-name">
+                        <p class="name">
+                            <a href="<?php
+                            echo $this->Html->url(
+                                array(
+                                    'controller' => 'pages',
+                                    'action' => 'view',
+                                    'category' => $p['Category']['slug'],
+                                    'slug' => $p['Product']['slug'],
+                                )
+                            )
+                            ?>">
+                            <?php echo $p['Product']['name']; ?>
+                        </a>
+                        </p>
+                        <p class="sku">(Mã sản phẩm <?php echo $p['Product']['sku']; ?>)</p>
+                        <?php
+                        if(isset($p['Promote']['value'])){
+                            echo "<span class=\"price\">";
+                            echo $this->App->format_money(h($p['Product']['price']), $p['Promote']['value']);
+                            echo "<small class=\"price2\">";
+                            echo $this->App->format_money(h($p['Product']['price']));
+                            echo "</small>";
+                        }else{
+                            echo "<span class=\"price\">";
+                            echo $this->App->format_money(h($p['Product']['price']));
+                        }
+                        ?>  | <a href="#" class="pull-right btn-buy add-cart"><label class="cat-in"></label> Thêm vào giỏ</a></span>
+                    </div>
                 </div>
         <?php endforeach; ?>
         <?php if(isset($data['use_paginate'])){?>

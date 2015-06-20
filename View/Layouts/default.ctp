@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <title>
-        <?php echo $title_for_layout . ' - ' . Configure::read('Site.title'); ?>
+        <?php echo Configure::read('Site.title') . ' | ' .$title_for_layout ;?>
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <?php echo $this->element('seo')?>
     <link href="<?php echo $this->Html->url('/icon/favicon.ico');?>" type="image/x-icon" rel="icon" />
     <link href="<?php echo $this->Html->url('/icon/favicon.ico');?>" type="image/x-icon" rel="shortcut icon" />
     <link rel="apple-touch-icon" sizes="57x57" href="<?php echo $this->Html->url('/icon/apple-icon-57x57.png');?>">
@@ -50,20 +49,20 @@
     <?php echo $this->element('header') ?>
 </header>
 <div class="container-fluid" id="main">
-    <div class="container" id="sub-main">
-        <div class="row women-in">
-            <div class="col-md-9">
+<!--    <div class="container" id="sub-main">-->
+<!--        <div class="row women-in">-->
+<!--            <div class="col-md-9">-->
                 <?php echo $this->element('slide'); ?>
                 <div class="single">
                         <?php echo $this->fetch('content') ?>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <?php echo $this->element('sidebar')?>
-            </div>
-        </div>
+<!--            </div>-->
+<!--            <div class="col-md-3">-->
+                <?php //echo $this->element('sidebar')?>
+<!--            </div>-->
+<!--        </div>-->
 
-    </div>
+<!--    </div>-->
 </div>
 <footer>
  <?php echo $this->element('footer');?>
