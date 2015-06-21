@@ -1,4 +1,4 @@
-<div id="p-content">
+<div class="single" id="p-content">
     <?php
     echo $this->element(
         'list-product',

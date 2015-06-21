@@ -20,7 +20,7 @@
                 $class = "";
             ?>
             <div class="item <?php echo $class;?>">
-                <?php echo $this->Media->image($promote['Thumb']['file'], 848, 315, array()); ?>
+                <?php echo $this->Media->image($promote['Thumb']['file'], 917, 315, array()); ?>
                 <div class="banner-matter">
                     <?php echo $promote['Promote']['excert'];?>
                 </div>

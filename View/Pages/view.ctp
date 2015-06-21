@@ -2,7 +2,7 @@
     echo $this->Html->script(array('jquery.etalage.min.js','view.js'),array('inline'=>false));
     echo $this->Html->css(array('etalage.css'),array('inline'=>false));
 ?>
-<div id="p-content">
+<div  class="single" id="p-content">
     <div class="single_grid">
         <div class="grid images_3_of_2">
             <ul id="etalage">

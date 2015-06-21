@@ -1,7 +1,4 @@
-<div class="col-md-2" id="side">
-    <?php echo $this->element('sidebar');?>
-</div>
-<div class="col-md-10" id="p-content">
+<div class="single" id="p-content">
   <?php
   echo $this->element(
       'list-product',

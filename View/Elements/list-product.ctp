@@ -27,7 +27,13 @@
             </h3>
     </div>
     <div class="panel-body lady-in">
-        <?php foreach ($data['products'] as $p): ?>
+        <?php
+            $i=0 ;
+            foreach ($data['products'] as $p):
+            if($i == 0){ echo '<div class="row">';}
+            if($i > 0 && $i%4 ==0){ echo '</div><div class="row">';}
+            ?>
+
             <div class="col-md-3 text-center product-item">
                     <a href="<?php
                     echo $this->Html->url(
@@ -77,7 +83,11 @@
                         ?>  | <a href="#" class="pull-right btn-buy add-cart"><label class="cat-in"></label> Thêm vào giỏ</a></span>
                     </div>
                 </div>
-        <?php endforeach; ?>
+        <?php
+            if($i == count($data['products'])-1){ echo "</div>" ;}
+            $i++;
+            endforeach;
+        ?>
         <?php if(isset($data['use_paginate'])){?>
             <div class="row">
                 <div class="col-lg-12 m-b-30">

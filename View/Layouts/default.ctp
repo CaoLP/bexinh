@@ -52,10 +52,15 @@
 <!--    <div class="container" id="sub-main">-->
 <!--        <div class="row women-in">-->
 <!--            <div class="col-md-9">-->
+    <div class="row">
                 <?php echo $this->element('slide'); ?>
-                <div class="single">
-                        <?php echo $this->fetch('content') ?>
-                </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <?php echo $this->fetch('content') ?>
+        </div>
+    </div>
+
 <!--            </div>-->
 <!--            <div class="col-md-3">-->
                 <?php //echo $this->element('sidebar')?>
