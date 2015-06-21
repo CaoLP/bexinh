@@ -8,7 +8,7 @@
             </div>
             <div class="footer-left">
                 <a href="<?php echo $this->Html->url('/')?>">
-                    <?php echo $this->Html->image('logo.png', array('alt'=>Configure::read('Site.title')))?>
+                    <?php echo $this->Html->image('logo_bottom.png', array('alt'=>Configure::read('Site.title'),'width'=>270))?>
                 </a>
             </div>
             <div class="clearfix"> </div>

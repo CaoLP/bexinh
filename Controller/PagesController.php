@@ -240,10 +240,11 @@ class PagesController extends AppController
                                 $t['OrderDetail']['qty'] = $t['OrderDetail']['qty'] + $this->request->data['OrderDetail']['qty'];
                                 $isExist = true;
                             } else {
-                                if ($item['OrderDetail']['product_id'] == $this->request->data['OrderDetail']['product_id']) {
-                                    $t['OrderDetail']['qty'] = $t['OrderDetail']['qty'] + $this->request->data['OrderDetail']['qty'];
-                                    $isExist = true;
-                                }
+//
+//                                if ($item['OrderDetail']['product_id'] == $this->request->data['OrderDetail']['product_id']) {
+//                                    $t['OrderDetail']['qty'] = $t['OrderDetail']['qty'] + $this->request->data['OrderDetail']['qty'];
+//                                    $isExist = true;
+//                                }
                             }
                         }
                         if ($t['OrderDetail']['thumb'] != Configure::read('Img.noImage')) {

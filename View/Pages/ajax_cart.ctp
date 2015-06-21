@@ -42,9 +42,10 @@ if(count($cart) > 0)
 
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <div class="price pull-left">
+        <i class="glyphicon glyphicon-shopping-cart"></i>
         <?php echo $this->App->format_cart_money($total);?>
     </div>
-    <i class="fa fa-shopping-cart">(<?php echo count($cart);?>)</i>
+    (<?php echo count($cart);?>)
 </a>
 <ul class="dropdown-menu dropdown-cart" role="menu">
    <?php echo $html_cart;?>

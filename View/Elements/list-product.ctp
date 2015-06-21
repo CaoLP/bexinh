@@ -71,16 +71,26 @@
                         <p class="sku">(Mã sản phẩm <?php echo $p['Product']['sku']; ?>)</p>
                         <?php
                         if(isset($p['Promote']['value'])){
-                            echo "<span class=\"price\">";
+                            echo "<span class=\"price pull-left\">";
                             echo $this->App->format_money(h($p['Product']['price']), $p['Promote']['value']);
                             echo "<small class=\"price2\">";
                             echo $this->App->format_money(h($p['Product']['price']));
                             echo "</small>";
                         }else{
-                            echo "<span class=\"price\">";
+                            echo "<span class=\"price pull-left\">";
                             echo $this->App->format_money(h($p['Product']['price']));
                         }
-                        ?>  | <a href="#" class="pull-right btn-buy add-cart"><label class="cat-in"></label> Thêm vào giỏ</a></span>
+                        ?></span>
+                        <a href="<?php
+                        echo $this->Html->url(
+                            array(
+                                'controller' => 'pages',
+                                'action' => 'view',
+                                'category' => $p['Category']['slug'],
+                                'slug' => $p['Product']['slug'],
+                            )
+                        )
+                        ?>" class="pull-right"><label class="cat-in"></label> Xem</a>
                     </div>
                 </div>
         <?php

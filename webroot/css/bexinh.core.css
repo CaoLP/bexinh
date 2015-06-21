@@ -35,7 +35,12 @@ h2,h3,h4,h5,h6,p{
     float:left;
 }
 .logo{
-    float:left;
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.logo img{
+    width: 150px;
 }
 .top-nav{
     float:left;
@@ -389,12 +394,11 @@ label.cat-in{
 }
 /*----*/
 .in-left{
-    background:url(../images/p111.jpg) 0px 0px;
     width: 100%;
-    min-height: 425px;
-    background-size:cover;
+    min-height: 315px;
     display:block;
     position:relative;
+    border: 1px solid #878C92;
 }
 .cool{
     width: 175px;
@@ -2734,4 +2738,38 @@ img.women{
 }
 #main{
     margin-top: 55px;
+}
+.dropdown-cart{
+    width: 250px !important;
+    right: 15px !important;
+    left: auto !important;
+}
+.dropdown-cart .item{
+    position: relative;
+    border-bottom: 1px solid #3c3f41;
+}
+.dropdown-cart .item:last-child{
+
+}
+.dropdown-cart .item-left{
+    width: 100%;
+}
+.dropdown-cart .item img{
+    float: left;
+    display: table-cell;
+    border: 2px solid #ffffe5;
+}
+.dropdown-cart .item-info{
+    display: table-cell;
+}
+.dropdown-cart .item-info .price{
+    color: red;
+}
+.dropdown-cart .item-info .name{
+    font-weight: bold;
+}
+.dropdown-cart .item-right{
+    top: 0;
+    position: absolute;
+    right: 0;
 }

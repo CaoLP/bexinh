@@ -1,7 +1,12 @@
 <div class="header-top">
     <div class="header-bottom-bottom">
+        <div class="logo">
+            <a href="<?php echo $this->Html->url('/')?>">
+                <?php echo $this->Html->image('logo.png', array('alt'=>Configure::read('Site.title')))?>
+            </a>
+        </div>
         <div class="top-nav">
-            <span class="menu"> </span>
+            <span class="menu"></span>
             <?php echo $this->element('category_menu'); ?>
             <div class="clearfix"> </div>
         </div>
@@ -51,9 +56,10 @@
                 <li class="dropdown" id="cart">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                         <div class="price pull-left">
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
                             <?php echo $this->App->format_cart_money($total); ?>
                         </div>
-                        <i class="fa fa-shopping-cart">(<?php echo count($cart); ?>)</i>
+                        (<?php echo count($cart); ?>)
                     </a>
                     <ul class="dropdown-menu dropdown-cart" role="menu">
                         <?php echo $html_cart; ?>
