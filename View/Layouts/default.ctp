@@ -48,7 +48,7 @@
 <header>
     <?php echo $this->element('header') ?>
 </header>
-<div class="container-fluid" id="main">
+<div class="container" id="main">
 <!--    <div class="container" id="sub-main">-->
 <!--        <div class="row women-in">-->
 <!--            <div class="col-md-9">-->
@@ -56,9 +56,7 @@
                 <?php echo $this->element('slide'); ?>
     </div>
     <div class="row">
-        <div class="col-md-12">
-            <?php echo $this->fetch('content') ?>
-        </div>
+        <?php echo $this->fetch('content') ?>
     </div>
 
 <!--            </div>-->
