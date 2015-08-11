@@ -37,6 +37,7 @@ class PagesController extends AppController
 
     public function index()
     {
+        $this->layout = 'home';
         $this->setTitle('Trang chủ');
         $best_sale = array();
         $new_products = array();
@@ -155,19 +156,7 @@ class PagesController extends AppController
     public function promotes($id = null)
     {
         $this->loadModel('Promote');
-
-        if ($this->request->is('ajax')) {
-            $this->layout = 'ajax';
-            $this->view = 'ajax_slide';
-            $promotes = $this->Promote->find('all', array(
-                'conditions' => array(
-                    'Promote.begin <=' => date('Y-m-d H:i:s'),
-                    'Promote.end >=' => date('Y-m-d H:i:s'),
-                    'Promote.status' => 1
-                )
-            ));
-            $this->set(compact('promotes'));
-        } else if ($id != null) {
+        if ($id != null) {
             $this->view = 'promote_view';
             $promote =  $this->Promote->find('first', array(
                 'conditions' =>array(
@@ -191,7 +180,35 @@ class PagesController extends AppController
             $this->setTitle('Khuyến mãi');
         }
     }
+    public function slides(){
+        $this->loadModel('Setting');
+        $this->layout = 'ajax';
+        $this->view = 'ajax_slide';
+        $slides = array(
+            'slide_top' => $this->Setting->find('all', array(
+                'conditions' => array(
+                    'ParentSetting.key' =>'slide_top'
+                ),
+            )),
+            'slide_left' => $this->Setting->find('all', array(
+                'conditions' => array(
+                    'ParentSetting.key' =>'slide_left'
+                ),
+            )),
+            'slide_mid' => $this->Setting->find('all', array(
+                'conditions' => array(
+                    'ParentSetting.key' =>'slide_middle'
+                ),
+            )),
+            'slide_right' => $this->Setting->find('all', array(
+                'conditions' => array(
+                    'ParentSetting.key' =>'slide_right'
+                ),
+            )),
+        );
 
+        $this->set(compact('slides'));
+    }
     public function order()
     {
 

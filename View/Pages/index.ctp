@@ -1,7 +1,7 @@
 <div class="single" id="p-content">
 <?php
 echo $this->element(
-    'list-product',
+    'slide-product',
     array(
         'data' => array(
             'title'=>'SẢN PHẨM BÁN CHẠY',
@@ -10,11 +10,12 @@ echo $this->element(
             'products'=> $best_sale,
             'img_w' => 300,
             'img_h' => 315,
+            'total' => 4,
         )
     )
 );
 echo $this->element(
-    'list-product',
+    'slide-product',
     array(
         'data' => array(
             'title'=>'SẢN PHẨM MỚI',
@@ -23,11 +24,12 @@ echo $this->element(
             'products'=> $new_products,
             'img_w' => 300,
             'img_h' => 315,
+            'total' => 4,
         )
     )
 );
 echo $this->element(
-    'list-product',
+    'slide-product',
     array(
         'data' => array(
             'title'=>'SẢN PHẨM KHUYẾN MÃI',
@@ -36,11 +38,12 @@ echo $this->element(
             'products'=> $promote_products,
             'img_w' => 300,
             'img_h' => 315,
+            'total' => 4,
         )
     )
 );
 echo $this->element(
-    'list-product',
+    'slide-product',
     array(
         'data' => array(
             'title'=>'SẢN PHẨM',
@@ -49,6 +52,7 @@ echo $this->element(
             'products'=> $products,
             'img_w' => 300,
             'img_h' => 315,
+            'total' => 4,
         )
     )
 );

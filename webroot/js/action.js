@@ -68,8 +68,17 @@ $(function () {
     if($('#carousel').length > 0){
         $.ajax({
             url: slide,
+            type : 'post',
+            dataType: "html",
             success : function(data){
-                $('#carousel').html(data);
+                $('#carousel').html($(data).filter('#slide_top').html());
+                $('#slide_left').html($(data).filter('#slide_left').html());
+                $('#slide_mid').html($(data).filter('#slide_mid').html());
+                $('#slide_right').html($(data).filter('#slide_right').html());
+                $('.carousel').each(function(){
+                    var random = Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000;
+                    $(this).carousel({interval: random});
+                })
             }
         });
     }

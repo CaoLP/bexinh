@@ -19,6 +19,7 @@
 	Router::connect('/', array('controller' => 'pages', 'action' => 'index'));
 
     Router::connect('/san-pham', array('controller' => 'pages', 'action' => 'products'));
+    Router::connect('/slides', array('controller' => 'pages', 'action' => 'slides'));
     Router::connect('/khuyen-mai/*', array('controller' => 'pages', 'action' => 'promotes'));
     Router::connect('/tin-tuc/*', array('controller' => 'pages', 'action' => 'news'));
     Router::connect('/blog/*', array('controller' => 'pages', 'action' => 'blogs'));
@@ -26,7 +27,6 @@
     Router::connect('/thanh-toan', array('controller' => 'pages', 'action' => 'order'));
     Router::connect('/gio-hang', array('controller' => 'pages', 'action' => 'cart'));
     Router::connect('/tim-kiem', array('controller' => 'pages', 'action' => 'search'));
-
     Router::connect('/ban-chay', array('controller' => 'pages', 'action' => 'best_sale'));
     Router::connect('/san-pham-moi', array('controller' => 'pages', 'action' => 'new_products'));
     Router::connect('/san-pham-khuyen-mai', array('controller' => 'pages', 'action' => 'promote_products'));

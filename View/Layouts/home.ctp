@@ -32,6 +32,15 @@
     echo $this->fetch('css');
     ?>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+
+    <script>
+        var slide = "<?php echo $this->Html->url(
+            array(
+                'controller' => 'pages',
+                'action' => 'slides',
+            )
+        );?>";
+    </script>
 </head>
 
 <body>
@@ -40,12 +49,23 @@
     <?php echo $this->element('header') ?>
 </header>
 <div class="container" id="main">
+<!--    <div class="container" id="sub-main">-->
+<!--        <div class="row women-in">-->
+<!--            <div class="col-md-9">-->
     <div class="row">
-        <?php //echo $this->element('slide'); ?>
+                <?php echo $this->element('slide'); ?>
     </div>
     <div class="row">
         <?php echo $this->fetch('content') ?>
     </div>
+
+<!--            </div>-->
+<!--            <div class="col-md-3">-->
+                <?php //echo $this->element('sidebar')?>
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
 </div>
 <footer>
  <?php echo $this->element('footer');?>
