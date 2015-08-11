@@ -6,14 +6,74 @@
     <div class="row">
         <div class="col-md-7">
             <div class="row">
-                <ul id="etalage">
-                    <?php foreach ($product['Media'] as $media) { ?>
-                        <li>
-                            <?php echo $this->Media->image($media['file'], 302, 402, array('class'=>'etalage_thumb_image img-responsive', 'disable_size'=>true)); ?>
-                            <img src="<?php echo Configure::read('Img.path') . $media['file']; ?>" class="etalage_source_image img-responsive">
-                        </li>
-                    <?php } ?>
-                </ul>
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8">
+                    <ul id="etalage">
+                        <?php foreach ($product['Media'] as $media) { ?>
+                            <li>
+                                <?php echo $this->Media->image($media['file'], 302, 402, array('class'=>'etalage_thumb_image img-responsive', 'disable_size'=>true)); ?>
+                                <img src="<?php echo Configure::read('Img.path') . $media['file']; ?>" class="etalage_source_image img-responsive">
+                            </li>
+                        <?php } ?>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-12">
+                    <div class="share-desc">
+                        <div class="share">
+                            <h4>Chia sẻ :</h4>
+                            <ul class="share_nav">
+                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php
+                                    echo $this->Html->url(
+                                        array(
+                                            'controller' => 'pages',
+                                            'action' => 'view',
+                                            'category' => $product['Category']['slug'],
+                                            'slug' => $product['Product']['slug'],
+                                        ),true
+                                    );
+                                    ?>&t=<?php echo $product['Product']['name'];?>"
+                                       class="share-popup"
+                                       target="_blank" title="Share on Facebook"><?php echo $this->Html->image('facebook.png', array('alt'=>'Facebook')) ?></a></li>
+                                <li><a href="http://twitter.com/share?url=<?php
+                                    echo $this->Html->url(
+                                        array(
+                                            'controller' => 'pages',
+                                            'action' => 'view',
+                                            'category' => $product['Category']['slug'],
+                                            'slug' => $product['Product']['slug'],
+                                        ),true
+                                    );
+                                    ?>&text=<?php echo $product['Product']['name'];?>"
+                                       class="share-popup"
+                                       target="_blank" title="Share on Twitter"><?php echo $this->Html->image('twitter.png', array('alt'=>'Twiiter')) ?></a></li>
+                                <li><a href="https://plus.google.com/share?url=<?php
+                                    echo $this->Html->url(
+                                        array(
+                                            'controller' => 'pages',
+                                            'action' => 'view',
+                                            'category' => $product['Category']['slug'],
+                                            'slug' => $product['Product']['slug'],
+                                        ),true
+                                    );
+                                    ?>&t=<?php echo $product['Product']['name'];?>"
+                                       class="share-popup"
+                                       target="_blank" title="Share on Google+"><?php echo $this->Html->image('gpluse.png', array('alt'=>'Google+')) ?></a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div
+                        class="fb-like"
+                        data-share="true"
+                        data-width="450"
+                        data-show-faces="true">
+                    </div>
+                </div>
             </div>
             <!----- tabs-box ---->
             <div class="row">
@@ -130,58 +190,6 @@
                         <div class="clearfix"></div>
                     </div>
                     <?php echo $this->Form->end();?>
-                    <div class="share-desc">
-                        <div class="share">
-                            <h4>Chia sẻ :</h4>
-                            <ul class="share_nav">
-                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php
-                                    echo $this->Html->url(
-                                        array(
-                                            'controller' => 'pages',
-                                            'action' => 'view',
-                                            'category' => $product['Category']['slug'],
-                                            'slug' => $product['Product']['slug'],
-                                        ),true
-                                    );
-                                    ?>&t=<?php echo $product['Product']['name'];?>"
-                                       class="share-popup"
-                                       target="_blank" title="Share on Facebook"><?php echo $this->Html->image('facebook.png', array('alt'=>'Facebook')) ?></a></li>
-                                <li><a href="http://twitter.com/share?url=<?php
-                                    echo $this->Html->url(
-                                        array(
-                                            'controller' => 'pages',
-                                            'action' => 'view',
-                                            'category' => $product['Category']['slug'],
-                                            'slug' => $product['Product']['slug'],
-                                        ),true
-                                    );
-                                    ?>&text=<?php echo $product['Product']['name'];?>"
-                                       class="share-popup"
-                                       target="_blank" title="Share on Twitter"><?php echo $this->Html->image('twitter.png', array('alt'=>'Twiiter')) ?></a></li>
-                                <li><a href="https://plus.google.com/share?url=<?php
-                                    echo $this->Html->url(
-                                        array(
-                                            'controller' => 'pages',
-                                            'action' => 'view',
-                                            'category' => $product['Category']['slug'],
-                                            'slug' => $product['Product']['slug'],
-                                        ),true
-                                    );
-                                    ?>&t=<?php echo $product['Product']['name'];?>"
-                                       class="share-popup"
-                                       target="_blank" title="Share on Google+"><?php echo $this->Html->image('gpluse.png', array('alt'=>'Google+')) ?></a></li>
-                            </ul>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="row m-top-10">
-                        <div
-                            class="fb-like"
-                            data-share="true"
-                            data-width="450"
-                            data-show-faces="true">
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="clearfix"></div>

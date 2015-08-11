@@ -116,6 +116,12 @@ $(function(){
         thumb_image_height: 400,
         source_image_width: 900,
         source_image_height: 1200,
+        zoom_area_width: 500,
+        zoom_area_height: 500,
+        zoom_area_distance: 5,
+        small_thumbs: 4,
+        smallthumb_inactive_opacity: 0.3,
+        smallthumbs_position: 'left',
         show_hint: true,
         click_callback: function(image_anchor, instance_id){
 
