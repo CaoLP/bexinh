@@ -152,6 +152,19 @@ class Product extends AppModel
             'finderQuery' => '',
             'counterQuery' => ''
         ),
+        'ProductSubitem' => array(
+            'className' => 'ProductSubitem',
+            'foreignKey' => 'product_id',
+            'dependent' => false,
+            'conditions' => array(),
+            'fields' => '',
+            'order' => '',
+            'limit' => '',
+            'offset' => '',
+            'exclusive' => '',
+            'finderQuery' => '',
+            'counterQuery' => ''
+        ),
         'Warehouse' => array(
             'className' => 'Warehouse',
             'foreignKey' => 'product_id',
