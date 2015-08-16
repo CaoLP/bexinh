@@ -1,4 +1,5 @@
 <?php
+if(isset($promotes))
 foreach ($promotes as $key => $promote) {
     if ($key == 0) {
         ?>

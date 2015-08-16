@@ -5007,3 +5007,6 @@ img.women{
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+.carousel-control{
+    width: 2%;
+}

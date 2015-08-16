@@ -47,12 +47,6 @@
                     ?>">
                         <?php echo $this->Media->image($p['Thumb']['file'], $data['img_w'], $data['img_h'], array('class'=>'img-responsive pic-in', 'disable_size'=>true)); ?>
                     </a>
-                <?php// if(isset($p['Promote']['value'])){  ?>
-                    <div class="you-in">
-                        <span><?php// echo $p['Promote']['value'];?>15<label>%</label></span>
-                        <small>off</small>
-                    </div>
-                <?php// }  ?>
                     <div class="pro-name">
                         <p class="name">
                             <a href="<?php

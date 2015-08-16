@@ -56,7 +56,7 @@ class AppController extends Controller
         //sample
         if(!$this->request->is('ajax')){
             $this->loadCategory();
-            $this->loadPromote();
+            //$this->loadPromote();
         }
     }
     public function canUploadMedias($model, $id){
