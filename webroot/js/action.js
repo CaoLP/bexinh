@@ -21,7 +21,18 @@ $(function () {
         return false;
     });
     $('.buy').on('click',function(){
-        $('#OrderDetailViewForm').submit();
+        var form = $('#OrderDetailViewForm').serialize();
+        $.ajax({
+            url: cartUrl,
+            type : 'post',
+            data : form,
+            success: function(data){
+                if(data){
+                    $('#cart').html(data);
+                    location.href = cartUrl;
+                }
+            }
+        });
     });
     $('.add-cart').on('click',function(){
         var form = $('#OrderDetailViewForm').serialize();
@@ -30,7 +41,8 @@ $(function () {
             type : 'post',
             data : form,
             success: function(data){
-                $('#cart').html(data);
+                if(data)
+                    $('#cart').html(data);
             }
         });
     });
