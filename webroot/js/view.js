@@ -132,4 +132,25 @@ $(function(){
         width: 'auto', //auto or any width like 600px
         fit: true   // 100% fit in a container
     });
+
+    $.ajax({
+        url : relative,
+        type : 'post',
+        data : {category: category},
+        success : function(data){
+            $('#relative-1').html(data);
+        }
+    });
+    $.ajax({
+        url : relative,
+        type : 'post',
+        data : {category: category},
+        success : function(data){
+            $('#relative-2').html(data);
+        }
+    });
 });
+function viewmore(){
+    $('.detail_listcart').css('height', 'auto');
+    $('.view_full').hide();
+}

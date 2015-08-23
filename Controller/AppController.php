@@ -43,6 +43,7 @@ class AppController extends Controller
 //        ),
         'DebugKit.Toolbar'
     );
+    public $uses = array('Provider','Category','Product','Setting');
     public function beforeRender()
     {
         $this->set('types', array(
@@ -57,7 +58,15 @@ class AppController extends Controller
         if(!$this->request->is('ajax')){
             $this->loadCategory();
             //$this->loadPromote();
+            $contact_footer = $this->Setting->find('first', array(
+                'conditions' => array(
+                    'Setting.key' =>'contact_footer'
+                ),
+            ));
+            $this->set(compact('contact_footer'));
         }
+        $this->getProviders();
+
     }
     public function canUploadMedias($model, $id){
 //        if($model == 'User' & $id = $this->Session->read('Auth.User.id')){
@@ -99,5 +108,13 @@ class AppController extends Controller
             'limit' => 3
         ));
         $this->set(compact('promotes'));
+    }
+    function getProviders(){
+
+        $providers = $this->Provider->get_listProviders();
+
+        $providers = Set::combine($providers,'{n}.Provider.id','{n}.Provider');
+        $this->set(compact('providers'));
+
     }
 }

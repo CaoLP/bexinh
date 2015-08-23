@@ -26,7 +26,7 @@
                     </small>
             </h3>
     </div>
-    <div class="panel-body lady-in">
+    <div class="panel-body">
         <?php
             $i=0 ;
             foreach ($data['products'] as $p):
@@ -47,34 +47,33 @@
                     ?>">
                         <?php echo $this->Media->image($p['Thumb']['file'], $data['img_w'], $data['img_h'], array('class'=>'img-responsive pic-in', 'disable_size'=>true)); ?>
                     </a>
-                    <div class="pro-name">
-                        <p class="name">
-                            <a href="<?php
-                            echo $this->Html->url(
-                                array(
-                                    'controller' => 'pages',
-                                    'action' => 'view',
-                                    'category' => $p['Category']['slug'],
-                                    'slug' => $p['Product']['slug'],
-                                )
+
+                <div class="info">
+                    <span class="brdname"><?php
+                        if (isset($providers[$p['Product']['provider_id']])) {
+                            ?>
+                        <a href="<?php
+                        echo $this->Html->url(
+                            array(
+                                'controller' => 'pages',
+                                'action' => 'brand',
+                                'provider' => $providers[$p['Product']['provider_id']]['slug'],
                             )
-                            ?>">
-                            <?php echo $p['Product']['name']; ?>
-                        </a>
-                        </p>
-                        <p class="sku">(Mã sản phẩm <?php echo $p['Product']['sku']; ?>)</p>
-                        <?php
-                        if(isset($p['Promote']['value'])){
-                            echo "<span class=\"price pull-left\">";
-                            echo $this->App->format_money(h($p['Product']['price']), $p['Promote']['value']);
-                            echo "<small class=\"price2\">";
-                            echo $this->App->format_money(h($p['Product']['price']));
-                            echo "</small>";
-                        }else{
-                            echo "<span class=\"price pull-left\">";
-                            echo $this->App->format_money(h($p['Product']['price']));
+                        )
+                        ?>">
+                            <?php
+                            if(!empty($providers[$p['Product']['provider_id']]['thumb'])){
+                                echo $this->Html->image(
+                                    Configure::read('Img.path')
+                                    . $providers[$p['Product']['provider_id']]['thumb'],
+                                    array('height' => '35')
+                                );
+                            }
+                            else
+                                echo $providers[$p['Product']['provider_id']]['name'];
                         }
-                        ?></span>
+                        ?></a></span>
+                    <h3>
                         <a href="<?php
                         echo $this->Html->url(
                             array(
@@ -84,9 +83,27 @@
                                 'slug' => $p['Product']['slug'],
                             )
                         )
-                        ?>" class="pull-right"><label class="cat-in"></label> Xem</a>
-                    </div>
+                        ?>"
+                           title="<?php echo $p['Product']['name']; ?>"><?php echo $p['Product']['name']; ?></a></h3>
+
+                    <?php
+                    if (isset($p['Promote']['value'])) {
+                        ?>
+                        <del><?php echo $this->App->format_money(h($p['Product']['price']), $p['Promote']['value']); ?></del>
+                        <br>
+                        <?php
+                    } ?>
+                    <span class="price dodam"><?php echo $this->App->format_money(h($p['Product']['price'])); ?></span>
+                    <?php
+                    if (isset($p['Promote']['value'])) {
+                        ?>
+                        <span class="down"><?php echo $p['Promote']['value']; ?>%</span>
+                        <?php
+                    } ?>
+
                 </div>
+
+            </div>
         <?php
             if($i == count($data['products'])-1){ echo "</div>" ;}
             $i++;

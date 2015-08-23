@@ -26,14 +26,7 @@ class ProductSubitem extends AppModel
             ),
         ),
         'name' => array(
-            'notEmpty' => array(
-                'rule' => array('notEmpty'),
-                //'message' => 'Your custom message here',
-                //'allowEmpty' => false,
-                //'required' => false,
-                //'last' => false, // Stop validation after this rule
-                //'on' => 'create', // Limit validation to 'create' or 'update' operations
-            ),
+
         ),
 
         'product_id' => array(
@@ -73,4 +66,31 @@ class ProductSubitem extends AppModel
             'order' => ''
         )
     );
+    public function updateSubitem($subitem_data,$product_id){
+        $old_data = $this->find('list',
+            array(
+                'conditions' =>
+                    array(
+                        'product_id' => $product_id
+                    )
+            )
+        );
+        $update_data = array();
+        $saveData = array();
+        foreach($subitem_data as $item){
+            $item_save = array(
+                'name' => $item['name'],
+                'medias' => json_encode($item['medias']),
+                'product_id' => $product_id
+            );
+            if(isset($item['id'])){
+                $update_data[] = $item['id'];
+                $item_save['id'] = $item['id'];
+            }
+            $saveData[] = $item_save;
+        }
+        $this->saveMany($saveData);
+        $subtract = array_diff(array_keys($old_data),$update_data);
+        $this->deleteAll(array('ProductSubitem.id'=> $subtract));
+    }
 }

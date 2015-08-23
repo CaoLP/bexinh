@@ -244,11 +244,26 @@ class PagesController extends AppController
                     }
                 }
             } else {
-                if(!isset($this->request->data['OrderDetail']['qty'])) $this->request->data['OrderDetail']['qty'] = 1;
+
+//                print_r($this->request->data);
+                $subitem = array();
+                $new_cart = array();
+                if(isset($this->request->data['qty'])){
+                    foreach($this->request->data['qty'] as $k=>$qt){
+                        if($qt > 0){
+                            $subitem[$k] = $qt;
+                        }
+                    }
+                }
+//                if(!isset($this->request->data['OrderDetail']['qty'])) $this->request->data['OrderDetail']['qty'] = 1;
                 if (isset($this->request->data['OrderDetail']['product_id'])) {
+                    $data = json_decode($this->request->data('OrderDetail.data'),true);
+                    $sub = $data['ProductSubitem'];
+                    $sub = Set::combine($sub,'{n}.id','{n}');
+                    $media = $data['Media'];
                     foreach ($cart as $item) {
                         $t = $item;
-                        if (isset($this->request->data['OrderDetail']['product_id'])) {
+                        if (count($subitem) == 0) {
                             if (
                                 isset($this->request->data['OrderDetail']['options'])
                                 && $item['OrderDetail']['product_id'] == $this->request->data['OrderDetail']['product_id']
@@ -256,22 +271,62 @@ class PagesController extends AppController
                             ) {
                                 $t['OrderDetail']['qty'] = $t['OrderDetail']['qty'] + $this->request->data['OrderDetail']['qty'];
                                 $isExist = true;
-                            } else {
-//
-//                                if ($item['OrderDetail']['product_id'] == $this->request->data['OrderDetail']['product_id']) {
-//                                    $t['OrderDetail']['qty'] = $t['OrderDetail']['qty'] + $this->request->data['OrderDetail']['qty'];
-//                                    $isExist = true;
-//                                }
+                            }
+                            if ($t['OrderDetail']['thumb'] != Configure::read('Img.noImage')) {
+                                $t['OrderDetail']['thumb'] = str_replace(Configure::read('Img.path') . '/', '', $t['OrderDetail']['thumb']);
+                            }
+                            $temp[] = $t;
+                        } else {
+                            foreach($subitem as $ke=>$va) {
+                                $st = $t;
+                                if(!isset($item['OrderDetail']['subitem'])){
+                                    $st['OrderDetail']['subitem'] = $ke;
+                                }
+                                if (
+                                    (
+                                        isset($this->request->data['OrderDetail']['options'])
+                                        && $item['OrderDetail']['product_id'] == $this->request->data['OrderDetail']['product_id']
+                                        && $item['OrderDetail']['options'] == $this->request->data['OrderDetail']['options']
+                                        && $item['OrderDetail']['subitem'] == $ke
+                                    )
+                                    || $item['OrderDetail']['subitem'] == $ke
+                                ) {
+                                    $st['OrderDetail']['qty'] = $st['OrderDetail']['qty'] + $va;
+                                    $isExist = true;
+                                }else{
+                                    $st['OrderDetail']['qty'] = $va;
+                                    if(isset($sub[$ke]['medias']) && !empty($sub[$ke]['medias'])){
+                                        $img_id = json_decode($sub[$ke]['medias'],true)[0];
+                                        $st['OrderDetail']['thumb'] = $media[$img_id]['file'];
+                                    }
+                                    $new_cart[] = $st;
+                                }
+
+                                $temp[] = $st;
                             }
                         }
-                        if ($t['OrderDetail']['thumb'] != Configure::read('Img.noImage')) {
-                            $t['OrderDetail']['thumb'] = str_replace(Configure::read('Img.path') . '/', '', $t['OrderDetail']['thumb']);
-                        }
-                        $temp[] = $t;
                     }
                     $cart = $temp;
-                    if (!$isExist)
-                        $cart[] = $this->request->data;
+                    if (!$isExist){
+                        if(count($new_cart) > 0){
+                            foreach($new_cart as $va) {
+                                $cart[] = $va;
+                            }
+                        }else if(count($subitem) > 0){
+                            unset($this->request->data['qty']);
+                            foreach($subitem as $ke=>$va) {
+                                $st = $this->request->data;
+                                $st['OrderDetail']['subitem'] = $ke;
+                                $st['OrderDetail']['qty'] = $va;
+                                if(isset($sub[$ke]['medias']) && !empty($sub[$ke]['medias'])){
+                                    $img_id = json_decode($sub[$ke]['medias'],true)[0];
+                                    $st['OrderDetail']['thumb'] = $media[$img_id]['file'];
+                                }
+                                $cart[] = $st;
+                            }
+                        }else
+                            $cart[] = $this->request->data;
+                    }
                 }
             }
             $this->Session->write('Shop.cart', $cart);
@@ -517,5 +572,45 @@ class PagesController extends AppController
         );
         $products = $this->Paginator->paginate('ProductPromote');
         $this->set(compact('products'));
+    }
+    public function relative(){
+        if($this->request->is('ajax')){
+            $this->layout= 'ajax';
+            $this->Product->hasMany = array();
+            $conditions = array(
+                'fields' => 'Product.*,Category.*,Thumb.file',
+                'conditions' => array(
+                    'NOT' => array(
+                        'Product.name' => array('0', ''),
+                    ),
+                ),
+                'joins' => array(
+                    array(
+                        'table' => 'product_promotes',
+                        'alias' => 'ProductPromote',
+                        'type' => 'LEFT',
+                        'conditions' => array(
+                            'Product.id = ProductPromote.product_id'
+                        )
+                    ),
+                    array(
+                        'table' => 'promotes',
+                        'alias' => 'Promote',
+                        'type' => 'LEFT',
+                        'conditions' => array(
+                            'ProductPromote.promote_id = Promote.id',
+                            'Promote.begin <=' => date('Y-m-d H:i:s'),
+                            'Promote.end >=' => date('Y-m-d H:i:s'),
+                        )
+                    )
+                ),
+                'order' => array('RAND()'),
+                'limit' => 4
+            );
+            if(isset($this->request->data['category']) && !empty($this->request->data['category']))
+                $conditions['conditions']['Product.category_id'] = $this->request->data('category');
+            $products = $this->Product->find('all', $conditions);
+            $this->set(compact('products'));
+        }else die;
     }
 }

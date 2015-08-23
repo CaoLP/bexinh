@@ -23,14 +23,14 @@ App::uses('Helper', 'View');
 class AppHelper extends Helper {
     public function format_money($price, $promote = 0){
         $price = $price - ($price * ($promote/100));
-        return number_format($price, 0, '.', ',').' VNĐ';
+        return number_format($price, 0, '.', ',').' đ';
     }
     public function format_detail_money($price, $promote = 0){
         $price = $price - ($price * ($promote/100));
-        return number_format($price, 0, '.', ',').' VNĐ';
+        return number_format($price, 0, '.', ',').' đ';
     }
     public function format_cart_money($price, $promote = 0){
         $price = $price - ($price * ($promote/100));
-        return number_format($price, 0, '.', ',').' VND';
+        return number_format($price, 0, '.', ',').' đ';
     }
 }
