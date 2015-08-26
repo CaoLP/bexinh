@@ -5459,3 +5459,75 @@ ul.thanhtoan li {
 #relative-2 .product-item{
     width: 100%;
 }
+
+.hotnews, .random {
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.hotnews h3, .random h3 {
+    color: #454545;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 600;
+}
+.hotnews ul, .random ul {
+    margin-top: 10px;
+}
+.hotnews ul li a {
+    display: block;
+    padding: 5px 0;
+    border-bottom: 1px dotted #aaa;
+    color: #2f2f2f;
+}
+.hotnews ul li{
+    list-style-type: none;
+}
+.random .product-item{
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.article-item {
+    margin-top: 15px;
+    float: left;
+    border: 1px solid #ccc;
+    width: calc(100% - 15px);
+}
+.article-img {
+    float: left;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.article-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.article-text {
+    width: calc(100% - 170px);
+    float: right;
+    padding-right: 10px;
+}
+.article-text h3 {
+    color: #404040;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.article-text p {
+    text-align: justify;
+    margin-top: 5px;
+    color: #000;
+    font-size: 12px;
+}
+.article-item a.readmore {
+    color: #FFB400;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 12px;
+}

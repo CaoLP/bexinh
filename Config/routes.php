@@ -18,8 +18,10 @@
  */
 	Router::connect('/', array('controller' => 'pages', 'action' => 'index'));
 
+    Router::connect('/test', array('controller' => 'pages', 'action' => 'test'));
     Router::connect('/san-pham', array('controller' => 'pages', 'action' => 'products'));
-    Router::connect('/bai-viet/*', array('controller' => 'pages', 'action' => 'posts'));
+    Router::connect('/bai-viet/*', array('controller' => 'pages', 'action' => 'post'));
+    Router::connect('/tin-tuc/*', array('controller' => 'pages', 'action' => 'posts'));
     Router::connect('/slides', array('controller' => 'pages', 'action' => 'slides'));
     Router::connect('/khuyen-mai/*', array('controller' => 'pages', 'action' => 'promotes'));
     Router::connect('/tin-tuc/*', array('controller' => 'pages', 'action' => 'news'));

@@ -12,7 +12,7 @@ foreach ($products as $p) {
             )
         )
         ?>">
-            <?php echo $this->Media->image($p['Thumb']['file'], 300, 315, array('class' => 'img-responsive pic-in', 'disable_size' => true)); ?>
+            <?php echo $this->Media->image($p['Thumb']['file'], 300, 415, array('class' => 'img-responsive pic-in', 'disable_size' => true), true); ?>
         </a>
 
         <div class="info">

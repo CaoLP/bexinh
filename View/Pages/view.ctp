@@ -28,7 +28,7 @@ echo $this->Html->css(array('etalage.css'), array('inline' => false));
                 <ul id="etalage">
                     <?php foreach ($product['Media'] as $media) { ?>
                         <li>
-                            <?php echo $this->Media->image($media['file'], 302, 402, array('class' => 'etalage_thumb_image img-responsive', 'disable_size' => true)); ?>
+                            <?php echo $this->Media->image($media['file'], 302, 502, array('class' => 'etalage_thumb_image img-responsive', 'disable_size' => true),true); ?>
                             <img src="<?php echo Configure::read('Img.path') . $media['file']; ?>"
                                  class="etalage_source_image img-responsive">
                         </li>
@@ -305,10 +305,12 @@ echo $this->Html->css(array('etalage.css'), array('inline' => false));
         </div>
     </div>
     <div class="col-md-2">
-        <span class="text_note">Sản phẩm liên quan</span>
-
-        <div class="row" id="relative-2">
-        </div>
+        <div class="row random">
+            <h3 class="title">
+                Sản phẩm liên quan
+            </h3>
+            <div class="row" id="relative-2">
+            </div>
     </div>
 </article>
 

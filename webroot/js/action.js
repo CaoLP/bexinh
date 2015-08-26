@@ -105,6 +105,15 @@ $(function () {
             $('.timer').text(cur);
         },1000)
     }
+    if($('#hotnews').length > 0){
+        $.ajax({
+            url : ajax_news,
+            type : 'post',
+            success : function(data){
+                $('#hotnews').html(data);
+            }
+        });
+    }
 });
 var change_cart = function(type,id,style){
     $.ajax({

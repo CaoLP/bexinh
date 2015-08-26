@@ -583,14 +583,51 @@ class PagesController extends AppController
             $this->set(compact('products'));
         }else die;
     }
-    public function posts($slug = null){
+    public function post($slug = null){
         $this->layout = 'home';
         $this->loadModel('Post');
         if($slug != null){
             $post = $this->Post->find('first',array('conditions' => array('Post.slug' => $slug)));
+            if(!$post){
+                $this->layout = 'error';
+                return false;
+            }
+            $this->setTitle($post['Post']['title']);
             $this->set(compact('post'));
-        }else{
-            $this->view = 'post_list';
+        }else {
+            $this->layout = 'error';
         }
+    }
+    public function posts($slug = null){
+        $this->layout = 'home';
+        $this->loadModel('PostCategory');
+        if ($slug != null) {
+            $posts = $this->PostCategory->find('first', array(
+                    'conditions' => array('PostCategory.slug' => $slug)
+                )
+            );
+            if(!$posts){
+                $this->layout = 'error';
+                return false;
+            }
+            $this->setTitle($posts['PostCategory']['name']);
+            $this->set(compact('posts'));
+        } else {
+            $this->layout = 'error';
+        }
+    }
+    public function new_posts(){
+        if($this->request->is('ajax')) {
+            $this->layout = 'ajax';
+            $this->view = 'ajax_news';
+            $this->loadModel('Post');
+            $posts = $this->Post->find('all',array('order' => array("Post.created DESC"),'limit' => 5));
+            $this->set(compact('posts'));
+        }
+
+    }
+    public function test(){
+        $this->layout = '';
+
     }
 }

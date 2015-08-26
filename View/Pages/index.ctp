@@ -9,7 +9,7 @@ echo $this->element(
             'url'=> $this->Html->url(array('controller' => 'pages', 'action' => 'best_sale')),
             'products'=> $best_sale,
             'img_w' => 300,
-            'img_h' => 315,
+            'img_h' => 415,
             'total' => 4,
         )
     )
@@ -23,7 +23,7 @@ echo $this->element(
             'url'=> $this->Html->url(array('controller' => 'pages', 'action' => 'new_products')),
             'products'=> $new_products,
             'img_w' => 300,
-            'img_h' => 315,
+            'img_h' => 415,
             'total' => 4,
         )
     )
@@ -37,7 +37,7 @@ echo $this->element(
             'url'=> $this->Html->url(array('controller' => 'pages', 'action' => 'promote_products')),
             'products'=> $promote_products,
             'img_w' => 300,
-            'img_h' => 315,
+            'img_h' => 415,
             'total' => 4,
         )
     )
@@ -51,7 +51,7 @@ echo $this->element(
             'url'=> $this->Html->url(array('controller' => 'pages', 'action' => 'products')),
             'products'=> $products,
             'img_w' => 300,
-            'img_h' => 315,
+            'img_h' => 415,
             'total' => 4,
         )
     )

@@ -47,7 +47,8 @@
                                             $p['Thumb']['file'],
                                             $data['img_w'],
                                             $data['img_h'],
-                                            array('class' => 'img-responsive')); ?>
+                                            array('class' => 'img-responsive'),
+                                            true ); ?>
                                     </a>
                                 </div>
                                 <span class="brdname"><?php
