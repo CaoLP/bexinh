@@ -583,4 +583,14 @@ class PagesController extends AppController
             $this->set(compact('products'));
         }else die;
     }
+    public function posts($slug = null){
+        $this->layout = 'home';
+        $this->loadModel('Post');
+        if($slug != null){
+            $post = $this->Post->find('first',array('conditions' => array('Post.slug' => $slug)));
+            $this->set(compact('post'));
+        }else{
+            $this->view = 'post_list';
+        }
+    }
 }

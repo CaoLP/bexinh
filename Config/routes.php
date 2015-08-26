@@ -19,12 +19,11 @@
 	Router::connect('/', array('controller' => 'pages', 'action' => 'index'));
 
     Router::connect('/san-pham', array('controller' => 'pages', 'action' => 'products'));
+    Router::connect('/bai-viet/*', array('controller' => 'pages', 'action' => 'posts'));
     Router::connect('/slides', array('controller' => 'pages', 'action' => 'slides'));
     Router::connect('/khuyen-mai/*', array('controller' => 'pages', 'action' => 'promotes'));
     Router::connect('/tin-tuc/*', array('controller' => 'pages', 'action' => 'news'));
     Router::connect('/blog/*', array('controller' => 'pages', 'action' => 'blogs'));
-    Router::connect('/lien-he', array('controller' => 'pages', 'action' => 'contact'));
-    Router::connect('/thanh-toan', array('controller' => 'pages', 'action' => 'order'));
     Router::connect('/gio-hang', array('controller' => 'pages', 'action' => 'cart'));
     Router::connect('/tim-kiem', array('controller' => 'pages', 'action' => 'search'));
     Router::connect('/ban-chay', array('controller' => 'pages', 'action' => 'best_sale'));

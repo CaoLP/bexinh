@@ -20,9 +20,9 @@
                                 <ul id="footer-aboutus">
                                     <li class="title-info"><h4>Thông tin</h4></li>
 
-                                    <li><a href="/posts/he-thong-cua-hang" title="Hệ thống cửa hàng" rel="nofollow">&gt; Hệ thống cửa hàng</a></li>
+                                    <li><a href="/bai-viet/he-thong-cua-hang" title="Hệ thống cửa hàng" rel="nofollow">&gt; Hệ thống cửa hàng</a></li>
 
-                                    <li><a href="/posts/tuyen-dung" title="Tuyển dụng" rel="nofollow">&gt; Tuyển dụng</a></li>
+                                    <li><a href="/bai-viet/tuyen-dung" title="Tuyển dụng" rel="nofollow">&gt; Tuyển dụng</a></li>
 
                                     <li class="title-info desktop">
                                         <h4>Chứng nhận an toàn</h4>
@@ -40,21 +40,21 @@
                                 <ul id="footer-support">
                                     <li class="title-info"><h4>Hỗ trợ khách hàng</h4></li>
 
-                                    <li><a href="/posts/huong-dan-mua-hang" title="Hướng dẫn mua hàng" rel="nofollow">Hướng dẫn mua hàng</a></li>
+                                    <li><a href="/bai-viet/huong-dan-mua-hang" title="Hướng dẫn mua hàng" rel="nofollow">Hướng dẫn mua hàng</a></li>
 
-                                    <li><a href="/posts/chinh-sach-van-chuyen" title="Chính sách vận chuyển" rel="nofollow">Chính sách vận chuyển</a></li>
+                                    <li><a href="/bai-viet/chinh-sach-van-chuyen" title="Chính sách vận chuyển" rel="nofollow">Chính sách vận chuyển</a></li>
 
-                                    <li><a href="/posts/chinh-sach-bao-hanh" title="Chính sách bảo hành" rel="nofollow">Chính sách bảo hành</a></li>
+                                    <li><a href="/bai-viet/chinh-sach-bao-hanh" title="Chính sách bảo hành" rel="nofollow">Chính sách bảo hành</a></li>
 
-                                    <li><a href="/posts/hinh-thuc-thanh-toan" title="Hình thức thanh toán" rel="nofollow">Hình thức thanh toán</a></li>
+                                    <li><a href="/bai-viet/hinh-thuc-thanh-toan" title="Hình thức thanh toán" rel="nofollow">Hình thức thanh toán</a></li>
 
-                                    <li><a href="/posts/doi-tra-san-pham" title="Đổi - trả sản phẩm" rel="nofollow">Đổi - trả sản phẩm</a></li>
+                                    <li><a href="/bai-viet/doi-tra-san-pham" title="Đổi - trả sản phẩm" rel="nofollow">Đổi - trả sản phẩm</a></li>
 
-                                    <li><a href="/posts/tieu-chi-ban-hang" title="Tiêu chí bán hàng" rel="nofollow">Tiêu chí bán hàng</a></li>
+                                    <li><a href="/bai-viet/tieu-chi-ban-hang" title="Tiêu chí bán hàng" rel="nofollow">Tiêu chí bán hàng</a></li>
 
-                                    <li><a href="/posts/chinh-sach-bao-mat" title="Chính sách bảo mật" rel="nofollow">Chính sách bảo mật</a></li>
+                                    <li><a href="/bai-viet/chinh-sach-bao-mat" title="Chính sách bảo mật" rel="nofollow">Chính sách bảo mật</a></li>
 
-                                    <li><a href="/posts/lien-he" title="Liên hệ với chúng tôi" rel="nofollow">Liên hệ với chúng tôi</a></li>
+                                    <li><a href="/bai-viet/lien-he" title="Liên hệ với chúng tôi" rel="nofollow">Liên hệ với chúng tôi</a></li>
 
                                 </ul>
                             </li>
