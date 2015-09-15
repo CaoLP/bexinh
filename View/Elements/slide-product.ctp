@@ -55,7 +55,7 @@
                                         if(isset($providers[$p['Product']['provider_id']])){
                                             echo $this->Html->image(
                                                 Configure::read('Img.path')
-                                                .$providers[$p['Product']['provider_id']]['thumb'],
+                                                .$providers[$p['Product']['provider_id']]['Provider']['thumb'],
                                                 array('height'=>'35')
                                             );
                                         }

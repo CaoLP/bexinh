@@ -106,31 +106,59 @@ echo $this->Html->css(array('etalage.css'), array('inline' => false));
                 <p><?php echo $product['Product']['excert'] ?></p>
 
                 <div class="detail_bar">
-                    <p class="bg_price">
+                    <div class="col-md-10">
+                        <p class="bg_price">
+                            <?php if (isset($product['Promote']['value'])) { ?>
+                                <span id="detail_trueprice"
+                                      class="detail_trueprice"><?php echo $this->App->format_detail_money($product['Product']['price'], $product['Promote']['value']); ?></span>
+                                <br>
+                            <?php } ?>
+                            <span id="price"
+                                  class="detail_price"><?php echo $this->App->format_detail_money($product['Product']['price']); ?></span>
+                        </p>
                         <?php if (isset($product['Promote']['value'])) { ?>
-                            <span id="detail_trueprice"
-                                  class="detail_trueprice"><?php echo $this->App->format_detail_money($product['Product']['price'], $product['Promote']['value']); ?></span>
-                            <br>
+                            <p class="detail_precent">52<span>%</span></p>
                         <?php } ?>
-                        <span id="price"
-                              class="detail_price"><?php echo $this->App->format_detail_money($product['Product']['price']); ?></span>
-                    </p>
-                    <?php if (isset($product['Promote']['value'])) { ?>
-                        <p class="detail_precent">52<span>%</span></p>
-                    <?php } ?>
 
-                    <div class="likeface">
-                        Mã SP: <?php echo $product['Product']['sku']; ?>
-                        <br>
+                        <div class="likeface">
+                            Mã SP: <?php echo $product['Product']['sku']; ?>
+                            <br>
 
-                        <div
-                            data-layout="button_count"
-                            class="fb-like"
-                            data-share="true"
-                            data-show-faces="true">
+                            <div
+                                data-layout="button_count"
+                                class="fb-like"
+                                data-share="true"
+                                data-show-faces="true">
+                            </div>
                         </div>
+                        <br class="clean">
                     </div>
-                    <br class="clean">
+                    <div class="col-md-2">
+                        <span class="brdname"><?php
+                            if (isset($providers[$product['Product']['provider_id']])) {
+                            ?>
+                            <a href="<?php
+                            echo $this->Html->url(
+                                array(
+                                    'controller' => 'pages',
+                                    'action' => 'brand',
+                                    'provider' => $providers[$product['Product']['provider_id']]['Provider']['slug'],
+                                )
+                            )
+                            ?>">
+                                <?php
+                                if (!empty($providers[$product['Product']['provider_id']]['Provider']['thumb'])) {
+                                    echo $this->Html->image(
+                                        Configure::read('Img.path')
+                                        . $providers[$product['Product']['provider_id']]['Provider']['thumb'],
+                                        array('height' => '35')
+                                    );
+                                } else
+                                    echo $providers[$product['Product']['provider_id']]['Provider']['name'];
+                                }
+                                ?></a>
+                        </span>
+                    </div>
                 </div>
                 <?php echo $this->Form->create('OrderDetail', array('id' => 'OrderDetailViewForm', 'url' => $this->Html->url(
                     array(

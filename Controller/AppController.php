@@ -113,7 +113,7 @@ class AppController extends Controller
 
         $providers = $this->Provider->get_listProviders();
 
-        $providers = Set::combine($providers,'{n}.Provider.id','{n}.Provider');
+        $providers = Set::combine($providers,'{n}.Provider.id','{n}');
         $this->set(compact('providers'));
 
     }

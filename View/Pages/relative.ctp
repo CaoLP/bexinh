@@ -24,19 +24,19 @@ foreach ($products as $p) {
                             array(
                                 'controller' => 'pages',
                                 'action' => 'brand',
-                                'provider' => $providers[$p['Product']['provider_id']]['slug'],
+                                'provider' => $providers[$p['Product']['provider_id']]['Provider']['slug'],
                             )
                         )
                         ?>">
                             <?php
-                            if (!empty($providers[$p['Product']['provider_id']]['thumb'])) {
+                            if (!empty($providers[$p['Product']['provider_id']]['Provider']['thumb'])) {
                                 echo $this->Html->image(
                                     Configure::read('Img.path')
-                                    . $providers[$p['Product']['provider_id']]['thumb'],
+                                    . $providers[$p['Product']['provider_id']]['Provider']['thumb'],
                                     array('height' => '35')
                                 );
                             } else
-                                echo $providers[$p['Product']['provider_id']]['name'];
+                                echo $providers[$p['Product']['provider_id']]['Provider']['name'];
                             }
                             ?></a></span>
 
