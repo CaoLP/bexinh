@@ -37,6 +37,8 @@ class PagesController extends AppController
 
     public function index()
     {
+        $this->layout = 'home_2';
+        /*
         $this->layout = 'home';
         $this->setTitle('Trang chủ');
         $best_sale = array();
@@ -55,6 +57,7 @@ class PagesController extends AppController
         //Product
         $products = $this->Product->getProduct('Rand()', 8);
         $this->set(compact('best_sale', 'new_products', 'promote_products', 'products'));
+        */
     }
     public function view($category = null, $slug = null)
     {

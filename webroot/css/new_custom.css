@@ -1,0 +1,24 @@
+div.banner_home_sm .carousel a{
+    width: auto;
+    margin-right: auto;
+    float: none;
+}
+.carousel .item a{
+    width: 100%;
+    float: none;
+}
+.carousel .item a img{
+    width: 100%;
+}
+.banner_home_sm .col-md-4{
+    padding: 0;
+}
+.banner_home_sm .carousel-control.left, .banner_home_sm .carousel-control.right{
+    width: 25px;
+}
+
+@media (min-width: 746px) {
+    .banner_home{
+        min-height: 258px;
+    }
+}

@@ -27,7 +27,7 @@
                 ?>
                 <div class="item <?php echo $class; ?>">
                     <a href="<?php echo $slide['Setting']['data'] ?>">
-                        <?php echo $this->Media->image($slide['Thumb']['file'], 917, 315, array ()); ?>
+                        <?php echo $this->Media->image($slide['Thumb']['file'], 745, 256, array ()); ?>
                     </a>
                 </div>
             <?php } ?>
@@ -68,7 +68,7 @@
                 ?>
                 <div class="item <?php echo $class; ?>">
                     <a href="<?php echo $slide['Setting']['data'] ?>">
-                        <?php echo $this->Media->image($slide['Thumb']['file'], 425, 425, array ()); ?>
+                        <?php echo $this->Media->image($slide['Thumb']['file'], 313, 154, array ()); ?>
                     </a>
                 </div>
             <?php } ?>
@@ -109,7 +109,7 @@
                 ?>
                 <div class="item <?php echo $class; ?>">
                     <a href="<?php echo $slide['Setting']['data'] ?>">
-                        <?php echo $this->Media->image($slide['Thumb']['file'], 425, 425, array ()); ?>
+                        <?php echo $this->Media->image($slide['Thumb']['file'], 313, 154, array ()); ?>
                     </a>
                 </div>
             <?php } ?>
@@ -149,7 +149,7 @@
                 ?>
                 <div class="item <?php echo $class; ?>">
                     <a href="<?php echo $slide['Setting']['data'] ?>">
-                        <?php echo $this->Media->image($slide['Thumb']['file'], 425, 425, array ()); ?>
+                        <?php echo $this->Media->image($slide['Thumb']['file'], 313, 154, array ()); ?>
                     </a>
                 </div>
             <?php } ?>
