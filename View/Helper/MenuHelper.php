@@ -97,4 +97,49 @@ class MenuHelper extends Helper
         if($sub) $html .= '</ul>';
         return $html;
     }
+    public function loadCategory2($categories, $parent = 'Category' , $child = 'children'){
+        $html = '';
+        foreach($categories as $cat){
+            $url =  $this->_View->Html->url(
+                array(
+                    'controller' => 'pages',
+                    'action' => 'categories',
+                    'category' => $cat[$parent]['slug']
+                )
+            );
+            $html.='<li><a href="'.$url.'"><span class="ic_cm">'.$cat[$parent]['icon'].'</span>'.$cat[$parent]['name'].'<span class="ic_cm  icon_arr">K</span></a>';
+            if(count($cat[$child])>0){
+                $html .= '<div class="menu_ver_hover">';
+                $html .= $this->loadCategory2_child($cat[$child], $parent, $child);
+                $html .= '</div>';
+            }
+            $html.='</li>';
+        }
+        return $html;
+    }
+    public function loadCategory2_child($categories, $parent = 'Category' , $child = 'children', $sub = false){
+        $html = '';
+        if(!$sub) $html .= '<ul class="menu_ver_item">';
+        foreach($categories as $cat){
+            $url =  $this->_View->Html->url(
+                array(
+                    'controller' => 'pages',
+                    'action' => 'categories',
+                    'category' => $cat[$parent]['slug']
+                )
+            );
+            $html .= '<li';
+            if(!$sub) $html.= ' class="bold" ';
+            $html.='>
+                    <a href="'.$url.'">
+                    '.$cat[$parent]['name'].'
+                    </a>';
+            $html.='</li>';
+            if(count($cat[$child])>0){
+                $html .= $this->loadCategory2_child($cat[$child], $parent, $child, true);
+            }
+        }
+        if(!$sub) $html .= '</ul>';
+        return $html;
+    }
 }

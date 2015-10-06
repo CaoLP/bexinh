@@ -180,14 +180,63 @@ class Product extends AppModel
         )
     );
 
-    public function getProduct($order = 'Product.created DESC',$limit = 6){
+    public function getProduct($order = 'Product.created DESC',$limit = 6, $conditions = array()){
+        $conditions['NOT'] = array(
+            'Product.name' => array('0',''),
+        );
         $result = $this->find('all',array(
             'fields' =>'Product.*,Category.*,ProductPromote.*,Promote.*,Thumb.file',
-            'conditions' => array(
-                'NOT' => array(
-                    'Product.name' => array('0',''),
+            'conditions' => $conditions,
+            'joins' => array(
+                array(
+                    'table' => 'product_promotes',
+                    'alias' => 'ProductPromote',
+                    'type' => 'LEFT',
+                    'conditions' => array(
+                        'Product.id = ProductPromote.product_id'
+                    )
+                ),
+                array(
+                    'table' => 'promotes',
+                    'alias' => 'Promote',
+                    'type' => 'LEFT',
+                    'conditions' => array(
+                        'ProductPromote.promote_id = Promote.id',
+                        'Promote.begin <=' => date('Y-m-d H:i:s'),
+                        'Promote.end >=' => date('Y-m-d H:i:s'),
+                    )
                 )
             ),
+            'order' => array($order),
+            'limit' => $limit
+        ));
+        return $result;
+    }
+    public function getProduct_SM($order = 'Product.created DESC',$limit = 6, $conditions = array()){
+        unset($this->hasMany['OrderDetail']);
+        unset($this->hasMany['InoutWarehouseDetail']);
+        unset($this->hasMany['ProductCategory']);
+        unset($this->hasMany['ProductOption']);
+        unset($this->hasMany['ProductSubitem']);
+        unset($this->hasMany['Warehouse']);
+        $conditions['NOT'] = array(
+            'Product.name' => array('0',''),
+        );
+        $result = $this->find('all',array(
+            'fields' =>array(
+                'Product.name',
+                'Product.slug',
+                'Product.sku',
+                'Product.provider_id',
+                'Product.price',
+                'Product.media_id',
+                'Thumb.*',
+                'Category.slug',
+                'Category.name',
+                'ProductPromote.*',
+                'Promote.value'
+            ),
+            'conditions' => $conditions,
             'joins' => array(
                 array(
                     'table' => 'product_promotes',
@@ -215,7 +264,13 @@ class Product extends AppModel
     }
     public function getProductDetails($category, $slug){
         $result = $this->find('first',array(
-            'fields' =>'Product.*,Category.*,ProductPromote.*,Promote.*,Thumb.file',
+            'fields' =>array(
+                'Product.*',
+                'Category.*',
+                'ProductPromote.*',
+                'Promote.*',
+                'Thumb.file'
+            ),
             'conditions' => array(
                 'NOT' => array(
                     'Product.name' => array('0',''),

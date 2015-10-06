@@ -4,7 +4,7 @@ html {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     outline: 0;
     cursor: pointer
 }
@@ -3967,7 +3967,6 @@ div.index_flash {
     clear: both;
     width: 100%;
     overflow: hidden;
-    height: 1306px;
     position: relative
 }
 
@@ -4039,7 +4038,9 @@ div.inside_banner {
     width: 100%;
     position: absolute;
     top: 0;
-    background: url(../images/bg_banner.png) no-repeat center top
+    /*background: url(../images/bg_banner.png) no-repeat center top;*/
+    /*background: #38B04A;*/
+    height: 100%;
 }
 
 div.inside_banner ul.breadcrumb {
@@ -4084,7 +4085,8 @@ div.cate_city a.city_link:hover, div.cate_city a.city_link.active {
 }
 
 div.inside_co {
-    position: relative
+    position: relative;
+    height: 100%;
 }
 
 div.cate_menu_hoz {
@@ -7447,7 +7449,7 @@ div.title_home ul.title_menu a:hover {
     border-bottom: 0
 }
 
-div.title_home ul.title_menu a.actived {
+div.title_home ul.title_menu .active a {
     border: 1px solid #e8e8e8;
     color: #38b04a;
     padding: 4px 13px;
@@ -11335,7 +11337,6 @@ ul.listdeal_four li:hover p.num_product_hover_T {
 
 ul.listdeal_four div.img {
     position: relative;
-    height: 235px;
     min-height: 200px
 }
 
@@ -11727,7 +11728,7 @@ ul.listdeal_four p.listdeal_info_Ce span.price {
     font-size: 15px;
     font-weight: 700;
     line-height: 13px;
-    color: #3a3a3a
+    color: #FF0000;
 }
 
 ul.listdeal_four p.listdeal_info_Ce1 {
@@ -11901,7 +11902,7 @@ ul.listdeal_right li:hover p.num_product_hover_T {
 
 ul.listdeal_right div.img {
     position: relative;
-    height: 235px;
+    /*height: 235px;*/
     min-height: 200px
 }
 

@@ -83,7 +83,7 @@ class AppController extends Controller
         $this->loadModel('Category');
         $categories = $this->Category->find('threaded',
             array(
-                'fields' => array('id', 'name', 'slug', 'parent_id'),
+                'fields' => array('id', 'name', 'slug', 'parent_id', 'icon'),
                 'conditions' => array(
                     'Category.name <>' => '0',
                     'Category.status' => '1',

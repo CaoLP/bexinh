@@ -22,3 +22,200 @@ div.banner_home_sm .carousel a{
         min-height: 258px;
     }
 }
+@media (min-width: 992px) {
+    .fly{
+        position: fixed;
+        z-index: 9999 !important;
+    }
+}
+.listdeal_info .brdname{
+    float: left;
+    margin-right: 10px;
+}
+li.btn{
+    width: 100%;
+}
+ul.shop_cart_list a.product_name{
+    height: 18px;
+    text-overflow: ellipsis;
+}
+.shop_cart_list .remove, .shop_cart_list .remove:hover{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.bx-clone{
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+.bx-viewport{
+    min-height: 75px;
+    background: #38B04A;
+}
+.cate_menu_hoz{
+    position: absolute;
+    bottom: 0;
+}
+.w-80{
+    width: 80%;
+}
+.etalage_zoom_area{
+    display: none !important;
+}
+/*Checkbox*/
+ul.choose_size {
+    list-style: none;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+ul.choose_size li:hover, ul.choose_size li.size_active {
+
+}
+ul.choose_size li:hover a, ul.choose_size li.size_active a{
+
+}
+ul.choose_size a {
+    padding: 7px 10px;
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+}
+ul.choose_size span.ic_check {
+    display: none;
+}
+ul.choose_size li.size_active span.ic_check {
+    display: inline-block;
+    margin-right: 3px;
+}
+.clean {
+    clear: both;
+    line-height: 0;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+ul.choose_size li{
+    float: left;
+    margin-right: 10px;
+}
+input[type=radio].radiocheck {
+    display: none
+}
+input[type=radio].radiocheck:checked + label{
+    background: #ff7a00;
+    color: #fff;
+}
+input[type=radio].radiocheck:checked + label:before {
+    content: "\e084";
+}
+input.radiocheck+label{
+    background: #eee;
+    border-radius: 3px;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    font-size: 12px;
+    padding: 6px 10px 6px 10px;
+    font-weight: normal;
+}
+input.radiocheck+label:after, input.radiocheck+label:before {
+    font-size: 14px;
+    top: 5px;
+    left: 5px;
+    width: 18px;
+    line-height: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+input.radiocheck+label:before {
+    content: "\e089";
+    transition: all .2s;
+    position: relative;
+    top: 2px;
+    left: 0px;
+    font-family: 'Glyphicons Halflings';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* start share-des */
+.share-desc{
+    padding: 20px 0;
+}
+.share h4{
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #ffffff;
+}
+.share_nav{
+    float:left;
+}
+.share_nav li {
+    display: inline-block;
+    margin: 5px 6px;
+}
+.share_nav li a {
+    background: #9C9C9C;
+    padding: 10px;
+    display: block;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.share_nav li a:hover{
+    background: #bc3726;
+}
+.share li img {
+    vertical-align:middle;
+}
+/*----*/
+.form-in{
+    margin-top: 3em;
+    float: right;
+}
+.form-in a{
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    width: 181px!important;
+    height: 62px!important;
+    font-size: 21px;
+    font-weight: 700;
+    background: #38b04a;
+    border: 0;
+    color: #fff!important;
+    white-space: nowrap;
+    padding: 5px 10px 7px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-border-top-left-radius: 2px;
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    -moz-border-radius-topleft: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    -moz-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    cursor: pointer;
+    font-family: OpenSans,arial;
+    display: inline-block;
+    text-decoration: none;
+}
+.form-in a:hover{
+    background:#FD1E01;
+}
+/*----*/

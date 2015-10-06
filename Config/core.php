@@ -366,5 +366,5 @@ Cache::config('_cake_model_', array(
 Configure::write('Upload.path', '/home/quanly.shopbexinhs.com/public_html/app/webroot/');
 Configure::write('Img.path', 'http://quanly.shopbexinhs.com/');
 Configure::write('Img.noImage', 'http://shopbexinhs.com/img/noimage.png');
-Configure::write('Page.limit',20);
+Configure::write('Page.limit',21);
 Configure::write('Site.title','Shop Bé Xinh');

@@ -1,5 +1,5 @@
 $(function () {
-    $.ajaxSetup({cache:false});
+    $.ajaxSetup({cache: false});
     $(".share-popup").click(function () {
         var window_size = "";
         var url = this.href;
@@ -20,28 +20,28 @@ $(function () {
         window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,' + window_size);
         return false;
     });
-    $('.buy').on('click',function(){
+    $('.buy').on('click', function () {
         var form = $('#OrderDetailViewForm').serialize();
         $.ajax({
             url: cartUrl,
-            type : 'post',
-            data : form,
-            success: function(data){
-                if(data){
+            type: 'post',
+            data: form,
+            success: function (data) {
+                if (data) {
                     $('#cart').html(data);
                     location.href = cartUrl;
                 }
             }
         });
     });
-    $('.add-cart').on('click',function(){
+    $('.add-cart').on('click', function () {
         var form = $('#OrderDetailViewForm').serialize();
         $.ajax({
             url: cartUrl,
-            type : 'post',
-            data : form,
-            success: function(data){
-                if(data)
+            type: 'post',
+            data: form,
+            success: function (data) {
+                if (data)
                     $('#cart').html(data);
             }
         });
@@ -49,13 +49,13 @@ $(function () {
     $(document).on('keydown', '*[data-type=number]', function (e) {
         // Allow: backspace, delete, tab, escape, enter and .
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
-            // Allow: Ctrl+A
+                // Allow: Ctrl+A
             (e.keyCode == 65 && e.ctrlKey === true) ||
-            // Allow: Ctrl+C
+                // Allow: Ctrl+C
             (e.keyCode == 67 && e.ctrlKey === true) ||
-            // Allow: Ctrl+X
+                // Allow: Ctrl+X
             (e.keyCode == 88 && e.ctrlKey === true) ||
-            // Allow: home, end, left, right
+                // Allow: home, end, left, right
             (e.keyCode >= 35 && e.keyCode <= 39)) {
             // let it happen, don't do anything
             return;
@@ -65,79 +65,98 @@ $(function () {
             e.preventDefault();
         }
     });
-    $(document).on('click','.cart-add-p',function(){
-        change_cart('add',$(this).data('id'),2);
+    $(document).on('click', '.cart-add-p', function () {
+        change_cart('add', $(this).data('id'), 2);
     });
-    $(document).on('click','.cart-minus-p',function(){
-        change_cart('minus',$(this).data('id'),2);
+    $(document).on('click', '.cart-minus-p', function () {
+        change_cart('minus', $(this).data('id'), 2);
     });
-    $(document).on('click','.cart-remove-p',function(){
-        change_cart('remove',$(this).data('id'),2);
+    $(document).on('click', '.cart-remove-p', function () {
+        change_cart('remove', $(this).data('id'), 2);
     });
-    $(document).on('click','.remove',function(){
-        change_cart('remove',$(this).data('id'));
+    $(document).on('click', '.remove', function () {
+        change_cart('remove', $(this).data('id'));
     });
-    if($('#carousel').length > 0){
+    if ($('#carousel').length > 0) {
         $.ajax({
             url: slide,
-            type : 'post',
+            type: 'post',
             dataType: "html",
-            success : function(data){
+            success: function (data) {
                 $('#carousel').html($(data).filter('#slide_top').html());
                 $('#slide_left').html($(data).filter('#slide_left').html());
                 $('#slide_mid').html($(data).filter('#slide_mid').html());
                 $('#slide_right').html($(data).filter('#slide_right').html());
-                $('.carousel').each(function(){
+                $('.carousel').each(function () {
                     var random = Math.floor(Math.random() * (6000 - 3000 + 1)) + 3000;
                     $(this).carousel({interval: random});
                 })
             }
         });
     }
-    if($('.timer').length > 0){
-        var inter = setInterval(function(){
+    if ($('.timer').length > 0) {
+        var inter = setInterval(function () {
             var cur = $('.timer').text();
-            if(cur == 0) {
+            if (cur == 0) {
                 clearInterval(inter);
                 window.location = $('#turn-home').attr('href');
             }
             else cur--;
             $('.timer').text(cur);
-        },1000)
+        }, 1000)
     }
-    if($('#hotnews').length > 0){
+    if ($('#hotnews').length > 0) {
         $.ajax({
-            url : ajax_news,
-            type : 'post',
-            success : function(data){
+            url: ajax_news,
+            type: 'post',
+            success: function (data) {
                 $('#hotnews').html(data);
             }
         });
     }
+    var top = $('#floorjumping').offset().top;
+    $(window).scroll(function () {
+        var $cache = $('#mainHeader');
+        if ($(window).scrollTop() > 100)
+            $cache.addClass('fly');
+        else
+            $cache.removeClass('fly');
+        var jum = $('#floorjumping');
+        if ($(window).scrollTop() > top - 140)
+            jum.addClass('H_cate_fixed');
+        else
+            jum.removeClass('H_cate_fixed');
+    });
+    $('.chose_cate').hover(function () {
+        if ($('#mainHeader').hasClass('fly'))
+            $('.menu_cate.menu_ver_inside').show();
+    }, function () {
+        $('.menu_cate.menu_ver_inside').hide();
+    });
 });
-var change_cart = function(type,id,style){
+var change_cart = function (type, id, style) {
     $.ajax({
         url: cartUrl,
         type: 'post',
         data: {
             m: true,
             type: type,
-            id : id,
-            style : style
+            id: id,
+            style: style
         },
-        beforeSend: function(){
+        beforeSend: function () {
 
         },
-        success : function(data){
-            if(typeof style != "undefined"){
+        success: function (data) {
+            if (typeof style != "undefined") {
                 $('#p-cart').html(data);
                 $.ajax({
                     url: cartUrl,
-                    success: function(data){
+                    success: function (data) {
                         $('#cart').html(data);
                     }
                 });
-            }else{
+            } else {
                 $('#cart').html(data);
             }
         }
@@ -146,11 +165,11 @@ var change_cart = function(type,id,style){
 
 var validateForm = function (form) {
     var stop_here = false;
-    try{
-        $($(form).serializeArray()).each(function(index,value){
-            if(value.name != 'data[Order][ship_email]' && value.name != 'data[Order][ship_note]'){
-                if(value.value == ''){
-                    $('*[name="'+value.name+'"]')
+    try {
+        $($(form).serializeArray()).each(function (index, value) {
+            if (value.name != 'data[Order][ship_email]' && value.name != 'data[Order][ship_note]') {
+                if (value.value == '') {
+                    $('*[name="' + value.name + '"]')
                         .focus()
                         .closest('.form-group')
                         .addClass('has-error')
@@ -158,8 +177,8 @@ var validateForm = function (form) {
                         .removeClass('hidden');
                     stop_here = true;
                     return false;
-                }else{
-                    $('*[name="'+value.name+'"]')
+                } else {
+                    $('*[name="' + value.name + '"]')
                         .closest('.form-group')
                         .removeClass('has-error')
                         .find('.error')
@@ -167,11 +186,11 @@ var validateForm = function (form) {
                 }
             }
         });
-    }catch(ex){
+    } catch (ex) {
         console.log(ex);
         return false;
     }
-    if(stop_here){
+    if (stop_here) {
         return false;
     }
 };

@@ -27,7 +27,7 @@
                 ?>
                 <div class="item <?php echo $class; ?>">
                     <a href="<?php echo $slide['Setting']['data'] ?>">
-                        <?php echo $this->Media->image($slide['Thumb']['file'], 745, 256, array ()); ?>
+                        <?php echo $this->Media->image($slide['Thumb']['file'], 745, 287, array ()); ?>
                     </a>
                 </div>
             <?php } ?>

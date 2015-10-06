@@ -119,10 +119,12 @@ $(function(){
         zoom_area_width: 500,
         zoom_area_height: 500,
         zoom_area_distance: 5,
+        click_to_zoom: false,
         small_thumbs: 4,
         smallthumb_inactive_opacity: 0.3,
         smallthumbs_position: 'left',
-        show_hint: true,
+        show_hint: false,
+        show_icon: false,
         click_callback: function(image_anchor, instance_id){
 
         }

@@ -39,7 +39,8 @@ if (count($cart) > 0)
                 </tr>";
     }
 ?>
-<div id="p-content">
+<div class="index_middle">
+<div id="p-content" class="container">
     <div class="panel in-line">
         <div class="panel-heading para-an has-icon">
             <h3>Giỏ hàng</h3>
@@ -136,4 +137,5 @@ if (count($cart) > 0)
         <?php echo $this->Form->end(); ?>
     </div>
     </div>
+</div>
 </div>

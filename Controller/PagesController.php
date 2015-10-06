@@ -38,8 +38,8 @@ class PagesController extends AppController
     public function index()
     {
         $this->layout = 'home_2';
-        /*
-        $this->layout = 'home';
+//        /*
+//        $this->layout = 'home';
         $this->setTitle('Trang chủ');
         $best_sale = array();
         $new_products = array();
@@ -55,9 +55,36 @@ class PagesController extends AppController
         $this->loadModel('ProductPromote');
         $promote_products = $this->ProductPromote->getProduct(8);
         //Product
-        $products = $this->Product->getProduct('Rand()', 8);
+        unset($this->Product->Category->hasMany['Product']);
+        $products = $this->Product->Category->find('all', array(
+            'fields' =>array(
+                'Category.name',
+                'Category.slug',
+                'Category.id',
+                'Category.icon',
+                'Category.media_id',
+            ),
+            'conditions' => array(
+                'OR' => array(
+                    array('Category.parent_id' => 0),
+                    array('Category.parent_id' => null),
+                )
+            ),
+            'recursive' => -1
+        ));
+        foreach($products as $key=>$cat){
+            $children = $this->Product->Category->children($cat['Category']['id'],false);
+            $products[$key]['children'] = $children;
+            $ids = Hash::extract($children, '{n}.Category.id');
+            $ids[] = $cat['Category']['id'];
+            $products[$key]['products'] = $this->Product->getProduct_SM('Product.created DESC', 8, array(
+                'Product.category_id' => $ids
+            ));
+        }
+//
+//        $products = $this->Product->getProduct('Rand()', 8);
         $this->set(compact('best_sale', 'new_products', 'promote_products', 'products'));
-        */
+//        */
     }
     public function view($category = null, $slug = null)
     {
@@ -399,8 +426,12 @@ class PagesController extends AppController
             )
         ));
         $allChildren = array();
+        $childlist = array();
+        $parentlist = array();
         if(isset($cat['Category']['id'])){
             $allChildren = $this->Category->children($cat['Category']['id']);
+            $parentlist = $this->Category->getPath($cat['Category']['id']);
+            $childlist = $allChildren;
             $allChildren = Set::combine($allChildren,'{n}.Category.id','{n}.Category.id');
         }
         $this->Paginator->settings = array(
@@ -435,7 +466,7 @@ class PagesController extends AppController
             'limit' => Configure::read('Page.limit')
         );
         $products = $this->Paginator->paginate('Product');
-        $this->set(compact('products'));
+        $this->set(compact('products','childlist','cat','parentlist'));
         if(isset($cat['Category']['name']))
             $this->setTitle($cat['Category']['name']);
         else
